@@ -1,6 +1,6 @@
 # What ???
 
-Trying to compile Free32 on a Teensy4.
+Trying to compile Free42 on a Teensy4.
 
 It's a PlatformIO project, copied some code from free42 into lib and trying to compile it...
 
