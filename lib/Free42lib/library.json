@@ -1,0 +1,21 @@
+{
+    "build": {
+        "flags": [
+            "-Wno-misleading-indentation",
+            "-Wno-parentheses",
+            "-Wno-write-strings",
+            "-Wno-maybe-uninitialized ",
+            "-fno-exceptions",
+            "-fno-rtti ",
+            "-DVERSION=\"3.1.5\"",
+            "-DDECIMAL_CALL_BY_REFERENCE=1 ",
+            "-DDECIMAL_GLOBAL_ROUNDING=1",
+            "-DDECIMAL_GLOBAL_ROUNDING_ACCESS_FUNCTIONS=1",
+            "-DDECIMAL_GLOBAL_EXCEPTION_FLAGS=1",
+            "-DDECIMAL_GLOBAL_EXCEPTION_FLAGS_ACCESS_FUNCTIONS=1 ",
+            "-D_WCHAR_T_DEFINED",
+            "-fdata-sections",
+            "-ffunction-sections"
+        ]
+    }
+}
