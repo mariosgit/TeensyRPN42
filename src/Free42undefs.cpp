@@ -78,7 +78,7 @@ int4 shell_read_saved_state(void *buf, int4 bufsize) {
 
 
 
-
+// Teensy does not have file io ? Maybe use SDCard ?
 
 #ifdef __cplusplus
 extern "C"
@@ -93,6 +93,10 @@ int _open(const char *pathname, int flags)
     return -1;
 }
 int _link(const char *oldpath, const char *newpath)
+{
+    return -1;
+}
+int _write(int fd, const char buf, size_t count)
 {
     return -1;
 }
