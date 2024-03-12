@@ -96,10 +96,10 @@ int _link(const char *oldpath, const char *newpath)
 {
     return -1;
 }
-int _write(int fd, const char buf, size_t count)
-{
-    return -1;
-}
+// int _write(int fd, const char buf, size_t count)
+// {
+//     return -1;
+// }
 
 }
 
