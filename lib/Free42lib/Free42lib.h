@@ -1,8 +1,5 @@
 #pragma once
 
-#include <Arduino.h>
-
-
 // stuff from keyboard.h collides
 #undef KEY_SIGMA 
 #undef KEY_INV   

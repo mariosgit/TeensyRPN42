@@ -1,4 +1,12 @@
+#if defined(ENV_NATIVE)
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <unistd.h>
+#else
 #include <Arduino.h>
+#endif
 
 #include <Free42lib.h>
 #include <unistd.h>
@@ -346,6 +354,8 @@ extern "C"
         return in->readBytes((char *)buf, toRead);
     }
 }
+
+
 void setup()
 {
     Serial.begin(115200);
