@@ -13,3 +13,5 @@ Ultraexperimental
 # Refs
 
 thomasokken's ingenious https://thomasokken.com/free42 
+
+And code on github: https://github.com/swissmicros/free42
