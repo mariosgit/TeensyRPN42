@@ -29,6 +29,9 @@
 #define uint4 unsigned int
 #define int8 long long
 #define uint8 unsigned long long
+#ifndef NULL
+#define NULL 0
+#endif
 
 #if defined(__BYTE_ORDER__) && __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
 /* I have tested big-endian state file compatibility in Fedora 12

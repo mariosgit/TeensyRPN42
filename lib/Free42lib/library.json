@@ -17,5 +17,6 @@
             "-fdata-sections",
             "-ffunction-sections"
         ]
-    }
+    },
+    "dependencies": ["IntelRDFPMathLib20U1"]
 }
