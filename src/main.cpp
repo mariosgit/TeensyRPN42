@@ -567,7 +567,7 @@ void skin_repaint_annunciator(int which, bool state)
 
 void shell_blitter(const char *bits, int bytesperline, int x, int y, int width, int height)
 {
-    printf("Shell blitter" NL);
+    // printf("Shell blitter" NL);
 
     for (int v = y; v < y + height; v++)
     {
@@ -583,7 +583,7 @@ void shell_blitter(const char *bits, int bytesperline, int x, int y, int width, 
 
 void shell_annunciators(int updn, int shf, int prt, int run, int g, int rad)
 {
-    printf("Shell annunciators" NL);
+    // printf("Shell annunciators" NL);
     if (updn != -1 && ann_updown != updn)
     {
         ann_updown = updn;
@@ -645,9 +645,9 @@ void empty_keydown()
     int dummy2;
     do
     {
-        printf("empty keydown:" NL);
+        // printf("empty keydown:" NL);
         keep_running = core_keydown(0, &dummy1, &dummy2);
-        printf("end of empty keydown: keep_running=%i" NL, keep_running);
+        // printf("end of empty keydown: keep_running=%i" NL, keep_running);
     } while (keep_running);
 }
 
@@ -681,19 +681,19 @@ void main_loop_curses()
         if (e == KEY_ESC)
             break;
 
-        printf("curs_key=%08x" NL, e);
+        // printf("curs_key=%08x" NL, e);
         fflush(stdout);
         key = curses_map_key(e);
         if (key > 0)
         {
             // Key pressed
-            printf("key press %i" NL, key);
+            // printf("key press %i" NL, key);
             int repeat, keep_running;
             keep_running = core_keydown(key, &enqueued, &repeat);
-            printf("end of keydown: keep_running=%i  enqueued=%i  repeat=%i" NL, keep_running, enqueued, repeat);
-            printf("keyup" NL);
+            // printf("end of keydown: keep_running=%i  enqueued=%i  repeat=%i" NL, keep_running, enqueued, repeat);
+            // printf("keyup" NL);
             keep_running = core_keyup();
-            printf("end of keyup: keep_running=%i" NL, keep_running);
+            // printf("end of keyup: keep_running=%i" NL, keep_running);
         }
     }
 
