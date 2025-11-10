@@ -41,10 +41,6 @@ const char *shell_number_format()
 }
 
 
-#ifndef ENV_NATIVE
-
-
-
 double shell_random_seed()
 {
     // Use a combination of analog reading and millis() to generate a seed
@@ -122,7 +118,6 @@ int4 shell_read_saved_state(void *buf, int4 bufsize)
     return -1; // No state saving for now, could use EEPROM or SD card in the future
 }
 
-#endif
 
 // Teensy does not have file io ? Maybe use SDCard ?
 
@@ -142,10 +137,10 @@ extern "C"
     {
         return -1;
     }
-    // int _write(int fd, const char buf, size_t count)
-    // {
-    //     return -1;
-    // }
+    int _write(int fd, const char buf, size_t count)
+    {
+        return -1;
+    }
 }
 
 #endif

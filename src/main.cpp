@@ -13,9 +13,9 @@
 #include <stdio.h>
 #include <cstring>
 
-#ifdef USE_CURSES
 #include "con_curses.h"
-#endif
+#include <common/core_aux.h>
+#include "DebugCore.h"
 
 static int ann_updown = 0;
 static int ann_shift = 0;
@@ -194,6 +194,8 @@ int hp2ascii(char *dst, const char *src, int srclen)
 
 /* === Undefined functions ... just stubs === */
 
+#if 0
+// its in Free32Hacks.cpp
 double shell_random_seed()
 {
     return 0.78237947239847;
@@ -250,6 +252,8 @@ int4 shell_read_saved_state(void *buf, int4 bufsize)
     return -1;
 }
 
+#endif
+
 /* ======================= */
 /* === LOCAL FUNCTIONS === */
 /* ======================= */
@@ -271,6 +275,15 @@ void curses_end()
     nocbreak();
     endwin();
 }
+#endif
+
+#if defined(ENV_STM32F4xx) || defined(ENV_TEENSY40)
+#define KEY_BACKSPACE 8
+#define KEY_TAB 9
+#define KEY_ESC 27
+#define KEY_UP_CURS 93   // ]
+#define KEY_DOWN_CURS 91 // [
+#endif
 int curses_map_key(int key)
 {
     int calc_key = -1;
@@ -333,10 +346,10 @@ int curses_map_key(int key)
     case 'n':
         calc_key = 17;
         break;
-    case KEY_UP_CURS:
+    case KEY_UP:
         calc_key = 18;
         break;
-    case KEY_DOWN_CURS:
+    case KEY_DOWN:
         calc_key = 23;
         break;
     case KEY_TAB:
@@ -401,7 +414,6 @@ int curses_map_key(int key)
     }
     return calc_key;
 }
-#endif
 
 #define LCDW 131
 #define LCDH 16
@@ -416,11 +428,6 @@ void disp_clear()
         disp[i][LCDW] = 0;
 }
 
-#if USE_CURSES
-#define NL "\r\n"
-#else
-#define NL "\n"
-#endif
 
 #ifdef UTF8_DISP
 
@@ -464,8 +471,6 @@ void disp_char_print(int i)
     printf("%s", disp_char(i));
 }
 
-#define P disp_char_print
-#define PC disp_char_print_cnt
 
 #endif
 
@@ -474,8 +479,8 @@ int disp_annun()
     if (ann_updown)
     {
 #ifdef UTF8_DISP
-        P(11);
-        P(12);
+        disp_char_print(11);
+        disp_char_print(12);
 #else
         printf("v^");
 #endif
@@ -502,23 +507,23 @@ void disp_char_print_cnt(int i, int cnt)
 void disp_print()
 {
     int i, j;
-    P(5);
-    PC(4, LCDW + 2);
-    P(6);
+    disp_char_print(5);
+    disp_char_print_cnt(4, LCDW + 2);
+    disp_char_print(6);
     printf(NL);
-    P(9);
+    disp_char_print(9);
     printf(" ");
     i = disp_annun();
-    PC(0, LCDW + 1 - i);
-    P(9);
+    disp_char_print_cnt(0, LCDW + 1 - i);
+    disp_char_print(9);
     printf(NL);
-    P(9);
-    PC(0, LCDW + 2);
-    P(9);
+    disp_char_print(9);
+    disp_char_print_cnt(0, LCDW + 2);
+    disp_char_print(9);
     printf(NL);
     for (i = 0; i < LCDH; i += 2)
     {
-        P(9);
+        disp_char_print(9);
         printf(" ");
         for (j = 0; j < LCDW; j++)
         {
@@ -527,15 +532,15 @@ void disp_print()
                 k += 1;
             if (disp[i + 1][j] != ' ')
                 k += 2;
-            P(k);
+            disp_char_print(k);
         }
         printf(" ");
-        P(9);
+        disp_char_print(9);
         printf(NL);
     }
-    P(7);
-    PC(4, LCDW + 2);
-    P(8);
+    disp_char_print(7);
+    disp_char_print_cnt(4, LCDW + 2);
+    disp_char_print(8);
     printf(NL);
 }
 
@@ -658,6 +663,7 @@ static bool enqueued;
 void main_loop_curses()
 {
     curses_init();
+    nodelay(stdscr, TRUE);
     (void)getch(); // Just make it print :)
     printf("%x %x" NL, KEY_UP_CURS, KEY_DOWN_CURS);
 
@@ -671,6 +677,7 @@ void main_loop_curses()
         do
         {
             e = getch();
+            // printf("curs_key=%08x" NL, e);
             if (e == ERR)
             {
                 // timeout - do some timout stuf
@@ -687,13 +694,15 @@ void main_loop_curses()
         if (key > 0)
         {
             // Key pressed
-            // printf("key press %i" NL, key);
+            printf("key press %i" NL, key);
             int repeat, keep_running;
             keep_running = core_keydown(key, &enqueued, &repeat);
             // printf("end of keydown: keep_running=%i  enqueued=%i  repeat=%i" NL, keep_running, enqueued, repeat);
             // printf("keyup" NL);
             keep_running = core_keyup();
             // printf("end of keyup: keep_running=%i" NL, keep_running);
+
+            debug_core();
         }
     }
 
@@ -706,7 +715,7 @@ void main_loop_curses()
 
 void main_loop()
 {
-    core_init(0, 0);
+    core_init(0, 0, NULL, 0);
     for (;;)
     {
         char s[LINELEN];
@@ -714,7 +723,7 @@ void main_loop()
         // Run until end
         empty_keydown();
 
-        printf("> ");
+        // printf("> ");
         if (!fgets(s, LINELEN, stdin))
             break;
 
@@ -735,15 +744,68 @@ void main_loop()
 
 #endif
 
+// no main on Arduinos
+#if !(defined(ENV_STM32F4xx) || defined(ENV_TEENSY40))
 int main(int argc, char *argv[])
 {
-    printf("Free42 console emulator\n");
-
 #ifdef USE_CURSES
+    printf("Free42 console emulator - CURSES\n");
+
     main_loop_curses();
 #else
+    printf("Free42 console emulator\n");
+
     main_loop();
 #endif
 
     return 0;
 }
+#else
+void setup()
+{
+    Serial.begin(115200);
+    printf("Free42 Arduino emulator\n");
+    core_init(0, 0, 0, 0);
+}
+void loop()
+{
+    char s[LINELEN];
+
+    // Run until end
+    empty_keydown();
+
+    if (Serial.available())
+    {
+        int input = Serial.read();
+
+        printf("Input: %d\n", input);
+
+        int key;
+        empty_keydown();
+
+        // if (e == KEY_ESC)
+        //     break;
+
+        if (input != 10) // ignore \r
+        {
+
+            // printf("curs_key=%08x" NL, e);
+            fflush(stdout);
+            key = curses_map_key(input);
+            if (key > 0)
+            {
+                // Key pressed
+                // printf("key press %i" NL, key);
+                int repeat, keep_running;
+                keep_running = core_keydown(key, &enqueued, &repeat);
+                // printf("end of keydown: keep_running=%i  enqueued=%i  repeat=%i" NL, keep_running, enqueued, repeat);
+                // printf("keyup" NL);
+                keep_running = core_keyup();
+                // printf("end of keyup: keep_running=%i" NL, keep_running);
+            }
+
+            debug_core();
+        }
+    }
+}
+#endif

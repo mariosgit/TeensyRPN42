@@ -1,10 +1,7 @@
 #pragma once
 
-#ifndef USE_CURSES
-#error "USE_CURSES must be defined for this file, needed for propper getchar reading, it's complicated. brew install ncurses "
-#endif
 
-#include "con_curses.h"
+#ifdef ENV_NATIVE
 
 #include <cstdlib>
 #include <thread>
@@ -22,3 +19,5 @@ int millis();
 int random(int min, int max);
 
 void delay(int duration);
+
+#endif
