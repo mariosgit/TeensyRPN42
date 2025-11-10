@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 40,
+    "active_layer": 44,
     "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -67,36 +67,17 @@
     "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
+  "git": {
+    "repo_password": "",
+    "repo_type": "",
+    "repo_username": "",
+    "ssh_key": ""
+  },
   "meta": {
     "filename": "TeensyRPN42.kicad_prl",
     "version": 3
   },
   "project": {
-    "files": [
-      {
-        "name": "TeensyRPN42.kicad_sch",
-        "open": true,
-        "window": {
-          "display": 1,
-          "maximized": false,
-          "pos_x": -2774,
-          "pos_y": -87,
-          "size_x": 2420,
-          "size_y": 1345
-        }
-      },
-      {
-        "name": "TeensyRPN42.kicad_pcb",
-        "open": true,
-        "window": {
-          "display": 1,
-          "maximized": false,
-          "pos_x": -2649,
-          "pos_y": -216,
-          "size_x": 2567,
-          "size_y": 1496
-        }
-      }
-    ]
+    "files": []
   }
 }
