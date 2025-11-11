@@ -17,4 +17,11 @@ void debug_core()
     printf("Y=%s " NL, buf);
     reg2str(buf, sizeof(buf), AUX_REG_X);
     printf("X=%s " NL, buf);
+
+    printf("Mode Number Entry: %d" NL, mode_number_entry);
+    printf("Command Line Length: %d" NL, cmdline_length);
+    printf("New Real: %d" NL, new_real);
+    printf("Stack Pointer: %p" NL, sp);
+    printf("Big Stack: %d" NL, flags.f.big_stack);
+    printf("Program Mode: %d" NL, flags.f.prgm_mode);
 }

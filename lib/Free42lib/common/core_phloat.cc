@@ -938,6 +938,7 @@ int string2phloat(const char *buf, int buflen, phloat *d) {
     }
     snprintf(decstr + pos, 35 - pos, "e%d", exp);
     sscanf(decstr, "%le", &res);
+    printf("[DBG] string2phloat: converted '%.*s' to %e\n", buflen, buf, res);
     if (isinf(res))
         return mant_sign ? 2 : 1;
     if (res == 0.0)
@@ -947,6 +948,7 @@ int string2phloat(const char *buf, int buflen, phloat *d) {
 }
 
 double decimal2double(void *data, bool pin_magnitude /* = false */) {
+    printf("[DBG] decimal2double called - BUGI?\n");
     double res;
     BID_UINT128 *b, b2;
     if ((((size_t) data) & 15) != 0) {
@@ -972,6 +974,7 @@ double decimal2double(void *data, bool pin_magnitude /* = false */) {
 int phloat2string(phloat pd, char *buf, int buflen, int base_mode, int digits,
                          int dispmode, int thousandssep, int max_mant_digits,
                          const char *format) {
+    printf("[DBG] phloat2string called - BUGI?\n");
     int group1, group2;
     char dec, sep;
     if (format == NULL) {

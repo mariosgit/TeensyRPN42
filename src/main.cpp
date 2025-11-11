@@ -15,6 +15,9 @@
 
 #include "con_curses.h"
 #include <common/core_aux.h>
+#include <common/core_globals.h>
+#include <common/core_variables.h>
+#include <common/core_helpers.h>
 #include "DebugCore.h"
 
 static int ann_updown = 0;
@@ -24,6 +27,20 @@ static int ann_run = 0;
 static int ann_battery = 0;
 static int ann_g = 0;
 static int ann_rad = 0;
+
+static void dbg_print_phloat(const char *prefix, phloat value)
+{
+    if (!prefix)
+        prefix = "";
+    char buf[64];
+    int len = easy_phloat2string(value, buf, sizeof(buf), 0);
+    if (len < 0)
+        len = 0;
+    if (len >= (int)sizeof(buf))
+        len = (int)sizeof(buf) - 1;
+    buf[len] = '\0';
+    printf("%s%s", prefix, buf);
+}
 
 int hp2ascii(char *dst, const char *src, int srclen)
 {
@@ -668,6 +685,9 @@ void main_loop_curses()
     printf("%x %x" NL, KEY_UP_CURS, KEY_DOWN_CURS);
 
     core_init(0, 0, NULL, 0);
+    printf("[DBG] init mcu sizeof(vartype_real)=%zu sizeof(phloat)=%zu allow_big_stack=%d auto_repeat=%d big_stack=%d stack=%p\n",
+           sizeof(vartype_real), sizeof(phloat), core_settings.allow_big_stack,
+           core_settings.auto_repeat, flags.f.big_stack, (void *) stack);
 
     for (;;)
     {
@@ -716,6 +736,12 @@ void main_loop_curses()
 void main_loop()
 {
     core_init(0, 0, NULL, 0);
+    printf("[DBG] init native sizeof(vartype_real)=%lu sizeof(phloat)=%lu allow_big_stack=%d auto_repeat=%d big_stack=%d stack=%p\n",
+        (unsigned long) sizeof(vartype_real), (unsigned long) sizeof(phloat),
+        core_settings.allow_big_stack ? 1 : 0,
+        core_settings.auto_repeat ? 1 : 0,
+        flags.f.big_stack ? 1 : 0,
+        (void *) stack);
     for (;;)
     {
         char s[LINELEN];
@@ -734,6 +760,12 @@ void main_loop()
             printf("key press %i\n", key);
             int repeat, keep_running;
             keep_running = core_keydown(key, &enqueued, &repeat);
+            vartype *slot = stack[sp];
+            printf("[DBG] post-keydown native sp=%d ptr=%p type=%d", sp, (void *) slot,
+                   slot ? slot->type : -1);
+            if (slot && slot->type == TYPE_REAL)
+                dbg_print_phloat(" value=", ((vartype_real *) slot)->x);
+            printf("\n");
             printf("end of keydown: keep_running=%i  enqueued=%i  repeat=%i\n", keep_running, enqueued, repeat);
             printf("keyup\n");
             keep_running = core_keyup();
@@ -761,16 +793,34 @@ int main(int argc, char *argv[])
     return 0;
 }
 #else
+
 void setup()
 {
     Serial.begin(115200);
+
     printf("Free42 Arduino emulator\n");
-    core_init(0, 0, 0, 0);
+    core_init(0, 0, NULL, 0);
+    printf("[DBG] init mcu sizeof(vartype_real)=%lu sizeof(phloat)=%lu allow_big_stack=%d auto_repeat=%d big_stack=%d stack=%p\n",
+        (unsigned long) sizeof(vartype_real), (unsigned long) sizeof(phloat),
+        core_settings.allow_big_stack ? 1 : 0,
+        core_settings.auto_repeat ? 1 : 0,
+        flags.f.big_stack ? 1 : 0,
+        (void *) stack);
+
+    char szF[20] = "";
+    dtostrf(31434875.894537, 5, 2, szF);
+    printf("[DBG] Can printf float ??? (float)3.14 > %f. No ?\n", (double)3.1498347658943);  // NO!!
+    printf("[DBG] Try dtostrf %s\n", szF);
+
+    // also test
+    char buf[64];
+    phloat p = 634.874478; // it's a double when USE_BCD is off
+    sscanf(buf, "%le", &p);
+    dbg_print_phloat("[DBG] test sscanf phloat =", p); printf("\n");
+
 }
 void loop()
 {
-    char s[LINELEN];
-
     // Run until end
     empty_keydown();
 
@@ -781,7 +831,7 @@ void loop()
         printf("Input: %d\n", input);
 
         int key;
-        empty_keydown();
+        // empty_keydown();
 
         // if (e == KEY_ESC)
         //     break;
@@ -798,6 +848,12 @@ void loop()
                 // printf("key press %i" NL, key);
                 int repeat, keep_running;
                 keep_running = core_keydown(key, &enqueued, &repeat);
+                vartype *slot = stack[sp];
+                printf("[DBG] post-keydown mcu sp=%d ptr=%p type=%d", sp, (void *) slot,
+                       slot ? slot->type : -1);
+                if (slot && slot->type == TYPE_REAL)
+                    dbg_print_phloat(" value=", ((vartype_real *) slot)->x);
+                printf("\n");
                 // printf("end of keydown: keep_running=%i  enqueued=%i  repeat=%i" NL, keep_running, enqueued, repeat);
                 // printf("keyup" NL);
                 keep_running = core_keyup();
