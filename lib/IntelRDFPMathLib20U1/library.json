@@ -1,8 +1,20 @@
 {
     "build": {
+        "libArchive": true,
         "flags": [
+            "-DVERSION=\"3.3.8\"",
+            "-DDECIMAL_CALL_BY_REFERENCE=1",
+            "-DDECIMAL_GLOBAL_ROUNDING=1",
+            "-DDECIMAL_GLOBAL_ROUNDING_ACCESS_FUNCTIONS=1",
+            "-DDECIMAL_GLOBAL_EXCEPTION_FLAGS=1",
+            "-DLINUX"
         ],
-        "srcdir": ["."]
+        "srcDir": ".",
+    "srcFilter": "+<*.c> +<*.cpp> +<src/> +<float128/> -<examples/> -<test/>"
     },
-    "dependencies": []
+    "dependencies": [],
+    "optional-flags": [
+            "-DDECIMAL_GLOBAL_EXCEPTION_FLAGS_ACCESS_FUNCTIONS=1",
+            "-D_WCHAR_T_DEFINED"
+    ]
 }

@@ -2,6 +2,9 @@
  * This is adapted from the console app.
  */
 
+#include "DebugCore.h"
+#include "CompabilityChecks.h"
+
 #ifdef ENV_NATIVE
 #include <ArduinoNative.h>
 #else
@@ -18,7 +21,8 @@
 #include <common/core_globals.h>
 #include <common/core_variables.h>
 #include <common/core_helpers.h>
-#include "DebugCore.h"
+
+
 
 static int ann_updown = 0;
 static int ann_shift = 0;
@@ -27,20 +31,6 @@ static int ann_run = 0;
 static int ann_battery = 0;
 static int ann_g = 0;
 static int ann_rad = 0;
-
-static void dbg_print_phloat(const char *prefix, phloat value)
-{
-    if (!prefix)
-        prefix = "";
-    char buf[64];
-    int len = easy_phloat2string(value, buf, sizeof(buf), 0);
-    if (len < 0)
-        len = 0;
-    if (len >= (int)sizeof(buf))
-        len = (int)sizeof(buf) - 1;
-    buf[len] = '\0';
-    printf("%s%s", prefix, buf);
-}
 
 int hp2ascii(char *dst, const char *src, int srclen)
 {
@@ -208,68 +198,6 @@ int hp2ascii(char *dst, const char *src, int srclen)
     }
     return d;
 }
-
-/* === Undefined functions ... just stubs === */
-
-#if 0
-// its in Free32Hacks.cpp
-double shell_random_seed()
-{
-    return 0.78237947239847;
-}
-
-void shell_print(const char *text, int length,
-                 const char *bits, int bytesperline,
-                 int x, int y, int width, int height)
-{
-    printf("Shell print: %s\n", text);
-}
-
-void shell_beeper(int frequency, int duration)
-{
-}
-
-int shell_wants_cpu()
-{
-    return 0;
-}
-
-void shell_get_time_date(uint4 *tim, uint4 *date, int *weekday)
-{
-    *tim = 12345600;
-    *date = 20150825;
-    *weekday = 2;
-}
-
-uint4 shell_get_mem()
-{
-    return 16 * 1024; // Returns free mem
-}
-
-uint4 shell_milliseconds()
-{
-    return 1;
-}
-
-void shell_request_timeout3(int delay)
-{
-}
-
-void shell_delay(int duration)
-{
-    // usleep(duration * 1000);
-}
-
-void shell_powerdown()
-{
-}
-
-int4 shell_read_saved_state(void *buf, int4 bufsize)
-{
-    return -1;
-}
-
-#endif
 
 /* ======================= */
 /* === LOCAL FUNCTIONS === */
@@ -778,10 +706,13 @@ void main_loop()
 
 // no main on Arduinos
 #if !(defined(ENV_STM32F4xx) || defined(ENV_TEENSY40))
+
 int main(int argc, char *argv[])
 {
 #ifdef USE_CURSES
     printf("Free42 console emulator - CURSES\n");
+
+    checkStdio();
 
     main_loop_curses();
 #else
@@ -792,6 +723,7 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+
 #else
 
 void setup()
@@ -799,26 +731,12 @@ void setup()
     Serial.begin(115200);
 
     printf("Free42 Arduino emulator\n");
+
+    checkStdio();
+
     core_init(0, 0, NULL, 0);
-    printf("[DBG] init mcu sizeof(vartype_real)=%lu sizeof(phloat)=%lu allow_big_stack=%d auto_repeat=%d big_stack=%d stack=%p\n",
-        (unsigned long) sizeof(vartype_real), (unsigned long) sizeof(phloat),
-        core_settings.allow_big_stack ? 1 : 0,
-        core_settings.auto_repeat ? 1 : 0,
-        flags.f.big_stack ? 1 : 0,
-        (void *) stack);
-
-    char szF[20] = "";
-    dtostrf(31434875.894537, 5, 2, szF);
-    printf("[DBG] Can printf float ??? (float)3.14 > %f. No ?\n", (double)3.1498347658943);  // NO!!
-    printf("[DBG] Try dtostrf %s\n", szF);
-
-    // also test
-    char buf[64];
-    phloat p = 634.874478; // it's a double when USE_BCD is off
-    sscanf(buf, "%le", &p);
-    dbg_print_phloat("[DBG] test sscanf phloat =", p); printf("\n");
-
 }
+
 void loop()
 {
     // Run until end

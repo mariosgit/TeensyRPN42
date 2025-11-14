@@ -14,6 +14,18 @@ Ultraexperimental
 
 Not running on MC ! Input Values are not stored ???
 
+* Problem seems to be in scanf/printf on the MC not suporting float.
+  * libscn - fails with old compiler 
+  * newlib-nano-1.0 ??
+
+* checking free42(swissmicro build process..)
+  * gcc111libbid-arm64.a - lib src is packaged with it. And available on github
+  * there is scanf stuff in ```common/core_phloat.cc``` only when not ARM build ?
+  * cmd line:
+  ```
+  arm-none-eabi-g++ -Os -DDM42_OLDHW -I../common -DRELEASE -MMD -Wall -Wno-misleading-indentation -Wno-parentheses -Wno-write-strings -Wno-maybe-uninitialized -Wno-unknown-pragmas -Wno-class-memaccess -Wno-sign-compare -fno-exceptions -fno-rtti -DVERSION="\"3.3.8\"" -DDECIMAL_CALL_BY_REFERENCE=1 -DDECIMAL_GLOBAL_ROUNDING=1 -DDECIMAL_GLOBAL_ROUNDING_ACCESS_FUNCTIONS=1 -DDECIMAL_GLOBAL_EXCEPTION_FLAGS=1 -DDECIMAL_GLOBAL_EXCEPTION_FLAGS_ACCESS_FUNCTIONS=1 -D_WCHAR_T_DEFINED  -fdata-sections -ffunction-sections -Wl,--gc-sections -ggdb -mthumb -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DARM -DBCD_MATH -c -o core_phloat.o ../common/core_phloat.cc
+  ```
+
 # Hardware
 
 Ideas...
