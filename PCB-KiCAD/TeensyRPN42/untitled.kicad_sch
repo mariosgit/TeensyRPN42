@@ -1,13 +1,1035 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "d80da916-1949-4ef1-a717-8e998d124c96")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Driver_LED:HT1632C-52LQFP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -11.43 54.61 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "HT1632C-52LQFP"
+				(at 11.43 54.61 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_QFP:LQFP-52_14x14mm_P1mm"
+				(at -5.08 1.27 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.holtek.com/documents/10179/116711/HT1632Cv170.pdf"
+				(at -5.08 1.27 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "LED Matrix Driver, 32×8 or 24×16, 52-LQFP"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED Matrix Driver"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LQFP*14x14mm*P1mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "HT1632C-52LQFP_0_1"
+				(rectangle
+					(start -12.7 53.34)
+					(end 12.7 -53.34)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "HT1632C-52LQFP_1_1"
+				(pin input line
+					(at -17.78 50.8 0)
+					(length 5.08)
+					(name "~{CS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 48.26 0)
+					(length 5.08)
+					(name "~{WR}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 45.72 0)
+					(length 5.08)
+					(name "~{RD}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 43.18 0)
+					(length 5.08)
+					(name "DATA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 38.1 0)
+					(length 5.08)
+					(name "OSC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 35.56 0)
+					(length 5.08)
+					(name "SYNC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 58.42 270)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 58.42 270)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -58.42 90)
+					(length 5.08)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -58.42 90)
+					(length 5.08)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -58.42 90)
+					(length 5.08)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 58.42 270)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 50.8 180)
+					(length 5.08)
+					(name "ROW0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 48.26 180)
+					(length 5.08)
+					(name "ROW1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 45.72 180)
+					(length 5.08)
+					(name "ROW2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 43.18 180)
+					(length 5.08)
+					(name "ROW3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 40.64 180)
+					(length 5.08)
+					(name "ROW4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 38.1 180)
+					(length 5.08)
+					(name "ROW5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 35.56 180)
+					(length 5.08)
+					(name "ROW6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 33.02 180)
+					(length 5.08)
+					(name "ROW7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 30.48 180)
+					(length 5.08)
+					(name "ROW8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 27.94 180)
+					(length 5.08)
+					(name "ROW9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 25.4 180)
+					(length 5.08)
+					(name "ROW10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 22.86 180)
+					(length 5.08)
+					(name "ROW11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 20.32 180)
+					(length 5.08)
+					(name "ROW12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "52"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 17.78 180)
+					(length 5.08)
+					(name "ROW13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "51"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 15.24 180)
+					(length 5.08)
+					(name "ROW14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "50"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 12.7 180)
+					(length 5.08)
+					(name "ROW15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 10.16 180)
+					(length 5.08)
+					(name "ROW16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 7.62 180)
+					(length 5.08)
+					(name "ROW17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 5.08 180)
+					(length 5.08)
+					(name "ROW18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 2.54 180)
+					(length 5.08)
+					(name "ROW19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "ROW20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -2.54 180)
+					(length 5.08)
+					(name "ROW21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -5.08 180)
+					(length 5.08)
+					(name "ROW22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(name "ROW23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -12.7 180)
+					(length 5.08)
+					(name "ROW24/COM15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -15.24 180)
+					(length 5.08)
+					(name "ROW25/COM14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -17.78 180)
+					(length 5.08)
+					(name "ROW26/COM13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -20.32 180)
+					(length 5.08)
+					(name "ROW27/COM12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -22.86 180)
+					(length 5.08)
+					(name "ROW28/COM11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -25.4 180)
+					(length 5.08)
+					(name "ROW29/COM10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -27.94 180)
+					(length 5.08)
+					(name "ROW30/COM9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -30.48 180)
+					(length 5.08)
+					(name "ROW31/COM8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -33.02 180)
+					(length 5.08)
+					(name "COM7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -35.56 180)
+					(length 5.08)
+					(name "COM6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -38.1 180)
+					(length 5.08)
+					(name "COM5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -40.64 180)
+					(length 5.08)
+					(name "COM4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -43.18 180)
+					(length 5.08)
+					(name "COM3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -45.72 180)
+					(length 5.08)
+					(name "COM2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -48.26 180)
+					(length 5.08)
+					(name "COM1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -50.8 180)
+					(length 5.08)
+					(name "COM0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_DPST_x2"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -175,20 +1197,21 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 88.9 97.79 0)
+		(at 193.04 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "07fba375-3d32-46e3-b06e-3f182510d451")
-		(property "Reference" "SW55"
-			(at 88.9 91.694 0)
+		(uuid "0f1b93b9-b036-4928-bb80-f1589758541b")
+		(property "Reference" "SW41"
+			(at 193.04 59.944 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -196,15 +1219,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 88.9 94.234 0)
+			(at 193.04 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 88.9 97.79 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 193.04 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -213,7 +1236,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 88.9 97.79 0)
+			(at 193.04 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -222,7 +1245,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 88.9 97.79 0)
+			(at 193.04 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -231,21 +1254,21 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad3330a")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad3330c")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ce")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5d0")
 		)
 		(pin "1"
-			(uuid "a5078609-14e6-4bb3-9241-c3cf849f0843")
+			(uuid "6177d6e5-7b08-4621-ac17-0b86a928c3c5")
 		)
 		(pin "2"
-			(uuid "e18b42a4-f775-41cf-9d73-e3c6f13c223e")
+			(uuid "6d6254d1-8b3f-487e-8bf6-32d5686999e7")
 		)
 		(instances
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW55")
+					(reference "SW41")
 					(unit 1)
 				)
 			)
@@ -253,16 +1276,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 53.34 66.04 0)
+		(at 157.48 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0d4c764e-9782-480e-82aa-30a1c0904805")
-		(property "Reference" "SW39"
-			(at 53.34 59.944 0)
+		(uuid "11a07e98-9847-4c5e-a315-a1ee582fb117")
+		(property "Reference" "SW60"
+			(at 157.48 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -270,15 +1293,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 53.34 62.484 0)
+			(at 157.48 105.664 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 53.34 66.04 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
+			(at 157.48 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -287,7 +1310,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 66.04 0)
+			(at 157.48 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -296,7 +1319,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 66.04 0)
+			(at 157.48 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -305,21 +1328,21 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332fc")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332fe")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c0")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c2")
 		)
 		(pin "1"
-			(uuid "d2e169ec-3acc-42e8-93e1-4896edd7a8b9")
+			(uuid "59638747-cb9e-4536-9197-a52b6e07dbb2")
 		)
 		(pin "2"
-			(uuid "b13ebcc9-626d-4250-9e13-4365536d9429")
+			(uuid "b41e0d01-fef8-4c6d-b175-573ed86dbd72")
 		)
 		(instances
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW39")
+					(reference "SW60")
 					(unit 1)
 				)
 			)
@@ -327,16 +1350,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 142.24 109.22 0)
+		(at 157.48 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1a709c94-9ef4-46fa-99f6-8c259c3538c3")
-		(property "Reference" "SW66"
-			(at 142.24 103.124 0)
+		(uuid "19357db9-57e2-4fc2-8cd2-4454aa80291f")
+		(property "Reference" "SW74"
+			(at 157.48 125.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -344,15 +1367,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 142.24 105.664 0)
+			(at 157.48 128.524 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 142.24 109.22 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
+			(at 157.48 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -361,7 +1384,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 109.22 0)
+			(at 157.48 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -370,7 +1393,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 109.22 0)
+			(at 157.48 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -379,21 +1402,21 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad33303")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332ff")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c7")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c3")
 		)
 		(pin "1"
-			(uuid "009df0f6-bfaf-4f04-a773-e6d84ab7b413")
+			(uuid "0d11080f-cabf-4499-9efe-9bf19d8dbc79")
 		)
 		(pin "2"
-			(uuid "24217a0d-a0dd-43df-aca6-8ebb73650e7c")
+			(uuid "abadab99-e135-4fcc-b35b-4129a961c815")
 		)
 		(instances
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW66")
+					(reference "SW74")
 					(unit 1)
 				)
 			)
@@ -401,81 +1424,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 53.34 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "205ce727-61a9-4a93-9135-fffa51e2327a")
-		(property "Reference" "SW53"
-			(at 53.34 91.694 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 53.34 94.234 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 53.34 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332fc")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c0")
-		)
-		(pin "1"
-			(uuid "f7622104-4449-4296-a6c0-7a4b720d3b78")
-		)
-		(pin "2"
-			(uuid "7f321eed-4645-4619-99d8-d12b6136ae0e")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 53.34 53.34 0)
+		(at 157.48 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -484,7 +1433,7 @@
 		(fields_autoplaced yes)
 		(uuid "20bea0d2-f324-4660-9dcf-0a8c0ac11945")
 		(property "Reference" "SW38"
-			(at 53.34 47.244 0)
+			(at 157.48 47.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -492,15 +1441,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 53.34 49.784 0)
+			(at 157.48 49.784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 53.34 53.34 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 157.48 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -509,7 +1458,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 53.34 0)
+			(at 157.48 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -518,7 +1467,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 53.34 0)
+			(at 157.48 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -527,10 +1476,10 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332fc")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33300")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c0")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c4")
 		)
 		(pin "1"
 			(uuid "607e8593-594f-4a55-9fdd-87827d38a1e6")
@@ -549,16 +1498,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 88.9 66.04 0)
+		(at 210.82 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "239f57fe-ad7c-4cdb-8d6c-6e9020910318")
-		(property "Reference" "SW41"
-			(at 88.9 59.944 0)
+		(uuid "26974708-07c7-49d1-9c2e-a73b5e41e07b")
+		(property "Reference" "SW49"
+			(at 210.82 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -566,15 +1515,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 88.9 62.484 0)
+			(at 210.82 73.914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 88.9 66.04 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 210.82 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -583,7 +1532,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 88.9 66.04 0)
+			(at 210.82 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -592,7 +1541,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 88.9 66.04 0)
+			(at 210.82 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -601,21 +1550,21 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad3330a")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332f2")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ce")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5b6")
 		)
 		(pin "1"
-			(uuid "f53da073-032d-4666-91ba-526f9a93151e")
+			(uuid "c091bbe7-9709-405c-aa2a-672c1a6ef45e")
 		)
 		(pin "2"
-			(uuid "98028539-3581-4cef-b771-09c65c621bf2")
+			(uuid "68daf695-3dd3-4ad9-99e1-ebaf3300b6a6")
 		)
 		(instances
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW41")
+					(reference "SW49")
 					(unit 1)
 				)
 			)
@@ -623,81 +1572,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 142.24 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "31d20cd0-ffe2-4920-a38f-d49d3af6b34e")
-		(property "Reference" "SW59"
-			(at 142.24 91.694 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 142.24 94.234 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 142.24 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad33303")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c7")
-		)
-		(pin "1"
-			(uuid "cc900596-adf4-4539-a889-9a8f4f969f68")
-		)
-		(pin "2"
-			(uuid "5052aa91-8da4-4209-8f8e-42ce4846ad5f")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW59")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 88.9 53.34 0)
+		(at 193.04 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -706,7 +1581,7 @@
 		(fields_autoplaced yes)
 		(uuid "32065230-f283-45a8-85d9-65882d9d3c91")
 		(property "Reference" "SW51"
-			(at 88.9 47.244 0)
+			(at 193.04 47.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -714,15 +1589,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 88.9 49.784 0)
+			(at 193.04 49.784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 88.9 53.34 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 193.04 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -731,7 +1606,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 88.9 53.34 0)
+			(at 193.04 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -740,7 +1615,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 88.9 53.34 0)
+			(at 193.04 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -749,10 +1624,10 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad3330a")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad3330d")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ce")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5d1")
 		)
 		(pin "1"
 			(uuid "99aed812-c534-48e3-8121-06e402c5766f")
@@ -771,16 +1646,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 142.24 78.74 0)
+		(at 210.82 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3834470b-5c20-4744-ae15-8d5613ddbbb7")
-		(property "Reference" "SW52"
-			(at 142.24 72.644 0)
+		(uuid "32797108-9ce9-4672-ae69-09343aab6468")
+		(property "Reference" "SW56"
+			(at 210.82 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -788,15 +1663,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 142.24 75.184 0)
+			(at 210.82 92.964 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 142.24 78.74 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
+			(at 210.82 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -805,7 +1680,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 78.74 0)
+			(at 210.82 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -814,7 +1689,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 78.74 0)
+			(at 210.82 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -823,21 +1698,21 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad33303")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332f3")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c7")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5b7")
 		)
 		(pin "1"
-			(uuid "9dbee7bf-c879-4eeb-9bc1-d9fd1fcef620")
+			(uuid "1abad0bb-b7e6-45cb-9d13-96286b97d6a7")
 		)
 		(pin "2"
-			(uuid "51424515-644c-47ac-a4d1-6ff022ee2289")
+			(uuid "e004c4a5-7ca8-4e05-aeac-0895bc050af9")
 		)
 		(instances
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW52")
+					(reference "SW56")
 					(unit 1)
 				)
 			)
@@ -845,534 +1720,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 124.46 66.04 0)
+		(at 228.6 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "388c4df0-41d1-4384-98dd-0c0fc0e3201a")
-		(property "Reference" "SW43"
-			(at 124.46 59.944 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 124.46 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 124.46 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e7")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ab")
-		)
-		(pin "1"
-			(uuid "a4788703-1fce-4806-be66-0f9a9a303705")
-		)
-		(pin "2"
-			(uuid "f87186d8-b682-48c1-9a66-d57fd5d870fd")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 106.68 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c50c06a-9468-4fb7-9d95-8d905d666cfc")
-		(property "Reference" "SW49"
-			(at 106.68 72.644 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 106.68 75.184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 106.68 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 106.68 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e8")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ac")
-		)
-		(pin "1"
-			(uuid "35b41861-5c46-4567-ae50-2885aa7a4720")
-		)
-		(pin "2"
-			(uuid "ef82fcf1-5d7b-404d-937f-4a6624ae3d28")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 106.68 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c8d8494-c566-420f-9d07-50bcfcbe8562")
-		(property "Reference" "SW63"
-			(at 106.68 103.124 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 106.68 105.664 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 106.68 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 106.68 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e8")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ac")
-		)
-		(pin "1"
-			(uuid "112967e9-61f1-482b-b648-b51fd4b72548")
-		)
-		(pin "2"
-			(uuid "1d9771c6-9bc4-462c-8583-8ff8b1373f53")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW63")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 71.12 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ed8c92e-656f-42f6-8abb-4b350e3860f5")
-		(property "Reference" "SW40"
-			(at 71.12 59.944 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 71.12 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 71.12 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 71.12 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad33304")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c8")
-		)
-		(pin "1"
-			(uuid "83c43eef-d81c-44e1-ac22-5a80db68ae51")
-		)
-		(pin "2"
-			(uuid "d87cf78e-b5ce-4fb0-862f-ae0cf3ba0312")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW40")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 106.68 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "42ba327d-62a0-4de1-b605-82ca659563f0")
-		(property "Reference" "SW77"
-			(at 106.68 127.254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 106.68 129.794 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 106.68 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 106.68 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e8")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ac")
-		)
-		(pin "1"
-			(uuid "e2a180c7-63f1-472a-8982-2ce0ffebdefe")
-		)
-		(pin "2"
-			(uuid "d9c76456-b979-4a09-a9da-aea5d795c49c")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW77")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 142.24 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "42ebd337-4216-4efd-8ae9-40e1269e413e")
-		(property "Reference" "SW79"
-			(at 142.24 127.254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 142.24 129.794 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 142.24 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad33303")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c7")
-		)
-		(pin "1"
-			(uuid "a4cf7718-f99a-48cb-89c9-6d5c7674d5b9")
-		)
-		(pin "2"
-			(uuid "127ab97a-e27e-4ffa-afe3-e4c06ea3e315")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW79")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 53.34 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "47ea2028-9fdb-4cef-b2e4-14ea8881dc10")
-		(property "Reference" "SW74"
-			(at 53.34 127.254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 53.34 129.794 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 53.34 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332fc")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c0")
-		)
-		(pin "1"
-			(uuid "63c5e745-7b7c-4c36-a45f-c34e0f18b65f")
-		)
-		(pin "2"
-			(uuid "2094bd16-e835-4fdb-8346-32ad3237f78a")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW74")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 124.46 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5165a884-6011-4c91-8408-c8190877a882")
+		(uuid "359c90d7-8e23-480c-acbf-a9ec2e025f74")
 		(property "Reference" "SW72"
-			(at 124.46 115.824 0)
+			(at 228.6 114.554 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1380,15 +1737,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 124.46 118.364 0)
+			(at 228.6 117.094 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 124.46 121.92 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 228.6 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1397,7 +1754,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 121.92 0)
+			(at 228.6 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1406,7 +1763,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 121.92 0)
+			(at 228.6 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1415,16 +1772,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e7")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332ed")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ab")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5b1")
 		)
 		(pin "1"
-			(uuid "566c8436-da70-42b1-8f69-89f1bbcbd71e")
+			(uuid "70ded1c5-c8ea-4d5e-be71-ce5fcb86c03e")
 		)
 		(pin "2"
-			(uuid "571b2d02-5a96-4587-adbb-2ddbeb1782bf")
+			(uuid "7c8296eb-7e45-42ef-83cd-75ba3cd51f15")
 		)
 		(instances
 			(project "TeensyRPN42"
@@ -1437,534 +1794,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 53.34 109.22 0)
+		(at 175.26 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "52ead48d-9a4a-43ac-af2e-e09ce54c68e2")
-		(property "Reference" "SW60"
-			(at 53.34 103.124 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 53.34 105.664 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 53.34 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332fc")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c0")
-		)
-		(pin "1"
-			(uuid "dd217056-957f-484f-920c-cd6ba0b40db8")
-		)
-		(pin "2"
-			(uuid "a4a44f3e-d65f-4b23-9ef4-b1c9af6efa21")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW60")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 71.12 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f3b749b-1a8b-4248-9f73-e835306dcd20")
-		(property "Reference" "SW75"
-			(at 71.12 127.254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 71.12 129.794 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 71.12 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 71.12 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad33304")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c8")
-		)
-		(pin "1"
-			(uuid "54643884-8545-473c-8a6e-4a0cfaa640ed")
-		)
-		(pin "2"
-			(uuid "104cad9c-61cf-49ab-9393-d11998f27770")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW75")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 88.9 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "643608c3-e757-4318-93f2-0b29b4181572")
-		(property "Reference" "SW76"
-			(at 88.9 127.254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 88.9 129.794 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 88.9 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 88.9 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad3330a")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ce")
-		)
-		(pin "1"
-			(uuid "79223a51-446a-4380-8334-aaaa19d45549")
-		)
-		(pin "2"
-			(uuid "2ab1b3a1-9110-44d2-89de-576f8ff298ab")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW76")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 124.46 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6470ca75-41be-431d-875f-1e26e236ba83")
-		(property "Reference" "SW78"
-			(at 124.46 127.254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 124.46 129.794 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 124.46 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e7")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ab")
-		)
-		(pin "1"
-			(uuid "9052451c-bf46-4990-9d5f-e20d7f43882e")
-		)
-		(pin "2"
-			(uuid "7fe9e547-b5c0-487c-8fdd-4c46500b1d18")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW78")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 142.24 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "681d9123-0881-4b93-8553-1bbef8e5f65c")
-		(property "Reference" "SW73"
-			(at 142.24 115.824 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 142.24 118.364 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 142.24 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad33303")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c7")
-		)
-		(pin "1"
-			(uuid "571da99c-7dc3-4f71-a7c6-a4b2d9ac7dae")
-		)
-		(pin "2"
-			(uuid "906fa174-69c6-4964-905f-15ee2e2edf97")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW73")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 71.12 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6bbd6260-4171-41e5-a482-1f9e4d816af5")
-		(property "Reference" "SW69"
-			(at 71.12 115.824 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 71.12 118.364 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 71.12 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 71.12 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad33304")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c8")
-		)
-		(pin "1"
-			(uuid "228aff97-606a-440e-8237-7e305390e888")
-		)
-		(pin "2"
-			(uuid "e80a381e-558e-406e-b567-cfeb8c356fff")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW69")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 142.24 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "77964cf8-160b-4296-8ea4-347a84e8661e")
-		(property "Reference" "SW44"
-			(at 142.24 59.944 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 142.24 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 142.24 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad33303")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c7")
-		)
-		(pin "1"
-			(uuid "c96ba97f-1dbe-4db7-b604-fd30f658dff8")
-		)
-		(pin "2"
-			(uuid "826ff4fb-9bbe-4b65-abc5-342625c7f5e5")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW44")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 71.12 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "781dc4b4-519e-4c05-bbaa-2344d75946f8")
+		(uuid "5bfa09be-e16c-4aac-b1f5-f9491256b58c")
 		(property "Reference" "SW61"
-			(at 71.12 103.124 0)
+			(at 175.26 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1972,15 +1811,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 71.12 105.664 0)
+			(at 175.26 105.664 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 71.12 109.22 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 175.26 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1989,7 +1828,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 109.22 0)
+			(at 175.26 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1998,7 +1837,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 109.22 0)
+			(at 175.26 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2007,16 +1846,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad33304")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33311")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c8")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5d5")
 		)
 		(pin "1"
-			(uuid "74be5d8e-9329-482b-982a-640faf8379c5")
+			(uuid "3cdf2750-d38c-445d-8b38-0bf4185c34ee")
 		)
 		(pin "2"
-			(uuid "02deb576-ffed-449a-9bfa-8a3c0bd4386a")
+			(uuid "2cc13003-76c1-4220-9682-d1e57ef6b659")
 		)
 		(instances
 			(project "TeensyRPN42"
@@ -2029,16 +1868,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 71.12 53.34 0)
+		(at 193.04 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7ca9b25c-26ec-4911-bcf0-d4194ce71c11")
-		(property "Reference" "SW45"
-			(at 71.12 47.244 0)
+		(uuid "5e932fd1-08f7-44c7-b6bd-d8d823277e51")
+		(property "Reference" "SW55"
+			(at 193.04 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2046,15 +1885,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 71.12 49.784 0)
+			(at 193.04 92.964 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 71.12 53.34 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
+			(at 193.04 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2063,7 +1902,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 53.34 0)
+			(at 193.04 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2072,7 +1911,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 53.34 0)
+			(at 193.04 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2081,10 +1920,674 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad33304")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad3330e")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c8")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5d2")
+		)
+		(pin "1"
+			(uuid "4b30a1d8-6dd2-410c-983c-7ff0a31ea1b0")
+		)
+		(pin "2"
+			(uuid "e06db513-2600-42c3-9900-3829cc86fb83")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 175.26 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60d4058e-9050-4111-9b87-fca2fe6963ee")
+		(property "Reference" "SW69"
+			(at 175.26 114.554 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 175.26 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 175.26 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33312")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5d6")
+		)
+		(pin "1"
+			(uuid "e5401a3b-0ee7-4db5-b220-78a7d2fc84a5")
+		)
+		(pin "2"
+			(uuid "a6a5e9e7-44f3-4dba-abf8-8ee66dd8f03a")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 157.48 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64a00031-df43-44da-b694-5fdb78ebf9be")
+		(property "Reference" "SW39"
+			(at 157.48 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 157.48 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 157.48 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33301")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c5")
+		)
+		(pin "1"
+			(uuid "a5c83f68-411d-417f-8a1d-b02444b06b05")
+		)
+		(pin "2"
+			(uuid "7ca9e9b2-fbf0-404b-af54-4ce257d8b553")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 228.6 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73f9ddb0-4adb-4a89-be61-e65fcb8c074d")
+		(property "Reference" "SW78"
+			(at 228.6 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 228.6 128.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 228.6 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332ee")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5b2")
+		)
+		(pin "1"
+			(uuid "189f0ec6-e7e0-47fa-896e-c771928e3a63")
+		)
+		(pin "2"
+			(uuid "8d06d4d6-712a-4ea9-b7b2-d998bc8b6035")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW78")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Driver_LED:HT1632C-52LQFP")
+		(at 63.5 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "759202e6-7811-4c10-b643-9dd6153d2dc5")
+		(property "Reference" "U1"
+			(at 65.6433 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HT1632C-52LQFP"
+			(at 65.6433 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-52_14x14mm_P1mm"
+			(at 58.42 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.holtek.com/documents/10179/116711/HT1632Cv170.pdf"
+			(at 58.42 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LED Matrix Driver, 32×8 or 24×16, 52-LQFP"
+			(at 63.5 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "385dfe1f-cd07-424c-9c63-cea9f80ae818")
+		)
+		(pin "8"
+			(uuid "5d5cd263-8fbe-4d14-8a16-5c33289bba09")
+		)
+		(pin "38"
+			(uuid "afdf1a92-8e89-4e42-b11b-4143438c9fd8")
+		)
+		(pin "33"
+			(uuid "6751c56b-3525-4bf4-b97e-91456f42caee")
+		)
+		(pin "32"
+			(uuid "921059d2-e857-4f27-aec8-1a505e16316e")
+		)
+		(pin "31"
+			(uuid "400dcb75-1d6b-4837-b64d-7383027ffbed")
+		)
+		(pin "30"
+			(uuid "1f5133b9-64d1-4b15-8636-54bd779758aa")
+		)
+		(pin "24"
+			(uuid "603b659f-66f9-45c2-a033-afc35a0c90f6")
+		)
+		(pin "23"
+			(uuid "acf29fae-368f-42f0-b4be-6dbedb83eae2")
+		)
+		(pin "6"
+			(uuid "0b337162-e1f3-4384-bfa7-05718e7752ed")
+		)
+		(pin "5"
+			(uuid "4cc4aa11-ecf5-42f2-add1-eae8c7543b37")
+		)
+		(pin "4"
+			(uuid "60857bb1-e4c1-4e3b-833b-0e56730b1b40")
+		)
+		(pin "3"
+			(uuid "3cc2e682-adf9-4b78-b8b6-9a2d122502e1")
+		)
+		(pin "2"
+			(uuid "ea503b24-bc1c-4e65-87f4-b5958cef3ea2")
+		)
+		(pin "1"
+			(uuid "303a9910-27b0-4d41-a4a4-e3fe9f9dd725")
+		)
+		(pin "35"
+			(uuid "2a552093-ac4f-4a08-bb24-84330f22b85a")
+		)
+		(pin "34"
+			(uuid "7db260de-71a5-4cc3-b44c-4c2a8d4afb4e")
+		)
+		(pin "29"
+			(uuid "19477aa4-4a51-483f-88af-7cc17a739df5")
+		)
+		(pin "28"
+			(uuid "03c55331-bf42-4a8b-a414-c3604ffeb542")
+		)
+		(pin "46"
+			(uuid "9e0ad4b4-c9f7-4bdd-bdc9-61125ab234ad")
+		)
+		(pin "45"
+			(uuid "5fbe5e23-e160-4564-930a-e5345569cbd8")
+		)
+		(pin "21"
+			(uuid "451deb01-e5bd-46f2-9388-23b893780605")
+		)
+		(pin "10"
+			(uuid "23c31998-e605-4c77-8eb9-bc6d32115fec")
+		)
+		(pin "41"
+			(uuid "57cd3761-6ed6-4313-ac7f-df2e24a0092d")
+		)
+		(pin "40"
+			(uuid "1760e54e-e14f-4a26-acd1-0120e8115159")
+		)
+		(pin "39"
+			(uuid "68024173-3b18-4b0c-84ef-820ec56f61e0")
+		)
+		(pin "37"
+			(uuid "f86d12b8-87d5-4069-b6f4-cfa34aedc94a")
+		)
+		(pin "9"
+			(uuid "7337ad54-8edb-4e87-b08e-5303cd100220")
+		)
+		(pin "27"
+			(uuid "233284b6-fe08-414c-a11f-5422db7df37f")
+		)
+		(pin "26"
+			(uuid "1c783104-15f8-43b3-b0f6-a186ec8a5dd1")
+		)
+		(pin "14"
+			(uuid "3d4f5680-cff8-4355-932a-06cc35cf5175")
+		)
+		(pin "44"
+			(uuid "0de3bf8c-ae4d-4cb1-8c2e-ec820b8e50f3")
+		)
+		(pin "43"
+			(uuid "71699c73-402b-4609-8fcc-692544ca0a0a")
+		)
+		(pin "42"
+			(uuid "a51a175f-8dac-4030-8544-39f9f8ab5dbc")
+		)
+		(pin "52"
+			(uuid "c452ecc4-08e9-4e02-a0d8-68a873bcaa2e")
+		)
+		(pin "51"
+			(uuid "54bbf118-3d7d-41e4-ae31-571d2c581e37")
+		)
+		(pin "11"
+			(uuid "e291772f-d977-4a2a-b87f-24af0004d650")
+		)
+		(pin "22"
+			(uuid "b77f1b6a-ef1c-42ca-a153-c3815596315e")
+		)
+		(pin "50"
+			(uuid "8668fb32-f64a-49c9-9740-8143e457f190")
+		)
+		(pin "49"
+			(uuid "e48e96a4-e30e-4186-bb8c-9776a7bec17b")
+		)
+		(pin "48"
+			(uuid "5cb144d4-864a-41e6-a2f2-ae482fc5dcbd")
+		)
+		(pin "47"
+			(uuid "5e60daf7-0af2-4910-9970-02b01901880e")
+		)
+		(pin "13"
+			(uuid "716ce197-2dfb-41a3-926d-cbb961f1a715")
+		)
+		(pin "7"
+			(uuid "aa4f36da-5575-4fae-90ff-ce55eefc226b")
+		)
+		(pin "20"
+			(uuid "1bb2913b-b71e-446b-b741-eabe8e6bfebd")
+		)
+		(pin "25"
+			(uuid "5c2e7a7e-bdf2-4841-90c8-2a5e2850a8af")
+		)
+		(pin "17"
+			(uuid "9d8c7485-cae1-44bd-a7a7-a075e8619c43")
+		)
+		(pin "16"
+			(uuid "aaf4ff86-d11a-4988-921b-5175a14ff975")
+		)
+		(pin "18"
+			(uuid "d1bcaa8d-f0b8-451e-ba5c-cf1404f90639")
+		)
+		(pin "19"
+			(uuid "7f9ecc77-a6c0-427d-ad20-43feb76eb432")
+		)
+		(pin "36"
+			(uuid "d30a3269-41b5-4d2a-a895-5fe83b91b85a")
+		)
+		(pin "12"
+			(uuid "3c38b070-e04b-427b-afc7-7625b45e2aa5")
+		)
+		(instances
+			(project ""
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 175.26 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7764bf0d-9bde-46ae-9db6-4cb47144284b")
+		(property "Reference" "SW75"
+			(at 175.26 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 175.26 128.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 175.26 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33313")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5d7")
+		)
+		(pin "1"
+			(uuid "302f6974-1f1c-40c3-a14a-8c4d28047297")
+		)
+		(pin "2"
+			(uuid "a1739100-5f53-4fcf-8f53-3a73c4192293")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW75")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 175.26 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b868989-0ed5-4a0e-80b9-e3d5ff262f4d")
+		(property "Reference" "SW54"
+			(at 175.26 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 175.26 92.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
+			(at 175.26 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33314")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5d8")
+		)
+		(pin "1"
+			(uuid "9a17f618-b814-4be5-9594-fba394720c49")
+		)
+		(pin "2"
+			(uuid "f308d761-483a-4990-82a0-5d574162ddf7")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 175.26 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ca9b25c-26ec-4911-bcf0-d4194ce71c11")
+		(property "Reference" "SW45"
+			(at 175.26 47.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 175.26 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 175.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33315")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5d9")
 		)
 		(pin "1"
 			(uuid "566b1d65-3373-49d6-8ac9-140cba16ffd0")
@@ -2103,16 +2606,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 53.34 121.92 0)
+		(at 210.82 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "984cabd7-c62e-402b-a8b9-83b25cc1b20f")
-		(property "Reference" "SW67"
-			(at 53.34 115.824 0)
+		(uuid "7f60fc40-beb9-4010-b8af-de64683e289f")
+		(property "Reference" "SW63"
+			(at 210.82 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2120,15 +2623,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 53.34 118.364 0)
+			(at 210.82 105.664 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 53.34 121.92 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 210.82 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2137,7 +2640,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 121.92 0)
+			(at 210.82 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2146,7 +2649,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 121.92 0)
+			(at 210.82 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2155,16 +2658,90 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332fc")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332f4")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c0")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5b8")
 		)
 		(pin "1"
-			(uuid "89eba545-f5cc-4f34-8c72-cb655c60b1e5")
+			(uuid "a82df3d6-851b-44b2-a437-0442cbea79e7")
 		)
 		(pin "2"
-			(uuid "568c21e4-b9c8-4f7e-aed6-d03e3e42a58d")
+			(uuid "5a0c9aef-d06a-4283-926e-2dd1835e45a9")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 157.48 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "801317c9-45cf-434b-acb0-208eb8c9f529")
+		(property "Reference" "SW67"
+			(at 157.48 114.554 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 157.48 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
+			(at 157.48 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33302")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c6")
+		)
+		(pin "1"
+			(uuid "d5cfd6dd-7d19-466c-a228-aaa43a198409")
+		)
+		(pin "2"
+			(uuid "2f929b7a-d98d-4c75-80c0-36d7203512df")
 		)
 		(instances
 			(project "TeensyRPN42"
@@ -2177,16 +2754,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 124.46 53.34 0)
+		(at 228.6 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "98c152b9-bf5e-4d0d-a2e4-54c5964073f7")
-		(property "Reference" "SW65"
-			(at 124.46 47.244 0)
+		(uuid "85d1b250-79e7-49ea-a9d9-c753219f2148")
+		(property "Reference" "SW64"
+			(at 228.6 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2194,15 +2771,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 124.46 49.784 0)
+			(at 228.6 105.664 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 124.46 53.34 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 228.6 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2211,7 +2788,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 53.34 0)
+			(at 228.6 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2220,7 +2797,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 53.34 0)
+			(at 228.6 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2229,10 +2806,158 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e7")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332ef")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ab")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5b3")
+		)
+		(pin "1"
+			(uuid "7f0a79e8-09e5-4013-85b1-63e11da18fc0")
+		)
+		(pin "2"
+			(uuid "7f748054-e389-4bf0-ba9c-a89b9bed37ac")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 175.26 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ed59d4f-e735-4a15-abca-f47ca544b3e9")
+		(property "Reference" "SW40"
+			(at 175.26 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 175.26 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 175.26 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33316")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5da")
+		)
+		(pin "1"
+			(uuid "1049bc24-2a61-43c7-9486-0b36b5fbe88c")
+		)
+		(pin "2"
+			(uuid "0e7bed93-c116-4b07-8c12-bfce158834b9")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 228.6 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98c152b9-bf5e-4d0d-a2e4-54c5964073f7")
+		(property "Reference" "SW65"
+			(at 228.6 47.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 228.6 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 228.6 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332f0")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5b4")
 		)
 		(pin "1"
 			(uuid "89c3556d-bb4c-400e-bf47-666421790ab9")
@@ -2251,16 +2976,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 142.24 53.34 0)
+		(at 210.82 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a4a4d69e-7f94-4715-b4da-01f1565c3596")
-		(property "Reference" "SW68"
-			(at 142.24 47.244 0)
+		(uuid "98f7ca9d-f8f1-43de-a937-080baddf2bf4")
+		(property "Reference" "SW71"
+			(at 210.82 114.554 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2268,15 +2993,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 142.24 49.784 0)
+			(at 210.82 117.094 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 142.24 53.34 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 210.82 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2285,7 +3010,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 53.34 0)
+			(at 210.82 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2294,7 +3019,81 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 53.34 0)
+			(at 210.82 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332f5")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5b9")
+		)
+		(pin "1"
+			(uuid "eff6d885-4131-4aac-92d1-d0ca9b305d1b")
+		)
+		(pin "2"
+			(uuid "1967a984-461a-49a5-adba-69e1bb2d32cc")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 165.1 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b37483b-4472-4d13-94f1-d6c6b89acaed")
+		(property "Reference" "SW46"
+			(at 165.1 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 165.1 73.914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_2.00u"
+			(at 165.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2307,6 +3106,154 @@
 		)
 		(pin "3"
 			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c7")
+		)
+		(pin "1"
+			(uuid "18f825b4-55cb-4cca-b1d6-64c3eafccd43")
+		)
+		(pin "2"
+			(uuid "a1ccdd8b-eac9-4b93-aa6d-f551e6fc6988")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 210.82 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a173a544-b75c-449f-9cfe-49e06c9c5f39")
+		(property "Reference" "SW42"
+			(at 210.82 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 210.82 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 210.82 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332f6")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ba")
+		)
+		(pin "1"
+			(uuid "fb47b57a-5261-480d-91f1-e68d896baa7a")
+		)
+		(pin "2"
+			(uuid "6baae461-b769-49ae-bd2c-ee34bc49728b")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 246.38 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4a4d69e-7f94-4715-b4da-01f1565c3596")
+		(property "Reference" "SW68"
+			(at 246.38 47.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 246.38 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 246.38 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33317")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5db")
 		)
 		(pin "1"
 			(uuid "3ab6cd23-706c-4e44-bfd8-986576c4c46b")
@@ -2325,164 +3272,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 124.46 97.79 0)
+		(at 193.04 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b4677eda-4b6b-4a11-96a4-db7524e4390a")
-		(property "Reference" "SW57"
-			(at 124.46 91.694 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 124.46 94.234 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 124.46 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e7")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ab")
-		)
-		(pin "1"
-			(uuid "3543e713-23d5-4c5f-82e6-2430b49b818a")
-		)
-		(pin "2"
-			(uuid "b0f36b92-6629-4d39-8b6a-e1a273bf9955")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 88.9 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c2b30ac3-a010-4275-bf99-28b2786a4d11")
-		(property "Reference" "SW70"
-			(at 88.9 115.824 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 88.9 118.364 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 88.9 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 88.9 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad3330a")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ce")
-		)
-		(pin "1"
-			(uuid "b7865c59-2e24-47fa-98a7-4aa8edcc1499")
-		)
-		(pin "2"
-			(uuid "b8ff1757-0d3b-47f8-94ce-81d6bd0f21ce")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW70")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 88.9 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d5396f22-ca62-4ed2-b73a-223856cc39a0")
+		(uuid "a5d8c586-44c1-4904-8ab8-08f7ad9366a0")
 		(property "Reference" "SW48"
-			(at 88.9 72.644 0)
+			(at 193.04 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2490,15 +3289,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 88.9 75.184 0)
+			(at 193.04 73.914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 88.9 78.74 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 193.04 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2507,7 +3306,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 88.9 78.74 0)
+			(at 193.04 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2516,7 +3315,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 88.9 78.74 0)
+			(at 193.04 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2525,16 +3324,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad3330a")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad3330f")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ce")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5d3")
 		)
 		(pin "1"
-			(uuid "e79ade41-26bc-4461-8ceb-77a0f5ef2560")
+			(uuid "d74a2bee-403b-4437-87a4-c70794022fe9")
 		)
 		(pin "2"
-			(uuid "e2018d4a-a671-4124-8fd6-e9ae3c8234ca")
+			(uuid "1c07af6f-953d-43ea-838b-c2ec8d4adb7b")
 		)
 		(instances
 			(project "TeensyRPN42"
@@ -2547,16 +3346,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 71.12 97.79 0)
+		(at 228.6 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "da67ffb6-1897-4396-8900-3963a98f2cea")
-		(property "Reference" "SW54"
-			(at 71.12 91.694 0)
+		(uuid "b14769fd-9e96-4f11-a07c-bb238a317c75")
+		(property "Reference" "SW43"
+			(at 228.6 59.944 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2564,15 +3363,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 71.12 94.234 0)
+			(at 228.6 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 71.12 97.79 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 228.6 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2581,7 +3380,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 97.79 0)
+			(at 228.6 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2590,7 +3389,303 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 97.79 0)
+			(at 228.6 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332f1")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5b5")
+		)
+		(pin "1"
+			(uuid "54c0cac7-bcc1-4b76-b816-bab7e1549783")
+		)
+		(pin "2"
+			(uuid "326f5487-bbff-41b4-a220-765cea4b061e")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 228.6 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b981f024-ba74-4981-9cf9-d9a1de0a6631")
+		(property "Reference" "SW50"
+			(at 228.6 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 228.6 73.914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 228.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332f7")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5bb")
+		)
+		(pin "1"
+			(uuid "af563bcd-8f78-488f-8bfb-d03955eeb0e1")
+		)
+		(pin "2"
+			(uuid "f93c982a-13b9-440a-9cd9-f08b0d434c5f")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 228.6 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c76eedc6-809b-4000-9889-60565feaf025")
+		(property "Reference" "SW57"
+			(at 228.6 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 228.6 92.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
+			(at 228.6 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332f8")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5bc")
+		)
+		(pin "1"
+			(uuid "9f9ff33c-4459-4a9b-a3e6-1f5c9b78baf1")
+		)
+		(pin "2"
+			(uuid "3a0d6e4f-5549-4e9d-9355-a783fd7e3b3a")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 193.04 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c789b1cc-6e44-4707-a7f1-55e78f49b20e")
+		(property "Reference" "SW70"
+			(at 193.04 114.554 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 193.04 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 193.04 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33310")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5d4")
+		)
+		(pin "1"
+			(uuid "b6086954-5dcb-4a28-b9dd-da8c99f4ac6e")
+		)
+		(pin "2"
+			(uuid "fb36e47d-ee6d-4a35-a389-f09ca9fcb8a4")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 157.48 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca7c5df5-c696-43b7-9bca-04fe0fd103af")
+		(property "Reference" "SW53"
+			(at 157.48 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 157.48 92.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
+			(at 157.48 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2605,15 +3700,15 @@
 			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c8")
 		)
 		(pin "1"
-			(uuid "72e8ca28-97da-4e42-a4f0-e4d9d4324754")
+			(uuid "dc5b8bd0-54b7-40d8-b1c7-d3da46beb278")
 		)
 		(pin "2"
-			(uuid "0622b66f-8644-459f-bf6d-a63df6ffd83d")
+			(uuid "e714c610-7787-4431-9f05-5b40933f2f33")
 		)
 		(instances
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW54")
+					(reference "SW53")
 					(unit 1)
 				)
 			)
@@ -2621,16 +3716,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 88.9 109.22 0)
+		(at 210.82 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dbf9c02f-6160-4fb8-97f0-2f596f398fec")
-		(property "Reference" "SW62"
-			(at 88.9 103.124 0)
+		(uuid "cb9ad372-1efd-4a92-9a84-142dcece4ce8")
+		(property "Reference" "SW77"
+			(at 210.82 125.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2638,15 +3733,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 88.9 105.664 0)
+			(at 210.82 128.524 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 88.9 109.22 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 210.82 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2655,7 +3750,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 88.9 109.22 0)
+			(at 210.82 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2664,7 +3759,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 88.9 109.22 0)
+			(at 210.82 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2673,16 +3768,90 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad3330a")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332f9")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ce")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5bd")
 		)
 		(pin "1"
-			(uuid "4e674182-817c-405c-b7b9-ae44f25582ce")
+			(uuid "c2c940e6-8e78-4fe7-8e19-34c4d7a04e0c")
 		)
 		(pin "2"
-			(uuid "f8ce8335-a382-40fb-bf64-6aca6bc3ffc7")
+			(uuid "0562a3af-4a0a-4e2a-a3f2-cfbf3a534882")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
+					(reference "SW77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 193.04 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9695f85-1761-4509-8703-804ba62335e1")
+		(property "Reference" "SW62"
+			(at 193.04 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 193.04 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 193.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33318")
+		)
+		(pin "3"
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5dc")
+		)
+		(pin "1"
+			(uuid "e32dc340-2150-4476-a905-3a6ca5611a51")
+		)
+		(pin "2"
+			(uuid "57d51ce7-ca99-4849-bc16-4229d2e4d550")
 		)
 		(instances
 			(project "TeensyRPN42"
@@ -2695,16 +3864,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 124.46 109.22 0)
+		(at 246.38 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dd684d66-1ca6-4314-b2d7-326a587e41bb")
-		(property "Reference" "SW64"
-			(at 124.46 103.124 0)
+		(uuid "e6311f6f-9a16-4647-b725-6e627fd2cbe9")
+		(property "Reference" "SW44"
+			(at 246.38 59.944 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2712,15 +3881,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 124.46 105.664 0)
+			(at 246.38 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 124.46 109.22 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 246.38 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2729,7 +3898,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 109.22 0)
+			(at 246.38 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2738,7 +3907,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 109.22 0)
+			(at 246.38 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2747,21 +3916,21 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e7")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad33319")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ab")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5dd")
 		)
 		(pin "1"
-			(uuid "7cd2f206-cefd-441d-bca9-3843a2284c44")
+			(uuid "9f251538-9ccb-4f00-8717-62ac919920f8")
 		)
 		(pin "2"
-			(uuid "ad298009-5ee9-4eb7-8dba-655b8405cf20")
+			(uuid "dd828666-7096-46f3-9e5c-c5a85d9e7590")
 		)
 		(instances
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW64")
+					(reference "SW44")
 					(unit 1)
 				)
 			)
@@ -2769,155 +3938,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 106.68 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e3675f53-9b8e-4ffb-b17b-d39be175cf3f")
-		(property "Reference" "SW42"
-			(at 106.68 59.944 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 106.68 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 106.68 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 106.68 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e8")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ac")
-		)
-		(pin "1"
-			(uuid "a6d4dee8-802e-4b3b-8938-f98196565bb7")
-		)
-		(pin "2"
-			(uuid "896ac5a5-d6c8-4b2f-a09f-54f5738e9320")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 106.68 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5e4294c-a581-406d-a984-f0cd54468e2a")
-		(property "Reference" "SW56"
-			(at 106.68 91.694 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 106.68 94.234 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 106.68 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 106.68 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e8")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ac")
-		)
-		(pin "1"
-			(uuid "cd1e4d9c-2ac3-4b8c-ad86-fb97ae5a9045")
-		)
-		(pin "2"
-			(uuid "d3d2ad7c-f0d2-4cf0-807a-fa04d11cbba2")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW56")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 106.68 53.34 0)
+		(at 210.82 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2926,7 +3947,7 @@
 		(fields_autoplaced yes)
 		(uuid "e71ad6f8-a6a9-4966-bdbb-df44abe23ee6")
 		(property "Reference" "SW58"
-			(at 106.68 47.244 0)
+			(at 210.82 47.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2934,15 +3955,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 106.68 49.784 0)
+			(at 210.82 49.784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 106.68 53.34 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 210.82 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2951,7 +3972,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 53.34 0)
+			(at 210.82 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2960,7 +3981,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 106.68 53.34 0)
+			(at 210.82 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2969,10 +3990,10 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e8")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad332fa")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ac")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5be")
 		)
 		(pin "1"
 			(uuid "2ef05a09-88c6-4af0-a85a-78fc3c072a37")
@@ -2991,16 +4012,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 124.46 78.74 0)
+		(at 246.38 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e811e289-086f-47a3-b66e-9f4c29851a4e")
-		(property "Reference" "SW50"
-			(at 124.46 72.644 0)
+		(uuid "ee05428f-ca55-4697-825d-3680eff87ac6")
+		(property "Reference" "SW52"
+			(at 246.38 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3008,15 +4029,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 124.46 75.184 0)
+			(at 246.38 73.914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 124.46 78.74 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 246.38 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3025,7 +4046,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 78.74 0)
+			(at 246.38 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3034,7 +4055,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 78.74 0)
+			(at 246.38 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3043,21 +4064,21 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e7")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad3331a")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ab")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5de")
 		)
 		(pin "1"
-			(uuid "47d430bf-7ee3-42cf-9c6d-84d680864f56")
+			(uuid "7797edbf-a56d-4410-8431-a9f7aae06005")
 		)
 		(pin "2"
-			(uuid "dee2632f-e031-4a8a-8793-c163ec8943c5")
+			(uuid "a99863ea-f39e-446e-aed9-1e592b350978")
 		)
 		(instances
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW50")
+					(reference "SW52")
 					(unit 1)
 				)
 			)
@@ -3065,16 +4086,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPST_x2")
-		(at 106.68 121.92 0)
+		(at 193.04 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e90faee4-8553-4f7e-8c0f-0a156a14f64c")
-		(property "Reference" "SW71"
-			(at 106.68 115.824 0)
+		(uuid "fa6ce367-d2f3-49a4-a7c3-1d93a615a8d3")
+		(property "Reference" "SW76"
+			(at 193.04 125.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3082,15 +4103,15 @@
 			)
 		)
 		(property "Value" "SW_DPST_x2"
-			(at 106.68 118.364 0)
+			(at 193.04 128.524 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 106.68 121.92 0)
+		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
+			(at 193.04 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3099,7 +4120,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 121.92 0)
+			(at 193.04 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3108,7 +4129,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 106.68 121.92 0)
+			(at 193.04 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3117,95 +4138,21 @@
 			)
 		)
 		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332e8")
+			(uuid "64dacf38-5f77-4eed-8732-6200aad3331b")
 		)
 		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5ac")
+			(uuid "1a78a310-7616-4665-8a37-abe49c01c5df")
 		)
 		(pin "1"
-			(uuid "f9e9d727-0eb2-43e2-ac30-61b64b6ec945")
+			(uuid "a8657cb2-fb5a-4837-a947-0a0399a8aed8")
 		)
 		(pin "2"
-			(uuid "d411011b-a6de-4071-bbc9-501f1496e369")
+			(uuid "d4be8d93-6a35-4317-b10a-b8ea9b016a1b")
 		)
 		(instances
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW71")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 53.34 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eb90700f-6368-40da-8688-3439e4d41243")
-		(property "Reference" "SW46"
-			(at 53.34 72.644 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 53.34 75.184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyswitches:Kailh_socket_PG1350"
-			(at 53.34 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "64dacf38-5f77-4eed-8732-6200aad332fc")
-		)
-		(pin "3"
-			(uuid "1a78a310-7616-4665-8a37-abe49c01c5c0")
-		)
-		(pin "1"
-			(uuid "8da258b3-a005-4cfa-a637-a2886fbd7eb1")
-		)
-		(pin "2"
-			(uuid "15e7f7e2-e1a3-4523-92a8-0b691b12ce72")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/9e6c72d2-1a3e-4078-91a8-d1324c355826"
-					(reference "SW46")
+					(reference "SW76")
 					(unit 1)
 				)
 			)

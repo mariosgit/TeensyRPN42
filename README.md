@@ -65,6 +65,7 @@ Ideas...
 * Keys 
   * K.Choc low profile mechaniks
   * cheap 12mm clickers ?
+  * RGB LEDs under keys ? SK6812-E | SK6805
 * Power ?
   * Single Lipo ? Cheap Charger...
 
