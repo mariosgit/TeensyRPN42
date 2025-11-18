@@ -92,7 +92,8 @@ bool checkStdio()
 
     // scanf test for float support
     phloat p = 0;
-    result &= (string2phloat(szF, szfSize, &p) == 0);
+    size_t parse_len = strlen(szF);
+    result &= (string2phloat(szF, (int) parse_len, &p) == 0);
     bool resultScanf = (p > phloat(3.13) && p < phloat(3.15));
     printf("[DBG] Parsed value: ");
     p = p*1.014; // make num longer ....

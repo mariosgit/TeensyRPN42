@@ -8,30 +8,47 @@ Allmost, just some link references to open/unlink/link file operations triggered
 
 # Status
 
-Ultraexperimental
+Ultraexperimental.
+
+Works with double precision over terminal.
+
+```
+╒═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╕
+│                                                                                                                                     │
+│                                                                                                                                     │
+│             ▄▀▀▀▄       ▄▀▀▀▄ ▄▀▀▀▄ ▄▀▀▀▄ ▀▀▀▀█  ▄█   ▀▀▀▀█ ▄▀▀▀▄   ▄█  ▀▀▀▀█ ▄▀▀▀▄ ▄▀▀▀▄ ▄▄▄▄         ▄█                           │
+│ ▀▄ ▄▀ ▄       ▄▄▀       ▀▄▄▄█   ▄▄▀  ▄▄▄▀   ▄▀    █     ▄▀  █ ▄▀█ ▄▀ █    ▄▀    ▄▄▀  ▄▄▄▀ █▄▄   ▄▄▄▄    █                           │
+│   █   ▄     ▄▀     ▄▄      ▄▀ ▄▀    ▄   █  █      █    █    █▀  █ ▀▀▀█▀  █    ▄▀    ▄   █ █▄▄▄          █                           │
+│   ▀         ▀▀▀▀▀  ▀▀    ▀▀   ▀▀▀▀▀  ▀▀▀   ▀     ▀▀▀   ▀     ▀▀▀     ▀   ▀    ▀▀▀▀▀  ▀▀▀               ▀▀▀                          │
+│                    ▄█         ▀▀▀▀█ █▀▀▀▀  ▄▀▀  ▄▀▀▀▄ ▀▀▀▀█ ▄▀▀▀▄ █▀▀▀▀ █▀▀▀▀ ▄▀▀▀▄  ▄█   ▀▀▀▀█ ▄▄▄▄         ▄█                     │
+│ ▀▄ ▄▀ ▄     ▄▄▄▄    █           ▄▀  ▀▀▀▀▄ █▄▄▄   ▄▄▄▀   ▄▀   ▄▄▄▀ ▀▀▀▀▄ ▀▀▀▀▄ ▀▄▄▄▀   █     ▄▀  █▄▄   ▄▄▄▄    █                     │
+│  ▄▀▄  ▄             █    ▄▄    █    ▄   █ █   █ ▄   █  █    ▄   █ ▄   █ ▄   █ █   █   █    █    █▄▄▄          █                     │
+│ ▀   ▀              ▀▀▀   ▀▀    ▀     ▀▀▀   ▀▀▀   ▀▀▀   ▀     ▀▀▀   ▀▀▀   ▀▀▀   ▀▀▀   ▀▀▀   ▀                 ▀▀▀                    │
+╘═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╛
+T=0 
+Z=0 
+Y=2.92371704723␘-1 
+X=-1.75637355817␘-1
+```
 
 # Software
 
-Not running on MC ! Input Values are not stored ???
+* replaced scanf %e %g with own parser.
 
-* Problem seems to be in scanf/printf on the MC not suporting float.
-  * libscn - fails with old compiler 
-  * newlib-nano-1.0 ??
+* quad precission ?
+  * checking free42(swissmicro build process..)
+    * gcc111libbid-arm64.a - lib src is packaged with it. And available on github
+    * there is scanf stuff in ```common/core_phloat.cc``` only when not ARM build ?
+    * cmd line:
+    ```
+    arm-none-eabi-g++ -Os -DDM42_OLDHW -I../common -DRELEASE -MMD -Wall -Wno-misleading-indentation -Wno-parentheses -Wno-write-strings -Wno-maybe-uninitialized -Wno-unknown-pragmas -Wno-class-memaccess -Wno-sign-compare -fno-exceptions -fno-rtti -DVERSION="\"3.3.8\"" -DDECIMAL_CALL_BY_REFERENCE=1 -DDECIMAL_GLOBAL_ROUNDING=1 -DDECIMAL_GLOBAL_ROUNDING_ACCESS_FUNCTIONS=1 -DDECIMAL_GLOBAL_EXCEPTION_FLAGS=1 -DDECIMAL_GLOBAL_EXCEPTION_FLAGS_ACCESS_FUNCTIONS=1 -D_WCHAR_T_DEFINED  -fdata-sections -ffunction-sections -Wl,--gc-sections -ggdb -mthumb -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DARM -DBCD_MATH -c -o core_phloat.o ../common/core_phloat.cc
+    ```
 
-* checking free42(swissmicro build process..)
-  * gcc111libbid-arm64.a - lib src is packaged with it. And available on github
-  * there is scanf stuff in ```common/core_phloat.cc``` only when not ARM build ?
-  * cmd line:
-  ```
-  arm-none-eabi-g++ -Os -DDM42_OLDHW -I../common -DRELEASE -MMD -Wall -Wno-misleading-indentation -Wno-parentheses -Wno-write-strings -Wno-maybe-uninitialized -Wno-unknown-pragmas -Wno-class-memaccess -Wno-sign-compare -fno-exceptions -fno-rtti -DVERSION="\"3.3.8\"" -DDECIMAL_CALL_BY_REFERENCE=1 -DDECIMAL_GLOBAL_ROUNDING=1 -DDECIMAL_GLOBAL_ROUNDING_ACCESS_FUNCTIONS=1 -DDECIMAL_GLOBAL_EXCEPTION_FLAGS=1 -DDECIMAL_GLOBAL_EXCEPTION_FLAGS_ACCESS_FUNCTIONS=1 -D_WCHAR_T_DEFINED  -fdata-sections -ffunction-sections -Wl,--gc-sections -ggdb -mthumb -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DARM -DBCD_MATH -c -o core_phloat.o ../common/core_phloat.cc
-  ```
-
-* It builds with the intel lib but it's a bit large
-  ```
-  stand:
-ld: region `RAM' overflowed by 798408 bytes
-ld: region `FLASH' overflowed by 2006716 bytes
-  ```
+  * It builds with the intel lib but it's a bit (way too) large
+    ```
+    ld: region `RAM' overflowed by 798408 bytes
+    ld: region `FLASH' overflowed by 2006716 bytes
+    ```
 
 # Hardware
 
@@ -53,8 +70,8 @@ Ideas...
 
 # Refs
 
-thomasokken's ingenious https://thomasokken.com/free42 
+thomasokken's ingenious https://thomasokken.com/free42 https://github.com/aswild/free42
 
 And code on github: https://github.com/swissmicros/free42
 
-OpenRPNCalc ? on github, uses CubeIDE and own code..
+OpenRPNCalc ? on github, uses CubeIDE 🤯 and own code..

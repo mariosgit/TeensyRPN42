@@ -922,6 +922,9 @@ static void make_scientific_string(double value, char *buffer, size_t buffer_len
     buffer[pos] = '\0';
 }
 
+/**
+ * Converts string to phloat. buflen must be length of actual string = strlen(buf).
+ */
 int string2phloat(const char *buf, int buflen, phloat *d) {
     /* Convert string to phloat.
      * Return values:
