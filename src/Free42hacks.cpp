@@ -137,11 +137,18 @@ extern "C"
     {
         return -1;
     }
-#ifdef ENV_TEENSY40
-#warning "Teensy does not support _write ?"
+#ifdef ENV_TEENSY
+// #warning "Teensy does not support _write ?"
     int _write(int fd, const char buf, size_t count)
     {
         return -1;
+    }
+    int _getpid()
+    {
+        return -1;
+    }
+    void _kill(int pid, int sig)
+    {
     }
 #endif
 }

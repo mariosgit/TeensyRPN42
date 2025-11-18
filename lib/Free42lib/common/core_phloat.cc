@@ -223,16 +223,7 @@ Phloat Phloat::operator=(Phloat p) {
 
 /* public */
 void Phloat::assign17digits(double d) {
-    if (isinf(d) || isnan(d)) {
-        binary64_to_bid128(&val, &d);
-    } else {
-        char buf[25];
-        snprintf(buf, 25, "%.15e", d);
-        double d2;
-        if (sscanf(buf, "%le", &d2) != 1 || d != d2)
-            snprintf(buf, 25, "%.16e", d);
-        bid128_from_string(&val, buf);
-    }
+    binary64_to_bid128(&val, &d);
 }
 
 /* public */
@@ -826,6 +817,111 @@ void phloat_init() {
     NAN_PHLOAT = nan("");
 }
 
+static void make_scientific_string(double value, char *buffer, size_t buffer_len) {
+    if (buffer_len == 0)
+        return;
+
+    size_t pos = 0;
+    bool negative = signbit(value) != 0;
+    double abs_val = negative ? -value : value;
+
+    if (negative && abs_val != 0.0 && pos < buffer_len - 1)
+        buffer[pos++] = '-';
+
+    if (abs_val == 0.0) {
+        if (pos + 3 >= buffer_len) {
+            if (pos < buffer_len)
+                buffer[pos] = '\0';
+            return;
+        }
+        buffer[pos++] = '0';
+        buffer[pos++] = '.';
+        for (int i = 1; i < MAX_MANT_DIGITS && pos < buffer_len - 1; i++)
+            buffer[pos++] = '0';
+        buffer[pos++] = 'e';
+        buffer[pos++] = '+';
+        buffer[pos++] = '0';
+        buffer[pos] = '\0';
+        return;
+    }
+
+    int exponent = 0;
+    double scaled = abs_val;
+    while (scaled >= 10.0) {
+        scaled /= 10.0;
+        exponent++;
+    }
+    while (scaled > 0.0 && scaled < 1.0) {
+        scaled *= 10.0;
+        exponent--;
+    }
+
+    const int digits_count = MAX_MANT_DIGITS + 1;
+    int digits[digits_count];
+    for (int i = 0; i < digits_count; i++) {
+        int digit = (int) scaled;
+        if (digit > 9)
+            digit = 9;
+        digits[i] = digit;
+        double remainder = scaled - digit;
+        if (remainder < 0.0)
+            remainder = 0.0;
+        scaled = remainder * 10.0;
+        if (scaled < 0.0)
+            scaled = 0.0;
+    }
+
+    int carry = digits[MAX_MANT_DIGITS] >= 5 ? 1 : 0;
+    for (int i = MAX_MANT_DIGITS - 1; i >= 0 && carry; --i) {
+        int value_digit = digits[i] + carry;
+        if (value_digit >= 10) {
+            digits[i] = value_digit - 10;
+            carry = 1;
+        } else {
+            digits[i] = value_digit;
+            carry = 0;
+        }
+    }
+    if (carry) {
+        for (int i = MAX_MANT_DIGITS - 1; i > 0; --i)
+            digits[i] = 0;
+        digits[0] = 1;
+        exponent++;
+    }
+
+    if (pos + 3 >= buffer_len) {
+        if (pos < buffer_len)
+            buffer[pos] = '\0';
+        return;
+    }
+    buffer[pos++] = (char) (digits[0] + '0');
+    buffer[pos++] = '.';
+    for (int i = 1; i < MAX_MANT_DIGITS && pos < buffer_len - 1; i++)
+        buffer[pos++] = (char) (digits[i] + '0');
+
+    buffer[pos++] = 'e';
+    if (exponent >= 0)
+        buffer[pos++] = '+';
+    else {
+        buffer[pos++] = '-';
+        exponent = -exponent;
+    }
+
+    char exp_digits[6];
+    int exp_len = 0;
+    do {
+        if (exp_len >= (int) sizeof(exp_digits))
+            break;
+        exp_digits[exp_len++] = (char) ('0' + (exponent % 10));
+        exponent /= 10;
+    } while (exponent > 0);
+
+    for (int i = exp_len - 1; i >= 0 && pos < buffer_len - 1; i--)
+        buffer[pos++] = exp_digits[i];
+
+    buffer[pos] = '\0';
+}
+
 int string2phloat(const char *buf, int buflen, phloat *d) {
     /* Convert string to phloat.
      * Return values:
@@ -849,7 +945,6 @@ int string2phloat(const char *buf, int buflen, phloat *d) {
     char dot = flags.f.decimal_point ? '.' : ',';
     char sep = flags.f.decimal_point ? ',' : '.';
     int is_zero = 1;
-    double res;
 
     memset(mantissa, 0, MAX_MANT_DIGITS);
 
@@ -906,15 +1001,9 @@ int string2phloat(const char *buf, int buflen, phloat *d) {
         exp = -exp;
     exp += exp_offset;
 
-    /* Get rid of leading zeroes in mantissa
-     * (the loop above removes redundant leading zeroes, e.g. the first two
-     * of 0012.345, but in the case of 0.001, the two zeroes following the
-     * decimal are not redundant, and they end up in the mantissa.
-     */
     if (mantissa[0] == 0) {
         int leadingzeroes = 0;
-        int i;
-        while (mantissa[leadingzeroes] == 0)
+        while (leadingzeroes < mant_pos && mantissa[leadingzeroes] == 0)
             leadingzeroes++;
         for (i = 0; i < mant_pos - leadingzeroes; i++)
             mantissa[i] = mantissa[i + leadingzeroes];
@@ -923,32 +1012,27 @@ int string2phloat(const char *buf, int buflen, phloat *d) {
         exp -= leadingzeroes;
     }
 
-    /* 'mantissa' now contains the normalized bcd mantissa;
-     * 'exp' contains the normalized signed exponent,
-     * and 'mant_sign' contains the mantissa's sign.
-     */
-    char decstr[35];
-    int pos = 0;
-    if (mant_sign)
-        decstr[pos++] = '-';
-    for (i = 0; i < MAX_MANT_DIGITS; i++) {
-        decstr[pos++] = mantissa[i] + '0';
-        if (i == 0)
-            decstr[pos++] = '.';
+    double mant = mantissa[0];
+    double scale = 0.1;
+    for (i = 1; i < MAX_MANT_DIGITS; i++) {
+        mant += mantissa[i] * scale;
+        scale *= 0.1;
     }
-    snprintf(decstr + pos, 35 - pos, "e%d", exp);
-    sscanf(decstr, "%le", &res);
-    printf("[DBG] string2phloat: converted '%.*s' to %e\n", buflen, buf, res);
+    if (mant_sign)
+        mant = -mant;
+
+    double pow10 = pow(10.0, exp);
+    double res = mant * pow10;
     if (isinf(res))
         return mant_sign ? 2 : 1;
     if (res == 0.0)
         return mant_sign ? 4 : 3;
+
     *d = res;
     return 0;
 }
 
 double decimal2double(void *data, bool pin_magnitude /* = false */) {
-    printf("[DBG] decimal2double called - BUGI?\n");
     double res;
     BID_UINT128 *b, b2;
     if ((((size_t) data) & 15) != 0) {
@@ -957,12 +1041,12 @@ double decimal2double(void *data, bool pin_magnitude /* = false */) {
         b = &b2;
     } else
         b = (BID_UINT128 *) data;
-    bid128_to_binary64(&res, b);
+    // bid128_to_binary64(&res, b);
     if (isnan(res) || !pin_magnitude)
         return res;
     int r;
-    if (res == 0 && !(bid128_isZero(&r, b), r))
-        return (bid128_isSigned(&r, b), r) ? NEG_TINY_PHLOAT : POS_TINY_PHLOAT;
+    // if (res == 0 && !(bid128_isZero(&r, b), r))
+    //     return (bid128_isSigned(&r, b), r) ? NEG_TINY_PHLOAT : POS_TINY_PHLOAT;
     int inf = isinf(res);
     return inf == 0 ? res : inf < 0 ? NEG_HUGE_PHLOAT : POS_HUGE_PHLOAT;
 }
@@ -974,7 +1058,6 @@ double decimal2double(void *data, bool pin_magnitude /* = false */) {
 int phloat2string(phloat pd, char *buf, int buflen, int base_mode, int digits,
                          int dispmode, int thousandssep, int max_mant_digits,
                          const char *format) {
-    printf("[DBG] phloat2string called - BUGI?\n");
     int group1, group2;
     char dec, sep;
     if (format == NULL) {
@@ -1111,16 +1194,12 @@ int phloat2string(phloat pd, char *buf, int buflen, int base_mode, int digits,
     int bcd_exponent = 0;
     int bcd_mantissa_sign = 0;
 
+#ifdef BCD_MATH
     char decstr[50];
-
-#ifndef BCD_MATH
-    double d = to_double(pd);
-    snprintf(decstr, 50, "%.*e", MAX_MANT_DIGITS - 2, d);
-    double d2;
-    if (sscanf(decstr, "%le", &d2) != 1 || d != d2)
-        snprintf(decstr, 50, "%.*e", MAX_MANT_DIGITS - 1, d);
-#else
     bid128_to_string(decstr, &pd.val);
+#else
+    char decstr[64];
+    make_scientific_string(pd, decstr, sizeof(decstr));
 #endif
 
     char *p = decstr;
@@ -1344,9 +1423,9 @@ int phloat2string(phloat pd, char *buf, int buflen, int base_mode, int digits,
         /* SCI and ENG modes */
         /* Also fall-through from FIX and ALL */
 
-        int m_digits;
-        int carry;
-        char norm_mantissa[MAX_MANT_DIGITS];
+    int m_digits;
+    int carry;
+    char norm_mantissa[MAX_MANT_DIGITS + 1];
         int norm_exponent, e3;
         int i;
 
@@ -1354,6 +1433,7 @@ int phloat2string(phloat pd, char *buf, int buflen, int base_mode, int digits,
 
         for (i = 0; i < MAX_MANT_DIGITS; i++)
             norm_mantissa[i] = bcd_mantissa[i];
+        norm_mantissa[MAX_MANT_DIGITS] = 0;
         norm_exponent = bcd_exponent;
 
         if (dispmode == 3) {

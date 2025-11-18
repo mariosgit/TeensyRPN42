@@ -623,7 +623,10 @@ int anum(const char *text, int len, phloat *res) {
     bid128_from_string(&b, buf);
     p = b;
 #else
-    sscanf(buf, "%le", &p);
+    phloat parsed;
+    if (string2phloat(buf, (int) strlen(buf), &parsed) != 0)
+        return false;
+    p = parsed;
 #endif
     if (p_isnan(p))
         return false;

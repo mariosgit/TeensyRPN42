@@ -1984,9 +1984,10 @@ static phloat parse_number_line(char *buf) {
 #ifdef BCD_MATH
     res = Phloat(buf);
 #else
-    BID_UINT128 d;
-    bid128_from_string(&d, buf);
-    bid128_to_binary64(&res, &d);
+    // BID_UINT128 d;
+    // bid128_from_string(&d, buf);
+    // bid128_to_binary64(&res, &d);
+    printf("[DBG] ALARM!\n");
 #endif
     if (p_isinf(res) != 0)
         res = NAN_1_PHLOAT;
