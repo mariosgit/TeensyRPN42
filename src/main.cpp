@@ -9,6 +9,7 @@
 #include <ArduinoNative.h>
 #else
 #include <Arduino.h>
+#include <Adafruit_NeoPixel.h>
 #endif
 
 #include <Free42lib.h>
@@ -21,7 +22,6 @@
 #include <common/core_globals.h>
 #include <common/core_variables.h>
 #include <common/core_helpers.h>
-
 
 
 static int ann_updown = 0;
@@ -685,19 +685,19 @@ void main_loop()
         if (key > 0 && key <= 37)
         {
             // Press key
-            printf("key press %i\n", key);
+            // printf("key press %i\n", key);
             int repeat, keep_running;
             keep_running = core_keydown(key, &enqueued, &repeat);
             vartype *slot = stack[sp];
-            printf("[DBG] post-keydown native sp=%d ptr=%p type=%d", sp, (void *) slot,
-                   slot ? slot->type : -1);
-            if (slot && slot->type == TYPE_REAL)
-                dbg_print_phloat(" value=", ((vartype_real *) slot)->x);
-            printf("\n");
-            printf("end of keydown: keep_running=%i  enqueued=%i  repeat=%i\n", keep_running, enqueued, repeat);
-            printf("keyup\n");
+            // printf("[DBG] post-keydown native sp=%d ptr=%p type=%d", sp, (void *) slot,
+            //        slot ? slot->type : -1);
+            // if (slot && slot->type == TYPE_REAL)
+            //     dbg_print_phloat(" value=", ((vartype_real *) slot)->x);
+            // printf("\n");
+            // printf("end of keydown: keep_running=%i  enqueued=%i  repeat=%i\n", keep_running, enqueued, repeat);
+            // printf("keyup\n");
             keep_running = core_keyup();
-            printf("end of keyup: keep_running=%i\n", keep_running);
+            // printf("end of keyup: keep_running=%i\n", keep_running);
         }
     }
 }
@@ -726,6 +726,10 @@ int main(int argc, char *argv[])
 
 #else
 
+const int LED_PIN = 6;
+const int LED_COUNT = 16;
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
+
 void setup()
 {
     Serial.begin(115200);
@@ -733,6 +737,11 @@ void setup()
     printf("Free42 Arduino emulator\n");
 
     checkStdio();
+
+    strip.begin();
+    strip.setBrightness(50);
+    strip.fill(strip.Color(255, 0, 0)); // Set all pixels to red
+    strip.show();
 
     core_init(0, 0, NULL, 0);
 }
@@ -746,7 +755,7 @@ void loop()
     {
         int input = Serial.read();
 
-        printf("Input: %d\n", input);
+        // printf("Input: %d\n", input);
 
         int key;
         // empty_keydown();
@@ -767,18 +776,18 @@ void loop()
                 int repeat, keep_running;
                 keep_running = core_keydown(key, &enqueued, &repeat);
                 vartype *slot = stack[sp];
-                printf("[DBG] post-keydown mcu sp=%d ptr=%p type=%d", sp, (void *) slot,
-                       slot ? slot->type : -1);
-                if (slot && slot->type == TYPE_REAL)
-                    dbg_print_phloat(" value=", ((vartype_real *) slot)->x);
-                printf("\n");
+                // printf("[DBG] post-keydown mcu sp=%d ptr=%p type=%d", sp, (void *) slot,
+                //        slot ? slot->type : -1);
+                // if (slot && slot->type == TYPE_REAL)
+                //     dbg_print_phloat(" value=", ((vartype_real *) slot)->x);
+                // printf("\n");
                 // printf("end of keydown: keep_running=%i  enqueued=%i  repeat=%i" NL, keep_running, enqueued, repeat);
                 // printf("keyup" NL);
                 keep_running = core_keyup();
                 // printf("end of keyup: keep_running=%i" NL, keep_running);
             }
 
-            debug_core();
+            // debug_core();
         }
     }
 }

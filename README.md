@@ -69,6 +69,14 @@ Ideas...
 * Power ?
   * Single Lipo ? Cheap Charger...
 
+Start with a mini board ? Only the top three rows ? Uhm mhm might be tedious to map that, especially the func key top row ?
+
+| | | | | | |
+|----|---|---|---|---|---|
+| +  | * | ^ | 7 | 8 | 9 |
+| -  | / | . | 4 | 5 | 6 |
+| ENTER || 0 | 1 | 2 | 3 |
+
 # Refs
 
 thomasokken's ingenious https://thomasokken.com/free42 https://github.com/aswild/free42
