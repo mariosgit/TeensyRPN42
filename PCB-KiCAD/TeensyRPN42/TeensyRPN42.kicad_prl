@@ -120,10 +120,10 @@
         "window": {
           "display": 1,
           "maximized": false,
-          "pos_x": -2980,
-          "pos_y": -160,
-          "size_x": 1464,
-          "size_y": 1404
+          "pos_x": -2949,
+          "pos_y": -55,
+          "size_x": 1849,
+          "size_y": 1258
         }
       },
       {
@@ -132,10 +132,10 @@
         "window": {
           "display": 1,
           "maximized": false,
-          "pos_x": -2501,
-          "pos_y": -160,
-          "size_x": 2419,
-          "size_y": 1338
+          "pos_x": -2079,
+          "pos_y": -277,
+          "size_x": 1860,
+          "size_y": 1591
         }
       }
     ]
