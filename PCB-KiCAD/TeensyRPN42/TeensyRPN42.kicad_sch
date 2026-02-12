@@ -5190,6 +5190,16 @@
 		)
 		(uuid "0cb6bb0b-f68e-47f0-be87-8091a5aa9009")
 	)
+	(text "PlatformIO stlink ok without SWO"
+		(exclude_from_sim no)
+		(at 46.736 148.336 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7a12e820-a2ef-4199-b44f-281d8313412e")
+	)
 	(text "RESET"
 		(exclude_from_sim no)
 		(at 15.748 51.054 0)
@@ -5703,16 +5713,6 @@
 			(type default)
 		)
 		(uuid "17aa0c13-0444-4f45-8af5-2f8f6bb25381")
-	)
-	(wire
-		(pts
-			(xy 135.89 96.52) (xy 153.67 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a1bda2d-78c4-46ef-9989-0274ecff7158")
 	)
 	(wire
 		(pts
@@ -7093,16 +7093,6 @@
 			(justify left bottom)
 		)
 		(uuid "6b4d2122-cfba-4cd4-b640-0f943f0ecf6a")
-	)
-	(label "SWO"
-		(at 144.78 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "799fc901-3963-4936-bdb7-42071b06ece4")
 	)
 	(label "SCK1"
 		(at 254 146.05 0)
