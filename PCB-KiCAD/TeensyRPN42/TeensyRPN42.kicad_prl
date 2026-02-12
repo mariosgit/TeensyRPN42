@@ -113,32 +113,7 @@
   },
   "open_jobsets": [],
   "project": {
-    "files": [
-      {
-        "name": "TeensyRPN42.kicad_sch",
-        "open": false,
-        "window": {
-          "display": 1,
-          "maximized": false,
-          "pos_x": -2949,
-          "pos_y": -55,
-          "size_x": 1849,
-          "size_y": 1258
-        }
-      },
-      {
-        "name": "TeensyRPN42.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 1,
-          "maximized": false,
-          "pos_x": -2079,
-          "pos_y": -277,
-          "size_x": 1860,
-          "size_y": 1591
-        }
-      }
-    ]
+    "files": []
   },
   "schematic": {
     "selection_filter": {
