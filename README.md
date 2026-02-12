@@ -1,6 +1,6 @@
 # What ???
 
-Trying to compile Free42 on a Teensy4.
+Trying to compile Free42 on a Teensy4 (or STM32F4 or whatever).
 
 It's a PlatformIO project, copied some code from free42 into lib and trying to compile it...
 
@@ -34,6 +34,7 @@ X=-1.75637355817␘-1
 # Software
 
 * replaced scanf %e %g with own parser.
+  * Todo: PIO_FRAMEWORK_ARDUINO_NANOLIB_FLOAT_SCANF ([from platformio stm32 page](https://docs.platformio.org/en/latest/platforms/ststm32.html))
 
 * quad precission ?
   * checking free42(swissmicro build process..)
@@ -59,6 +60,7 @@ Ideas...
   RAM:   [=         ]   9.7% (used 12704 bytes from 131072 bytes)
   Flash: [======    ]  62.7% (used 328636 bytes from 524288 bytes)
   ```
+  Alternative ? L432KC ?
 * Display ???
   * OLED ? 256x64
   * VFD ?? cool but power usage ???
@@ -76,6 +78,14 @@ Start with a mini board ? Only the top three rows ? Uhm mhm might be tedious to 
 | +  | * | ^ | 7 | 8 | 9 |
 | -  | / | . | 4 | 5 | 6 |
 | ENTER || 0 | 1 | 2 | 3 |
+
+### Boards in PlatformIO
+
+Clone these... in project boards/ ? Keep the c files, just reference best one.
+```
+.platformio/platforms/ststm32/boards/adafruit_feather_f405.json 
+.platformio/packages/framework-arduinoststm32/variants/STM32F4xx/F405RGT_F415RGT/variant_FEATHER_F405.cpp 
+```
 
 # Refs
 
