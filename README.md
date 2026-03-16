@@ -55,12 +55,12 @@ X=-1.75637355817␘-1
 
 Ideas...
 
-* STM32 ? F411RE - is dev board (Or F429? 82-168 IOs)
+* STM32 ? Nucleo-F411RE - is dev board 
   ```
   RAM:   [=         ]   9.7% (used 12704 bytes from 131072 bytes)
   Flash: [======    ]  62.7% (used 328636 bytes from 524288 bytes)
   ```
-  Connect to Nucleo STLink programmer part:
+  Connect other board to Nucleo STLink programmer part:
   * Remove SB13/SB14 for TX/RX connection to Nucleo MCU
   * Connect SWD (SWO not needed) (Open Jumpers to Nucleo MCU)
   * Connect TX->RX Rx->TX
@@ -74,7 +74,9 @@ Ideas...
   * cheap 12mm clickers ?
   * RGB LEDs under keys ? SK6812-E | SK6805
 * Power ?
-  * Single Lipo ? Cheap Charger...
+  * Single Lipo ? Cheap Charger... (like Ada PowerBoost or their F405 board)
+* Realtime ? 31k Crystal ?
+* IR transceiver as TV remote ?
 
 Start with a mini board ? Only the top three rows ? Uhm mhm might be tedious to map that, especially the func key top row ?
 
