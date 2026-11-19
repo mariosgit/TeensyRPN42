@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "d80da916-1949-4ef1-a717-8e998d124c96")
 	(paper "A4")
 	(lib_symbols
@@ -13,8 +13,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
 				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -23,6 +27,8 @@
 			)
 			(property "Value" "SW_DPST_x2"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -31,38 +37,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "switch lever"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "SW_DPST_x2_0_0"
@@ -386,19 +400,29 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "003ebf56-050e-4179-947c-0db500c0171c")
 	)
 	(wire
 		(pts
-			(xy 187.96 82.55) (xy 160.02 82.55)
+			(xy 160.02 82.55) (xy 187.96 82.55)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "03d8ec84-36b6-4f57-b2f4-b71fc53904c7")
+	)
+	(wire
+		(pts
+			(xy 251.46 77.47) (xy 254 77.47)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "081b2108-bd7c-4d57-93ff-8907208d213b")
 	)
 	(wire
 		(pts
@@ -406,17 +430,47 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "0a803e1b-e906-48f3-b537-3cf626a4c007")
 	)
 	(wire
 		(pts
-			(xy 187.96 123.19) (xy 170.18 123.19)
+			(xy 162.56 96.52) (xy 165.1 96.52)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "0aace7cf-1730-4c39-8697-61c7521b70dd")
+	)
+	(wire
+		(pts
+			(xy 215.9 132.08) (xy 218.44 132.08)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "1067d7d2-4c7c-43bc-869b-ab18223d87e0")
+	)
+	(wire
+		(pts
+			(xy 162.56 120.65) (xy 165.1 120.65)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "1195d1e2-9e58-4098-81f5-7d112c6d4b9e")
+	)
+	(wire
+		(pts
+			(xy 170.18 123.19) (xy 187.96 123.19)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "14f207f8-d236-4f02-aaa2-b40a350cf5ba")
 	)
@@ -426,7 +480,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "179d9ffb-1be9-4d57-a402-54ad6d72c247")
 	)
@@ -436,17 +490,17 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "18124965-b4e6-496b-969a-069484d76043")
 	)
 	(wire
 		(pts
-			(xy 236.22 53.34) (xy 233.68 53.34)
+			(xy 233.68 53.34) (xy 236.22 53.34)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "1934b70d-66c8-4746-a7d9-9d9e1f022b38")
 	)
@@ -456,19 +510,29 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "19bbfef4-f57a-4df4-a42c-aa0b033be7d7")
 	)
 	(wire
 		(pts
-			(xy 223.52 82.55) (xy 205.74 82.55)
+			(xy 205.74 82.55) (xy 223.52 82.55)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "1a4a55cf-0602-4fe6-b66e-cba2cbf5823f")
+	)
+	(wire
+		(pts
+			(xy 180.34 109.22) (xy 182.88 109.22)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "1d1328d9-d6fd-48f5-b680-43fe7b589851")
 	)
 	(wire
 		(pts
@@ -476,9 +540,39 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "23d6a72a-3a33-4a46-bbf8-277d21727597")
+	)
+	(wire
+		(pts
+			(xy 162.56 66.04) (xy 165.1 66.04)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "24a52c65-fd9f-43ff-a216-51f5bf7d3866")
+	)
+	(wire
+		(pts
+			(xy 215.9 120.65) (xy 218.44 120.65)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "24c862fc-37aa-4243-ac9e-cfb76baed29f")
+	)
+	(wire
+		(pts
+			(xy 198.12 132.08) (xy 200.66 132.08)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "2588cbdd-e115-4bf3-98ec-877d1aa79b95")
 	)
 	(wire
 		(pts
@@ -486,17 +580,17 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "25a2b9b6-8f43-4da7-94c5-77927f99f435")
 	)
 	(wire
 		(pts
-			(xy 205.74 99.06) (xy 187.96 99.06)
+			(xy 187.96 99.06) (xy 205.74 99.06)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "25e7f5ad-c550-4035-b05f-31f9b8d65e56")
 	)
@@ -506,7 +600,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "27cd787c-aa87-4d8c-8371-a3a52b4a134e")
 	)
@@ -516,27 +610,27 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "2858c1f6-70d9-41d4-a0da-9a2701a563b9")
 	)
 	(wire
 		(pts
-			(xy 187.96 99.06) (xy 170.18 99.06)
+			(xy 170.18 99.06) (xy 187.96 99.06)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "2a431eb2-b123-480b-8aae-bb5e93834fc2")
 	)
 	(wire
 		(pts
-			(xy 223.52 99.06) (xy 205.74 99.06)
+			(xy 205.74 99.06) (xy 223.52 99.06)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "2c6232a7-46f0-4572-bb06-908e67a77c94")
 	)
@@ -546,97 +640,137 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "2fbb2069-1b00-40ab-9a18-6dcaff8a400a")
 	)
 	(wire
 		(pts
-			(xy 170.18 134.62) (xy 152.4 134.62)
+			(xy 170.18 77.47) (xy 172.72 77.47)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "384cffff-ba67-4e2a-95d1-024eee648812")
+	)
+	(wire
+		(pts
+			(xy 233.68 66.04) (xy 236.22 66.04)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "3896cdf4-0561-44be-8b2a-6a849c3585c1")
+	)
+	(wire
+		(pts
+			(xy 152.4 134.62) (xy 170.18 134.62)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "39b979f4-2e50-4048-ba5d-1637a1cc1f47")
 	)
 	(wire
 		(pts
-			(xy 223.52 55.88) (xy 205.74 55.88)
+			(xy 205.74 55.88) (xy 223.52 55.88)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "3adbc926-cfae-4e48-9a70-e42a9985329a")
 	)
 	(wire
 		(pts
-			(xy 152.4 123.19) (xy 139.7 123.19)
+			(xy 139.7 123.19) (xy 152.4 123.19)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "3df8bd0b-de62-4e14-a294-82e49584bd0a")
 	)
 	(wire
 		(pts
-			(xy 205.74 123.19) (xy 187.96 123.19)
+			(xy 187.96 123.19) (xy 205.74 123.19)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "482f03dd-627e-4ad6-8a25-75d8fc57e8e6")
 	)
 	(wire
 		(pts
-			(xy 182.88 53.34) (xy 180.34 53.34)
+			(xy 180.34 53.34) (xy 182.88 53.34)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "49fa225e-8a14-406a-81d2-06844ebd5e7c")
 	)
 	(wire
 		(pts
-			(xy 200.66 53.34) (xy 198.12 53.34)
+			(xy 198.12 53.34) (xy 200.66 53.34)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "4cfbf00f-3fad-4a13-82e5-4c33e33a6e93")
 	)
 	(wire
 		(pts
-			(xy 187.96 134.62) (xy 170.18 134.62)
+			(xy 170.18 134.62) (xy 187.96 134.62)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "4f86f37e-7db8-4e5c-9d7d-179cb1356e3f")
 	)
 	(wire
 		(pts
-			(xy 218.44 53.34) (xy 215.9 53.34)
+			(xy 215.9 53.34) (xy 218.44 53.34)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "4fda7a4e-2fc3-4fa5-b1e1-01b1c514550e")
 	)
 	(wire
 		(pts
-			(xy 187.96 55.88) (xy 170.18 55.88)
+			(xy 215.9 77.47) (xy 218.44 77.47)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "50ec6cfd-5f86-460e-b732-c2b36c4e0d5a")
+	)
+	(wire
+		(pts
+			(xy 180.34 132.08) (xy 182.88 132.08)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "5216fa43-26ec-45a5-869b-f05b62374795")
+	)
+	(wire
+		(pts
+			(xy 170.18 55.88) (xy 187.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "55d4fe94-4528-44f9-aa64-27878f3a0139")
 	)
@@ -646,7 +780,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "5710f31f-bbf8-4398-bac0-b204673aa51a")
 	)
@@ -656,7 +790,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "58e21f0a-4b06-4fde-bcb7-bd703ea28a38")
 	)
@@ -666,27 +800,37 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "59d3c1fc-a06a-4fe6-9e1d-439b42b045ba")
 	)
 	(wire
 		(pts
-			(xy 205.74 82.55) (xy 187.96 82.55)
+			(xy 233.68 120.65) (xy 236.22 120.65)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "59ed141f-62c7-4b57-a5fa-4a99634ebe53")
+	)
+	(wire
+		(pts
+			(xy 187.96 82.55) (xy 205.74 82.55)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "5a8de6dc-4361-4a5d-ad4a-1998f8d9b5db")
 	)
 	(wire
 		(pts
-			(xy 152.4 55.88) (xy 152.4 53.34)
+			(xy 152.4 53.34) (xy 152.4 55.88)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "624450e4-0b9b-44e8-ac97-b02b4f0e4bc5")
 	)
@@ -696,17 +840,17 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "63c04c89-9bcd-4525-864a-c16a0d167736")
 	)
 	(wire
 		(pts
-			(xy 241.3 68.58) (xy 223.52 68.58)
+			(xy 223.52 68.58) (xy 241.3 68.58)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "64ea64f5-1263-464a-8144-2cac17421558")
 	)
@@ -716,7 +860,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "65708671-3ceb-4244-81b6-fa3a80ada6d6")
 	)
@@ -726,27 +870,47 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "6697fdd1-fcb1-4170-8e63-b7a3ed8073f0")
 	)
 	(wire
 		(pts
-			(xy 170.18 111.76) (xy 152.4 111.76)
+			(xy 233.68 96.52) (xy 236.22 96.52)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "6a478b44-24ca-46a1-8c0c-8dc83936b735")
+	)
+	(wire
+		(pts
+			(xy 152.4 111.76) (xy 170.18 111.76)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "7081d07e-6a74-42b0-acb9-e68471ba7883")
 	)
 	(wire
 		(pts
-			(xy 170.18 99.06) (xy 152.4 99.06)
+			(xy 215.9 66.04) (xy 218.44 66.04)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "72bdfbb5-f796-4be4-9df7-678d1385cc85")
+	)
+	(wire
+		(pts
+			(xy 152.4 99.06) (xy 170.18 99.06)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "739805cb-c66f-482d-a474-15c6975923e9")
 	)
@@ -756,17 +920,27 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "764674f6-83db-4e45-8323-c6a97a23da74")
 	)
 	(wire
 		(pts
-			(xy 223.52 68.58) (xy 205.74 68.58)
+			(xy 251.46 66.04) (xy 254 66.04)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "7acd88b4-90d8-4899-8df1-bfde4f3374e5")
+	)
+	(wire
+		(pts
+			(xy 205.74 68.58) (xy 223.52 68.58)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "7b6e6000-8964-4e33-b14f-bb383a77fc24")
 	)
@@ -776,7 +950,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "7d3d9ba4-fc74-4fcf-b3b2-f6651bcc9e52")
 	)
@@ -786,9 +960,19 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "7ff035d3-c700-4f67-84b0-6582f0a952a8")
+	)
+	(wire
+		(pts
+			(xy 215.9 109.22) (xy 218.44 109.22)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "80cc7a41-7379-48c0-b473-af737b405679")
 	)
 	(wire
 		(pts
@@ -796,7 +980,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "8259c12b-9e17-4fef-83b3-d1224e48c500")
 	)
@@ -806,7 +990,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "8a6d1525-11d3-4f2f-83fa-b44ec73b182d")
 	)
@@ -816,17 +1000,17 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "90b63aae-72a9-41a3-ae9f-f8f426087b13")
 	)
 	(wire
 		(pts
-			(xy 165.1 53.34) (xy 162.56 53.34)
+			(xy 162.56 53.34) (xy 165.1 53.34)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "95fe3b27-98c3-4681-a322-a0aa448f7d5a")
 	)
@@ -836,19 +1020,29 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "961ff6c9-77f3-427c-b138-29a7ba268c40")
 	)
 	(wire
 		(pts
-			(xy 223.52 134.62) (xy 205.74 134.62)
+			(xy 205.74 134.62) (xy 223.52 134.62)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "96964112-a6c8-430c-9dba-a3a78cb8fee5")
+	)
+	(wire
+		(pts
+			(xy 162.56 132.08) (xy 165.1 132.08)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "997de334-2c68-4731-8d2c-410b0a36fe73")
 	)
 	(wire
 		(pts
@@ -856,7 +1050,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "99d4a659-a67f-41ec-be53-96de1b909a5d")
 	)
@@ -866,27 +1060,27 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "9ac1c462-542b-4f3e-95d0-d36dcb4633ac")
 	)
 	(wire
 		(pts
-			(xy 223.52 111.76) (xy 205.74 111.76)
+			(xy 205.74 111.76) (xy 223.52 111.76)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "9bd829ef-8d11-42b7-b5e2-813504f44e69")
 	)
 	(wire
 		(pts
-			(xy 241.3 55.88) (xy 223.52 55.88)
+			(xy 223.52 55.88) (xy 241.3 55.88)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "9e89df6e-78cc-4173-a641-1a2b35cd7bbc")
 	)
@@ -896,9 +1090,39 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "a1a1bec5-52fc-4cf9-bd84-37ec0810bc82")
+	)
+	(wire
+		(pts
+			(xy 180.34 120.65) (xy 182.88 120.65)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "a317f797-2af0-4cc3-80e8-9598bc86322c")
+	)
+	(wire
+		(pts
+			(xy 233.68 77.47) (xy 236.22 77.47)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "a9bd31b8-64a6-4341-b1bb-ff01e01b78cb")
+	)
+	(wire
+		(pts
+			(xy 233.68 132.08) (xy 236.22 132.08)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "a9c50af0-3827-4838-b186-b927c9ef0c57")
 	)
 	(wire
 		(pts
@@ -906,17 +1130,27 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "ab178c50-66be-4549-86f4-ac2c28db1b65")
 	)
 	(wire
 		(pts
-			(xy 152.4 99.06) (xy 139.7 99.06)
+			(xy 198.12 120.65) (xy 200.66 120.65)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "ac562deb-56bb-45f8-8d4d-13f3833aa701")
+	)
+	(wire
+		(pts
+			(xy 139.7 99.06) (xy 152.4 99.06)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "ad2ab8ba-beb3-450d-aa6d-efd62c5d1da4")
 	)
@@ -926,19 +1160,39 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "af04c8a5-a778-44f7-b26f-49834fedd1fc")
 	)
 	(wire
 		(pts
-			(xy 254 53.34) (xy 251.46 53.34)
+			(xy 233.68 109.22) (xy 236.22 109.22)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "b1455dec-3828-4bfa-a437-4550c73578f7")
+	)
+	(wire
+		(pts
+			(xy 251.46 53.34) (xy 254 53.34)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "b342847d-02d0-45cc-a9aa-ed5ecd0f8583")
+	)
+	(wire
+		(pts
+			(xy 180.34 66.04) (xy 182.88 66.04)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "b925ae1d-efe3-4e0b-a50d-9c52ceaf2a53")
 	)
 	(wire
 		(pts
@@ -946,7 +1200,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "baad4bf7-62a2-4d4d-8c3a-44302af21da1")
 	)
@@ -956,27 +1210,27 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "bad73453-729b-490a-80bc-891741f747ae")
 	)
 	(wire
 		(pts
-			(xy 152.4 111.76) (xy 139.7 111.76)
+			(xy 139.7 111.76) (xy 152.4 111.76)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "bbae0445-edfe-4124-b5af-9e4e16ef9502")
 	)
 	(wire
 		(pts
-			(xy 241.3 82.55) (xy 223.52 82.55)
+			(xy 223.52 82.55) (xy 241.3 82.55)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "bd0ac87f-dfcd-4d27-8ac0-d030dabd9d4b")
 	)
@@ -986,27 +1240,37 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "bdda6492-29b5-4aee-b6d2-e9322edf3a0e")
 	)
 	(wire
 		(pts
-			(xy 223.52 123.19) (xy 205.74 123.19)
+			(xy 205.74 123.19) (xy 223.52 123.19)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "bf3341cf-6ea8-48ee-a347-148180aa8b1d")
 	)
 	(wire
 		(pts
-			(xy 205.74 134.62) (xy 187.96 134.62)
+			(xy 198.12 77.47) (xy 200.66 77.47)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "bf61687a-a8e3-47d5-99a2-cf32a1436ff6")
+	)
+	(wire
+		(pts
+			(xy 187.96 134.62) (xy 205.74 134.62)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "c03b378e-1b4f-45e2-87f9-c4a867f73bb1")
 	)
@@ -1016,7 +1280,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "c195b39a-9521-489d-a274-7803d5a77bd3")
 	)
@@ -1026,17 +1290,17 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "c20607c5-a267-4851-b2e9-29359c24cfba")
 	)
 	(wire
 		(pts
-			(xy 205.74 55.88) (xy 187.96 55.88)
+			(xy 187.96 55.88) (xy 205.74 55.88)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "c67d985d-ad27-473a-8191-e83491d1ba7a")
 	)
@@ -1046,17 +1310,17 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "cb28406b-dac5-4455-99e9-04881b76bc1c")
 	)
 	(wire
 		(pts
-			(xy 205.74 111.76) (xy 187.96 111.76)
+			(xy 187.96 111.76) (xy 205.74 111.76)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "cbdc5bdb-7346-420e-92cc-19b475bfa1f4")
 	)
@@ -1066,7 +1330,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "cf43a11f-ee7a-413a-b403-4e2351092741")
 	)
@@ -1076,7 +1340,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "d0afbb22-9185-4dee-9618-ba8582884582")
 	)
@@ -1086,19 +1350,39 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "d26307be-8452-4705-8b3e-be376abfdad0")
 	)
 	(wire
 		(pts
-			(xy 170.18 123.19) (xy 152.4 123.19)
+			(xy 152.4 123.19) (xy 170.18 123.19)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "d4324003-82c4-4d05-827a-358922e8f3d9")
+	)
+	(wire
+		(pts
+			(xy 215.9 96.52) (xy 218.44 96.52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "d4b925e6-e401-4cee-8610-7a896096655c")
+	)
+	(wire
+		(pts
+			(xy 180.34 96.52) (xy 182.88 96.52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "d653cafa-9a79-49a0-a2ec-8419870ba04a")
 	)
 	(wire
 		(pts
@@ -1106,27 +1390,37 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "d805f886-d9b3-4a54-9b7e-18996e30d042")
 	)
 	(wire
 		(pts
-			(xy 170.18 55.88) (xy 152.4 55.88)
+			(xy 152.4 55.88) (xy 170.18 55.88)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "db7e9619-7f47-4bf9-9808-4f9b21d393bd")
 	)
 	(wire
 		(pts
-			(xy 170.18 68.58) (xy 152.4 68.58)
+			(xy 198.12 109.22) (xy 200.66 109.22)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "df0951f9-c014-4faa-bd9a-e4247651935e")
+	)
+	(wire
+		(pts
+			(xy 152.4 68.58) (xy 170.18 68.58)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "e1cafde5-760a-436a-a30a-39e15759287b")
 	)
@@ -1136,17 +1430,27 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "e2a6f9f2-b31e-47b6-b663-d2e1884929bc")
 	)
 	(wire
 		(pts
-			(xy 152.4 134.62) (xy 139.7 134.62)
+			(xy 162.56 109.22) (xy 165.1 109.22)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+		)
+		(uuid "e72417d3-f2df-4be6-b0cb-fb06df48f691")
+	)
+	(wire
+		(pts
+			(xy 139.7 134.62) (xy 152.4 134.62)
+		)
+		(stroke
+			(width 0)
+			(type solid)
 		)
 		(uuid "e7660891-4135-4e1e-80c6-cf6bd47e3dfd")
 	)
@@ -1156,7 +1460,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "edf0975d-0d8f-474a-95a1-d280e94b0f86")
 	)
@@ -1166,7 +1470,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "f2a76235-9a1b-4179-b4cd-4590e967f3d6")
 	)
@@ -1176,7 +1480,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "f358fc8c-6cf9-4967-8816-ef59ec92afd9")
 	)
@@ -1186,17 +1490,17 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "f599e96e-5ea5-4560-b31d-b9d577c35fa2")
 	)
 	(wire
 		(pts
-			(xy 187.96 111.76) (xy 170.18 111.76)
+			(xy 170.18 111.76) (xy 187.96 111.76)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "f59ea1ce-682a-4563-8f74-4aa9788c8d1e")
 	)
@@ -1206,19 +1510,29 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "f62226f4-eb50-44c6-b5b4-967f76cda5a6")
 	)
 	(wire
 		(pts
-			(xy 160.02 82.55) (xy 139.7 82.55)
+			(xy 139.7 82.55) (xy 160.02 82.55)
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "f664ce12-6eb9-4191-bc85-55eb7806e424")
+	)
+	(wire
+		(pts
+			(xy 198.12 96.52) (xy 200.66 96.52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "f82f8e9f-4fe1-4472-9b88-535483616c7d")
 	)
 	(wire
 		(pts
@@ -1226,9 +1540,19 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "fc3522b0-55a1-4316-b090-f89f59033e91")
+	)
+	(wire
+		(pts
+			(xy 198.12 66.04) (xy 200.66 66.04)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "fc6df9f0-3ff7-40da-a8e1-7394347c844e")
 	)
 	(wire
 		(pts
@@ -1236,9 +1560,31 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "fff3e84d-8037-42a3-9ecf-b344b6297585")
+	)
+	(global_label "COL1"
+		(shape bidirectional)
+		(at 182.88 109.22 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "0d668db5-eed6-4a15-91d8-87d4b030bc05")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.88 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(global_label "ROW6"
 		(shape input)
@@ -1253,12 +1599,14 @@
 		(uuid "0e81d70b-8608-43e4-ab7e-a0e90fc5eac3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 131.4534 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -1275,34 +1623,146 @@
 		(uuid "127d77c3-2a94-49d5-87dd-18ee712a7048")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 131.4534 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
-	(global_label "ROW0"
-		(shape input)
-		(at 139.7 39.37 180)
-		(fields_autoplaced yes)
+	(global_label "COL0"
+		(shape bidirectional)
+		(at 172.72 77.47 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.524 1.524)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "3050fbe6-bc9a-4a2e-948d-872a80764121")
+		(uuid "12dc1399-06cb-41c9-99ea-c60f39beb3d9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.4534 39.37 0)
+			(at 172.72 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
-				(hide yes)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape bidirectional)
+		(at 200.66 66.04 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "12e91386-d2a2-4d9f-bdea-c9927eac6c6f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL1"
+		(shape bidirectional)
+		(at 182.88 120.65 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "2546511f-e1b7-40eb-87cf-d2c6552f4ab9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.88 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL4"
+		(shape bidirectional)
+		(at 236.22 77.47 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "275dfec1-629a-4cab-a9cc-0492e7b73980")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL0"
+		(shape bidirectional)
+		(at 165.1 132.08 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "2bd42f6a-612d-43c5-87c9-9353dd3c9e49")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.1 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL1"
+		(shape bidirectional)
+		(at 182.88 132.08 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "2d7e877f-a008-4c1e-b653-6a5737097fe6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.88 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 	)
@@ -1319,12 +1779,58 @@
 		(uuid "39eccd27-52ce-4c4d-b224-c449aae03950")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 236.22 30.2767 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
+			)
+		)
+	)
+	(global_label "COL0"
+		(shape bidirectional)
+		(at 165.1 96.52 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "3cb920c6-dcbc-4bc1-a7db-0d4f1b9b2859")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.1 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL3"
+		(shape bidirectional)
+		(at 218.44 77.47 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "5d62aeb8-2e6d-494b-a545-7ad5337f69ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 	)
@@ -1341,12 +1847,58 @@
 		(uuid "5f009882-f37a-488d-aed7-d21ea6218555")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 254 30.2767 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
+			)
+		)
+	)
+	(global_label "COL4"
+		(shape bidirectional)
+		(at 218.44 120.65 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "658e4b8d-61e9-4dfc-a39c-fed814407542")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL3"
+		(shape bidirectional)
+		(at 218.44 66.04 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "6a763508-9225-4ced-a23c-8e36b20275cc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 	)
@@ -1363,12 +1915,14 @@
 		(uuid "6fe344f6-b8df-4d4a-9172-f78354ae035b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 131.4534 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -1385,12 +1939,36 @@
 		(uuid "7020668c-61b2-423d-9133-889dcc927518")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 131.4534 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
+			)
+		)
+	)
+	(global_label "COL4"
+		(shape bidirectional)
+		(at 218.44 96.52 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "759ee985-1c6b-437f-89ba-5168767bc4eb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 	)
@@ -1407,12 +1985,14 @@
 		(uuid "7a09822d-84b9-4cdd-9420-863a9a97d06a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 131.4534 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -1429,12 +2009,58 @@
 		(uuid "7b733a64-9447-456b-ac83-858fb520798a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 131.4534 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
+			)
+		)
+	)
+	(global_label "COL0"
+		(shape bidirectional)
+		(at 165.1 120.65 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "89bacfb2-1166-4f5e-a024-d57f98e11922")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.1 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape bidirectional)
+		(at 200.66 120.65 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "8f804c7f-a57d-45d4-95e4-f7a3a8ae4e93")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 	)
@@ -1451,12 +2077,14 @@
 		(uuid "927a9d3a-aaac-4947-bca1-9e68eaac48c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 218.44 30.2767 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -1473,12 +2101,234 @@
 		(uuid "94c0def0-7228-4341-916b-4efde9971067")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 165.1 30.2767 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape bidirectional)
+		(at 200.66 96.52 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "995e7e1f-4532-4188-876e-449b66b9b62d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL4"
+		(shape bidirectional)
+		(at 236.22 66.04 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "99ac4095-8980-4001-a4b4-61ed444ff1a3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape bidirectional)
+		(at 200.66 109.22 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "9ae65e7c-c96d-4562-b180-883f24abfe7c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL5"
+		(shape bidirectional)
+		(at 236.22 132.08 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "a64cf240-a98e-4895-b6a9-0cc5a830c805")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL4"
+		(shape bidirectional)
+		(at 218.44 109.22 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "a8b6d003-9155-478a-8e0b-af33a0be2665")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL1"
+		(shape bidirectional)
+		(at 182.88 66.04 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "a8eba281-5f47-4aab-968c-0025bcde03b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.88 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL1"
+		(shape bidirectional)
+		(at 182.88 96.52 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "ac6129be-904e-47a5-b6d2-cbca6393d67d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.88 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL0"
+		(shape bidirectional)
+		(at 165.1 66.04 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "ae5048e0-7279-4b29-ac73-9854389ad49d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.1 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL0"
+		(shape bidirectional)
+		(at 165.1 109.22 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "b7961c43-cef9-4bf6-a65e-96b49711bfce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.1 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL5"
+		(shape bidirectional)
+		(at 236.22 96.52 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "b8d2c0cf-bd30-4b54-a6ed-c47646deb833")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 	)
@@ -1495,12 +2345,124 @@
 		(uuid "c1ab1523-7c08-4856-be83-c85481a6aaf5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 182.88 30.2767 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape bidirectional)
+		(at 200.66 132.08 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "c79d2538-4b82-4970-a706-c29bb645f258")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL5"
+		(shape bidirectional)
+		(at 236.22 120.65 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "cbb1db92-3567-4d4f-86a5-cd40006fee1e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape bidirectional)
+		(at 200.66 77.47 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "d54ec93f-d444-4c66-8b19-0573a0882eec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL4"
+		(shape bidirectional)
+		(at 218.44 132.08 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "e0b29c12-5e59-40cc-86bd-977e6c1c93ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL5"
+		(shape bidirectional)
+		(at 236.22 109.22 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "e56671d2-7649-4e1b-8b1a-06b5c9b524f3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 	)
@@ -1517,12 +2479,14 @@
 		(uuid "e64eb8a5-dc34-4768-9570-60d5145273ae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 131.4534 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -1539,12 +2503,58 @@
 		(uuid "ed94b17e-4910-4fe8-8d13-3fd18bde4079")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 200.66 30.2767 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
+			)
+		)
+	)
+	(global_label "COL5"
+		(shape bidirectional)
+		(at 254 77.47 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "ee6a42eb-4bb5-4113-b55e-4a7ce3b91cdc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 254 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "COL5"
+		(shape bidirectional)
+		(at 254 66.04 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "f5c67c59-43b2-468c-bb01-9b78bf73ac91")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 254 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 	)
@@ -1552,14 +2562,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 193.04 66.04 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f1b93b9-b036-4928-bb80-f1589758541b")
 		(property "Reference" "SW41"
 			(at 193.04 59.944 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1568,6 +2582,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 193.04 62.484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1576,47 +2592,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 193.04 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 193.04 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 193.04 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 193.04 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 193.04 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -1644,14 +2670,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 157.48 109.22 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11a07e98-9847-4c5e-a315-a1ee582fb117")
 		(property "Reference" "SW60"
 			(at 157.48 103.124 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1660,6 +2690,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 157.48 105.664 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1668,47 +2700,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 157.48 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 157.48 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 157.48 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 157.48 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -1736,14 +2778,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 157.48 132.08 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19357db9-57e2-4fc2-8cd2-4454aa80291f")
 		(property "Reference" "SW74"
 			(at 157.48 125.984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1752,6 +2798,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 157.48 128.524 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1760,47 +2808,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 157.48 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 157.48 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 157.48 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 157.48 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -1828,14 +2886,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 157.48 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20bea0d2-f324-4660-9dcf-0a8c0ac11945")
 		(property "Reference" "SW38"
 			(at 157.48 47.244 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1844,6 +2906,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 157.48 49.784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1852,47 +2916,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 157.48 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 157.48 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 157.48 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 157.48 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -1920,14 +2994,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 210.82 77.47 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26974708-07c7-49d1-9c2e-a73b5e41e07b")
 		(property "Reference" "SW49"
 			(at 210.82 71.374 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1936,6 +3014,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 210.82 73.914 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1944,47 +3024,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -2012,14 +3102,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 193.04 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32065230-f283-45a8-85d9-65882d9d3c91")
 		(property "Reference" "SW51"
 			(at 193.04 47.244 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2028,6 +3122,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 193.04 49.784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2036,47 +3132,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 193.04 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 193.04 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 193.04 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 193.04 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 193.04 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -2104,14 +3210,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 210.82 96.52 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32797108-9ce9-4672-ae69-09343aab6468")
 		(property "Reference" "SW56"
 			(at 210.82 90.424 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2120,6 +3230,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 210.82 92.964 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2128,47 +3240,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 210.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 210.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 210.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 210.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 210.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -2196,14 +3318,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 228.6 120.65 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "359c90d7-8e23-480c-acbf-a9ec2e025f74")
 		(property "Reference" "SW72"
 			(at 228.6 114.554 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2212,6 +3338,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 228.6 117.094 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2220,47 +3348,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 228.6 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 228.6 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 228.6 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 228.6 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -2288,14 +3426,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 175.26 109.22 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5bfa09be-e16c-4aac-b1f5-f9491256b58c")
 		(property "Reference" "SW61"
 			(at 175.26 103.124 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2304,6 +3446,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 175.26 105.664 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2312,47 +3456,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 175.26 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 175.26 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 175.26 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 175.26 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 175.26 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -2380,14 +3534,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 193.04 96.52 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e932fd1-08f7-44c7-b6bd-d8d823277e51")
 		(property "Reference" "SW55"
 			(at 193.04 90.424 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2396,6 +3554,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 193.04 92.964 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2404,47 +3564,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 193.04 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 193.04 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 193.04 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 193.04 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 193.04 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -2472,14 +3642,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 175.26 120.65 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60d4058e-9050-4111-9b87-fca2fe6963ee")
 		(property "Reference" "SW69"
 			(at 175.26 114.554 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2488,6 +3662,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 175.26 117.094 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2496,47 +3672,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 175.26 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 175.26 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 175.26 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 175.26 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 175.26 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -2564,14 +3750,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 157.48 66.04 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64a00031-df43-44da-b694-5fdb78ebf9be")
 		(property "Reference" "SW39"
 			(at 157.48 59.944 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2580,6 +3770,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 157.48 62.484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2588,47 +3780,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 157.48 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 157.48 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 157.48 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 157.48 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -2656,14 +3858,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 228.6 132.08 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73f9ddb0-4adb-4a89-be61-e65fcb8c074d")
 		(property "Reference" "SW78"
 			(at 228.6 125.984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2672,6 +3878,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 228.6 128.524 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2680,47 +3888,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 228.6 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 228.6 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 228.6 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 228.6 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -2748,14 +3966,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 175.26 132.08 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7764bf0d-9bde-46ae-9db6-4cb47144284b")
 		(property "Reference" "SW75"
 			(at 175.26 125.984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2764,6 +3986,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 175.26 128.524 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2772,47 +3996,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 175.26 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 175.26 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 175.26 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 175.26 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 175.26 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -2840,14 +4074,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 175.26 96.52 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b868989-0ed5-4a0e-80b9-e3d5ff262f4d")
 		(property "Reference" "SW54"
 			(at 175.26 90.424 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2856,6 +4094,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 175.26 92.964 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2864,47 +4104,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 175.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 175.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 175.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 175.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 175.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -2932,14 +4182,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 175.26 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ca9b25c-26ec-4911-bcf0-d4194ce71c11")
 		(property "Reference" "SW45"
 			(at 175.26 47.244 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2948,6 +4202,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 175.26 49.784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2956,47 +4212,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 175.26 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 175.26 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 175.26 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 175.26 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 175.26 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3024,14 +4290,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 210.82 109.22 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f60fc40-beb9-4010-b8af-de64683e289f")
 		(property "Reference" "SW63"
 			(at 210.82 103.124 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3040,6 +4310,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 210.82 105.664 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3048,47 +4320,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 210.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 210.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 210.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 210.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 210.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3116,14 +4398,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 157.48 120.65 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "801317c9-45cf-434b-acb0-208eb8c9f529")
 		(property "Reference" "SW67"
 			(at 157.48 114.554 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3132,6 +4418,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 157.48 117.094 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3140,47 +4428,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 157.48 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 157.48 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 157.48 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 157.48 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3208,14 +4506,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 228.6 109.22 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85d1b250-79e7-49ea-a9d9-c753219f2148")
 		(property "Reference" "SW64"
 			(at 228.6 103.124 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3224,6 +4526,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 228.6 105.664 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3232,47 +4536,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 228.6 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 228.6 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 228.6 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 228.6 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3300,14 +4614,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 175.26 66.04 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ed59d4f-e735-4a15-abca-f47ca544b3e9")
 		(property "Reference" "SW40"
 			(at 175.26 59.944 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3316,6 +4634,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 175.26 62.484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3324,47 +4644,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 175.26 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 175.26 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 175.26 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 175.26 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 175.26 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3392,14 +4722,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 228.6 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98c152b9-bf5e-4d0d-a2e4-54c5964073f7")
 		(property "Reference" "SW65"
 			(at 228.6 47.244 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3408,6 +4742,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 228.6 49.784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3416,47 +4752,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 228.6 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 228.6 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 228.6 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 228.6 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3484,14 +4830,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 210.82 120.65 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98f7ca9d-f8f1-43de-a937-080baddf2bf4")
 		(property "Reference" "SW71"
 			(at 210.82 114.554 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3500,6 +4850,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 210.82 117.094 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3508,47 +4860,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 210.82 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 210.82 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 210.82 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 210.82 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 210.82 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3576,14 +4938,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 165.1 77.47 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b37483b-4472-4d13-94f1-d6c6b89acaed")
 		(property "Reference" "SW46"
 			(at 165.1 71.374 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3592,6 +4958,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 165.1 73.914 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3600,47 +4968,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_2.00u"
 			(at 165.1 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 165.1 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 165.1 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 165.1 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 165.1 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3668,14 +5046,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 210.82 66.04 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a173a544-b75c-449f-9cfe-49e06c9c5f39")
 		(property "Reference" "SW42"
 			(at 210.82 59.944 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3684,6 +5066,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 210.82 62.484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3692,47 +5076,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 210.82 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 210.82 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 210.82 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 210.82 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 210.82 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3760,14 +5154,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 246.38 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4a4d69e-7f94-4715-b4da-01f1565c3596")
 		(property "Reference" "SW68"
 			(at 246.38 47.244 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3776,6 +5174,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 246.38 49.784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3784,47 +5184,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 246.38 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 246.38 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 246.38 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 246.38 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 246.38 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3852,14 +5262,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 193.04 77.47 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5d8c586-44c1-4904-8ab8-08f7ad9366a0")
 		(property "Reference" "SW48"
 			(at 193.04 71.374 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3868,6 +5282,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 193.04 73.914 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3876,47 +5292,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 193.04 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 193.04 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 193.04 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 193.04 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 193.04 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3944,14 +5370,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 228.6 66.04 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b14769fd-9e96-4f11-a07c-bb238a317c75")
 		(property "Reference" "SW43"
 			(at 228.6 59.944 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3960,6 +5390,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 228.6 62.484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3968,47 +5400,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 228.6 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 228.6 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 228.6 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 228.6 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4036,14 +5478,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 228.6 77.47 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b981f024-ba74-4981-9cf9-d9a1de0a6631")
 		(property "Reference" "SW50"
 			(at 228.6 71.374 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4052,6 +5498,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 228.6 73.914 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4060,47 +5508,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 228.6 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 228.6 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 228.6 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 228.6 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4128,14 +5586,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 228.6 96.52 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c76eedc6-809b-4000-9889-60565feaf025")
 		(property "Reference" "SW57"
 			(at 228.6 90.424 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4144,6 +5606,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 228.6 92.964 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4152,47 +5616,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 228.6 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 228.6 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 228.6 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 228.6 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4220,14 +5694,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 193.04 120.65 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c789b1cc-6e44-4707-a7f1-55e78f49b20e")
 		(property "Reference" "SW70"
 			(at 193.04 114.554 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4236,6 +5714,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 193.04 117.094 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4244,47 +5724,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 193.04 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 193.04 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 193.04 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 193.04 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 193.04 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4312,14 +5802,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 157.48 96.52 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca7c5df5-c696-43b7-9bca-04fe0fd103af")
 		(property "Reference" "SW53"
 			(at 157.48 90.424 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4328,6 +5822,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 157.48 92.964 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4336,47 +5832,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 157.48 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 157.48 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 157.48 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 157.48 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4404,14 +5910,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 210.82 132.08 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb9ad372-1efd-4a92-9a84-142dcece4ce8")
 		(property "Reference" "SW77"
 			(at 210.82 125.984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4420,6 +5930,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 210.82 128.524 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4428,47 +5940,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 210.82 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 210.82 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 210.82 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 210.82 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 210.82 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4496,14 +6018,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 193.04 109.22 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9695f85-1761-4509-8703-804ba62335e1")
 		(property "Reference" "SW62"
 			(at 193.04 103.124 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4512,6 +6038,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 193.04 105.664 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4520,47 +6048,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 193.04 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 193.04 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 193.04 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 193.04 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 193.04 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4588,14 +6126,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 246.38 66.04 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6311f6f-9a16-4647-b725-6e627fd2cbe9")
 		(property "Reference" "SW44"
 			(at 246.38 59.944 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4604,6 +6146,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 246.38 62.484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4612,47 +6156,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 246.38 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 246.38 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 246.38 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 246.38 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 246.38 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4680,14 +6234,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 210.82 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e71ad6f8-a6a9-4966-bdbb-df44abe23ee6")
 		(property "Reference" "SW58"
 			(at 210.82 47.244 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4696,6 +6254,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 210.82 49.784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4704,47 +6264,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 210.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 210.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 210.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 210.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 210.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4772,14 +6342,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 246.38 77.47 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee05428f-ca55-4697-825d-3680eff87ac6")
 		(property "Reference" "SW52"
 			(at 246.38 71.374 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4788,6 +6362,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 246.38 73.914 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4796,47 +6372,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u"
 			(at 246.38 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 246.38 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 246.38 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 246.38 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 246.38 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4864,14 +6450,18 @@
 		(lib_id "Switch:SW_DPST_x2")
 		(at 193.04 132.08 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa6ce367-d2f3-49a4-a7c3-1d93a615a8d3")
 		(property "Reference" "SW76"
 			(at 193.04 125.984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4880,6 +6470,8 @@
 		)
 		(property "Value" "SW_DPST_x2"
 			(at 193.04 128.524 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4888,47 +6480,57 @@
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u"
 			(at 193.04 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 193.04 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 193.04 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S3.3" ""
 			(at 193.04 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "KLC_S4.1" ""
 			(at 193.04 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"

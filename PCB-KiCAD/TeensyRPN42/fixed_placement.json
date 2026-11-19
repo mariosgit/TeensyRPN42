@@ -1,0 +1,313 @@
+{
+ "footprints": {
+  "H1": {
+   "footprint": "MountingHole:MountingHole_3.2mm_M3_ISO7380",
+   "x": 57.912,
+   "y": 78.486,
+   "rot": 0.0,
+   "layer": "F.Cu"
+  },
+  "H2": {
+   "footprint": "MountingHole:MountingHole_3.2mm_M3_ISO7380",
+   "x": 57.912,
+   "y": 105.918,
+   "rot": 0.0,
+   "layer": "F.Cu"
+  },
+  "H3": {
+   "footprint": "MountingHole:MountingHole_3.2mm_M3_ISO7380",
+   "x": 149.352,
+   "y": 78.486,
+   "rot": 0.0,
+   "layer": "F.Cu"
+  },
+  "H4": {
+   "footprint": "MountingHole:MountingHole_3.2mm_M3_ISO7380",
+   "x": 149.352,
+   "y": 105.918,
+   "rot": 0.0,
+   "layer": "F.Cu"
+  },
+  "J3": {
+   "footprint": "RPN42Library:OLED-2.8inch16pin",
+   "x": 103.6965,
+   "y": 92.202,
+   "rot": 0.0,
+   "layer": "B.Cu"
+  },
+  "SW38": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 56.73,
+   "y": 120.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW39": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 56.73,
+   "y": 140.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW40": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 75.438,
+   "y": 140.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW41": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 94.234,
+   "y": 140.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW42": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 112.864,
+   "y": 140.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW43": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 131.66,
+   "y": 140.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW44": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 150.28,
+   "y": 140.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW45": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 75.438,
+   "y": 120.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW46": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_2.00u",
+   "x": 65.698,
+   "y": 160.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW48": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 94.146,
+   "y": 160.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW49": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 113.03,
+   "y": 160.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW50": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 131.826,
+   "y": 160.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW51": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 94.146,
+   "y": 120.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW52": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 150.368,
+   "y": 160.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW53": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 58.332,
+   "y": 182.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW54": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 80.938,
+   "y": 182.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW55": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 103.544,
+   "y": 182.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW56": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 126.062,
+   "y": 182.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW57": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 148.668,
+   "y": 182.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW58": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 112.776,
+   "y": 120.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW60": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 58.332,
+   "y": 202.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW61": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 80.938,
+   "y": 202.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW62": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 103.544,
+   "y": 202.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW63": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 126.15,
+   "y": 202.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW64": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 148.668,
+   "y": 202.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW65": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 131.572,
+   "y": 120.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW67": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 58.41,
+   "y": 222.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW68": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.00u",
+   "x": 150.28,
+   "y": 120.0,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW69": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 80.938,
+   "y": 222.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW70": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 103.544,
+   "y": 222.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW71": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 126.15,
+   "y": 222.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW72": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 148.588,
+   "y": 222.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW74": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 58.41,
+   "y": 242.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW75": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 80.938,
+   "y": 242.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW76": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 103.544,
+   "y": 242.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW77": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 126.15,
+   "y": 242.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  },
+  "SW78": {
+   "footprint": "PCM_Switch_Keyboard_Kailh:SW_Kailh_Choc_V1_1.25u",
+   "x": 148.668,
+   "y": 242.626,
+   "rot": 180.0,
+   "layer": "F.Cu"
+  }
+ },
+ "outline": [
+  {
+   "shape": "rect",
+   "points": [
+    [
+     47.068,
+     73.618
+    ],
+    [
+     160.068,
+     256.486
+    ]
+   ]
+  }
+ ]
+}

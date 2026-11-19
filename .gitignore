@@ -3,6 +3,8 @@
 PCB-KiCAD/**/*.zip
 PCB-KiCAD/**/*.lck
 PCB-KiCAD/**/.history/
+PCB-KiCAD/**/.kicad-mcp/
+PCB-KiCAD/**/output/
 
 compile_commands.json
 
