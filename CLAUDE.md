@@ -26,9 +26,7 @@ Reference: `PCB-KiCAD/TeensyRPN42/fixed_placement.json`. After any PCB edit run
   Plan room for them during placement/fan-out instead of moving them to the bottom.
   TeensyRPN42 exception (intentional, leave as is): `J3` OLED, `J1` SWD, `J4` serial and the
   side buttons `SW1`/`SW2` are on B.Cu. Everything else, and anything new, goes on top.
-- **Ground fills on both sides:** GND zone on F.Cu and B.Cu, plus GND vias next to SMD ground pads.
-- **Generous GND stitching vias:** besides vias at SMD GND pads, spread stitching vias over the
-  GND fills (edges, corners, around split areas) so top/bottom GND are well tied together.
+- **Ground fills on both sides:** GND zone on F.Cu and B.Cu
 - **Heat:** under parts that get hot, add thermal vias (in/next to the thermal pad) and extra copper
   zones on both layers to spread heat. If the thermal pad is not GND (e.g. LM317 tab = OUT), the
   spreading zones are on that pad's net with higher priority than GND — never short it to GND.
@@ -95,6 +93,8 @@ Schematic (file edits) → `pcb_sync_from_schematic` → placement/routing on th
 
 ## Finishing touches (once the board is functionally done)
 
+0. **Generous GND stitching vias:** besides vias at SMD GND pads, spread stitching vias over the
+  GND fills (edges, corners, around split areas) so top/bottom GND are well tied together.
 1. **Silkscreen:** connector pin labels on top (e.g. `IN G G OUT`), part refs ≥0.8 mm placed clear of pads.
 2. **Back-side branding:** knockout bold-italic `@mb` plate + spaced year (`2 0 2 6`) below it, plus a fine
    italic line with the key formula (e.g. `Vout=1.25V×(1+R2/R1)`). Mirrored, kept clear of via openings
