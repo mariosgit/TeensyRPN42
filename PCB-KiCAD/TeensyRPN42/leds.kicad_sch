@@ -2829,6 +2829,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 35.56) (xy 48.26 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c1ebac0-63dc-410e-b7df-19f38410ec6f")
+	)
+	(wire
+		(pts
 			(xy 160.02 110.49) (xy 172.72 110.49)
 		)
 		(stroke
@@ -3006,6 +3016,16 @@
 			(type solid)
 		)
 		(uuid "a286e3ad-6934-436f-bf30-1739691da13b")
+	)
+	(wire
+		(pts
+			(xy 48.26 29.21) (xy 58.42 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3317ef9-69be-4d9f-9cfd-46064a99ed96")
 	)
 	(wire
 		(pts
@@ -3858,6 +3878,16 @@
 			)
 		)
 		(uuid "ccc44068-c53a-4b88-9787-f684153ecd8c")
+	)
+	(label "V-LED"
+		(at 52.07 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1b344a2-fea7-4a69-8d49-29086bee8be2")
 	)
 	(label "V-LED"
 		(at 43.18 95.25 0)
@@ -6458,84 +6488,6 @@
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/62b6b0f2-8eb7-4bef-92bf-632626f4cc22"
 					(reference "C17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 48.26 35.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b5d1742-d1c6-4611-82f7-66a68a267983")
-		(property "Reference" "#PWR08"
-			(at 48.26 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 48.26 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 48.26 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "06744c25-783e-4f12-ab8b-84d53a684a1b")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/62b6b0f2-8eb7-4bef-92bf-632626f4cc22"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -11242,7 +11194,7 @@
 				)
 			)
 		)
-		(property "Value" "L_Ferrite_Small"
+		(property "Value" "600R@100MHz 1.3A"
 			(at 166.37 66.04 90)
 			(hide yes)
 			(show_name no)
@@ -11276,6 +11228,17 @@
 			)
 		)
 		(property "Description" "Inductor with ferrite core, small symbol"
+			(at 166.37 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "BLM18KG601SN1D"
 			(at 166.37 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11506,7 +11469,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 236.22 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11516,7 +11479,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 236.22 165.1 0)
 			(hide yes)
 			(show_name no)

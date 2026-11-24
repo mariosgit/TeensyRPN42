@@ -8,10 +8,10 @@ This includes the kicad MCP's `vcs_*` tools (`vcs_commit_checkpoint`, `vcs_resto
 These are final and must stay exactly where they are. Never move, rotate, flip or replace them, and
 don't let auto-place/sync tools touch them. If a change seems necessary, **ask first**.
 
-- **OLED** `J3` (`RPN42Library:OLED-2.8inch16pin`) at (103.6965, 92.202), B.Cu.
+- **OLED** `J3` (`RPN42Library:OLED-2.8inch16pin`) at (103.6965, 92.202), F.Cu (moved to top 2026-11, approved).
 - **37 Kailh Choc V1 key switches** (`SW38`–`SW78`; 1u/1.25u/2u), all at rot 180 on F.Cu.
 - **Mounting holes** `H1`–`H4` (M3) at x 57.912 / 149.352, y 78.486 / 105.918.
-- **Board outline:** one Edge.Cuts rect (47.068, 73.618)–(160.068, 256.486) = 113.0 × 182.868 mm.
+- **Board outline:** Edge.Cuts rounded rect (47.068, 73.618)–(160.068, 256.486) = 113.0 × 182.868 mm, 3 mm corner radius (4 lines + 4 arcs).
 
 All of these are also locked in KiCad (`(locked yes)`); never unlock them.
 Reference: `PCB-KiCAD/TeensyRPN42/fixed_placement.json`. After any PCB edit run
@@ -24,8 +24,8 @@ Reference: `PCB-KiCAD/TeensyRPN42/fixed_placement.json`. After any PCB edit run
   Connectors may stay THT (pin headers).
 - **All parts on the top side** (single-sided assembly) — no components on B.Cu, including decoupling caps.
   Plan room for them during placement/fan-out instead of moving them to the bottom.
-  TeensyRPN42 exception (intentional, leave as is): `J3` OLED, `J1` SWD, `J4` serial and the
-  side buttons `SW1`/`SW2` are on B.Cu. Everything else, and anything new, goes on top.
+  TeensyRPN42 exception (intentional, leave as is): `J1` SWD and `J4` serial are on B.Cu.
+  Everything else (incl. `J3` OLED and the side buttons `SW1`/`SW2`), and anything new, goes on top.
 - **Ground fills on both sides:** GND zone on F.Cu and B.Cu
 - **Heat:** under parts that get hot, add thermal vias (in/next to the thermal pad) and extra copper
   zones on both layers to spread heat. If the thermal pad is not GND (e.g. LM317 tab = OUT), the

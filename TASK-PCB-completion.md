@@ -2,29 +2,32 @@
 
 This is becoming a PCB for a slightly oversized RPN calculator.
 
-## Schematics sanity check
+## TODO
 
-OLED and Key placement are done to fit the purpose.
-
-### MCU
-
-..design is coarse - check that the stm32f405 has everything it needs.
-There is a somewhat complete schematic in  ../kicad-mcp-test/test02/
-
-### LiPo battery
-
-There is a Bat charger in ./HeadPhoneAmp/pcb-kicad/PowerBoost5V12V
-Maybe copy them schematic into a new subcircuit of this project ?
+* OLED pinout fitting ? — checked 2026-11-24 against `images/S0ca32adc2e2146a188fa496b92d5a3e5P.avif`
+  (SOG25664C_M280 drawing):
+  * OK: pin numbering (seen from the display side = board top: pin 1 bottom left, 2 bottom right, 15/16 on top)
+    → J3 on F.Cu is right. Holes 91.5 × 27.5 (H1–H4 91.44 × 27.43, fine), outline 97 × 32.5,
+    SPI pin functions (pin 6 = D2 open, 7–13 tied to GND) match.
+  * **MISMATCH: header position.** Drawing: pin 1/2 row **6.50 mm** from the module's bottom edge, right pin
+    column **1.30 mm** from the right edge. J3 footprint: ≈ 7.4 / ≈ 1.53 → header ≈ **0.86 mm too far toward
+    pins 15/16** (+ maybe 0.2–0.3 mm too far left). Footprint centres the header between the holes, drawing doesn't.
+  * **Before fixing: measure the real module** — centre of pin 2 to centre of the bottom-right mounting hole.
+    Drawing ≈ 4.0 mm vertical / ≈ 1.6–1.7 mm horizontal, footprint 4.83 / 1.33.
+  * If confirmed: shift the 16 header pads inside the J3 footprint (≈ 0.86 mm toward pin 1, maybe 0.2–0.3 mm
+    right). J3 position, holes and outline stay; touch up the traces/fill at J3. J3 is fixed mechanics → snapshot after.
+  * Module setting: set the module to **4-wire SPI** (CN1 table: R19/R21 fitted, R18/R20 open); these ship as 8080.
+* USB plug fitting
+* USB header labels on the back
+* SW1 SW2 in stock ???
+* die SK LEDs suchen !
 
 ### LEDs
 
 All the choc buttons should have an LED in the cutout.
 Extend the schematic to cover the lower key rows as well.
 
-## PCB
-
-layout.
-keep most stuff around the top...
+* D13 is on the left edge, is a status indicator
 
 ## Refs
 
@@ -101,6 +104,7 @@ LEDs only work while BOOST_EN (PC3) is high.
 
 Changed 2026-11-20: the on-board MCP73871 charger and TPS61030 boost were replaced by an **off-board TP4056
 charger module (with DW01 protection)** and an **XL6007 boost (SOP-8)**. No power path (kept simple on purpose).
+Changed 2026-11-24: XL6007 → **TS1935BCX5** (Taiwan Semi, SOT-23-5, Reichelt), Q1 soft-start R24/C56 added.
 
 ```
 J7 µUSB → F1 750 mA → VBUS ─┬─ U6 USBLC6 (data), C34, R21/R22 → VBUS_DET (PA1)
@@ -109,23 +113,25 @@ battery ──► module B+ / B−   (battery never connects to our board direct
 module OUT+ / OUT− ──cable──► J5 "BAT" (JST-EH: 1 GND, 2 PWR_SYS)
 PWR_SYS ─┬─ U4 MCP1727-3302E/SN → +3.3 V (MCU, OLED), PWRGD → NRST
          ├─ R16/R17 → BAT_SENSE (PA0)
-         └─ Q1 IRLML6401 (load switch) → BOOST_IN → L4 10 µH → SW → D42 SS34 → +5 V (C38/C39 22 µF, C54 220 µF)
-              gate: R20 100 k to PWR_SYS, pulled low by Q2 2N7002 when BOOST_EN (PC3) = high
-            U5 XL6007: VIN = EN = BOOST_IN, FB = R13 30 k / R14 10 k → 1.25 V × 4 = 5.0 V
+         └─ Q1 IRLML6401 (load switch) → BOOST_IN → L4 10 µH → SW → D42 SS34 → +5 V (C38 22 µF; C54 220 µF = DNP; V-LED bulk C53 22 µF)
+              gate: R20 100 k + C56 47 nF to PWR_SYS, pulled low via R24 10 k by Q2 2N7002 when BOOST_EN (PC3) = high
+              (soft-start ≈ 0.45 ms against inrush into the +5V/V-LED caps; Vgs on ≈ −0.91 × V_bat)
+            U5 TS1935BCX5: VCC = EN = BOOST_IN, FB = R13 30 k / R14 10 k → 1.238 V × 4 = 4.95 V
 ```
 - **Module wiring:** our GND only to the module's IN−/OUT− (never B−, that is the switched battery minus).
 - **Module PROG resistor:** stock modules charge at 1 A (R_PROG 1.2 k, often "R3"/"122"). Change it to
   **2.4 k (≈ 500 mA)** or higher (3 k ≈ 400 mA) — otherwise charge current + board load exceed F1 (750 mA)
   and a PC USB port. Charge LEDs are on the module.
-- **Why the Q1 load switch:** the XL6007 is a non-synchronous boost; with EN low the battery would still reach
+- **Why the Q1 load switch:** the TS1935B is a non-synchronous boost; with EN low the battery would still reach
   +5 V through L4 + D42 (≈ 3.5 V) and the 38 SK6805 would draw their idle current. Q1 cuts the boost input → 0 mA
   in soft-off.
-- **XL6007 limits:** VIN ≥ 3.6 V (LEDs go dark below that, MCU/OLED keep running from the LDO), 2 A switch
-  limit → ≈ 1 A at 5 V from 3.6 V. L4 needs Isat ≥ 3 A (e.g. SRP5030T-100M, check Isat), D42 3 A Schottky.
+- **TS1935B limits:** VIN 2.6–5.5 V (UVLO ≈ 2.35 V, abs. max 6.5 V) → works over the whole LiPo range;
+  1.9 A switch limit → ≈ 0.6 A at 5 V from 3.0 V, more at higher V_bat. 1.2 MHz, internal soft-start.
+  L4 10 µH (SRP5030T) is fine (4.7 µH would also do), D42 SS34 Schottky stays.
 - No power path: while USB is plugged in the board runs from the module's OUT+ (charger + battery in
   parallel). With a large load the TP4056 may not terminate cleanly — keep LEDs dim/off while charging.
-- **Firmware rules:** LEDs off below ≈ 3.65 V (XL6007 UVLO), warning/soft-off at ≈ 3.4 V (DW01 only cuts at
-  ≈ 2.5 V), total LED current < ≈ 0.8 A, read VBUS_DET (PA1) for "charging".
+- **Firmware rules:** warning/soft-off at ≈ 3.4 V (DW01 only cuts at ≈ 2.5 V), total LED current < ≈ 0.5 A
+  (limit brightness, esp. at low V_bat), read VBUS_DET (PA1) for "charging".
 - Soft-off: firmware drops BOOST_EN, puts OLED to sleep and the MCU into STOP; ON key (matrix) wakes it.
 
 ## PCB routing status (2026-11-19)
@@ -136,9 +142,10 @@ Done (scripted / small grid router, DRC-clean except the known items below):
   at x ≈ 49.1 / 67.8 / 86.6 / 105.2 / 124.0 / 142.7 (y 123.8); ROW lines end at the outer pin-1 pads of each row.
 - LED chain D1…D38 complete (data, row-to-row links), V-LED buses per row, left trunk (x 48.77) and right trunk
   (x 159.0, rows 1 and 4–7, fed by L3 at the right edge).
-- Power cluster: **re-placed 2026-11-20 for TP4056 module + XL6007, not routed** (user routes by hand):
+- Power cluster: **re-placed 2026-11-20 for TP4056 module + XL6007, not routed** (U5 now TS1935B SOT-23-5,
+  R24/C56 new — re-place after F8) (user routes by hand):
   J5 BAT + J9 CHG IN side by side at the top edge (x 116.9 / 125.5), Q2/Q1/R20/R15 load switch above L4,
-  U5 (SOIC-8, rot 270) right of L4, D42 + C38/C39/C54 (+5V) below, C37/C55 at U5 VIN, R13/R14 (FB) right,
+  U5 (SOIC-8, rot 270) right of L4, D42 + C38/C54 (+5V) below, C37/C55 at U5 VIN, R13/R14 (FB) right,
   R21/R22 (VBUS_DET) next to C34. Old charger/boost copper removed; still-valid links (BAT_SENSE, LDO) kept.
 - GND: vias next to the SMD GND pads (new power parts still without), stitching grid only in the key area (y > 113).
 
