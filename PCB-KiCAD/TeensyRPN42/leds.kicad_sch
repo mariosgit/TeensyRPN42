@@ -5265,7 +5265,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "470"
 			(at 74.93 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7165,7 +7165,7 @@
 				)
 			)
 		)
-		(property "Reichelt" "74AHCT1G125GW"
+		(property "Reichelt" "74AHC T1G125GW"
 			(at 48.26 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -11503,6 +11503,17 @@
 		)
 		(property "Description" ""
 			(at 236.22 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "GRM31CC81E226K"
+			(at 236.22 165.1 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

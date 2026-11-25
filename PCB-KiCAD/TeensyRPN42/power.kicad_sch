@@ -1394,183 +1394,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -5018,12 +4841,6 @@
 		(uuid "3104a156-3057-465f-92c8-cfdb30eae438")
 	)
 	(junction
-		(at 273.05 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "377289ea-7bc7-4b37-9016-6b0c208bcfc4")
-	)
-	(junction
 		(at 127 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5060,6 +4877,12 @@
 		(uuid "8e589f34-1573-4d88-8bb0-1086ca08ef90")
 	)
 	(junction
+		(at 232.41 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3dc93f6-109e-42c4-b006-cb0b9c7f2f07")
+	)
+	(junction
 		(at 38.1 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5070,6 +4893,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7b53342-f8b6-475e-9e48-7c8d6c8055a7")
+	)
+	(junction
+		(at 224.79 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8cd4d43-2329-4c6c-abe8-81390a7a1934")
 	)
 	(junction
 		(at 120.65 162.56)
@@ -5305,7 +5134,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 50.8) (xy 234.95 50.8)
+			(xy 232.41 50.8) (xy 240.03 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5355,6 +5184,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 39.37) (xy 232.41 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3947192d-69d9-4eae-9beb-c0f931e36512")
+	)
+	(wire
+		(pts
 			(xy 127 144.78) (xy 127 162.56)
 		)
 		(stroke
@@ -5392,16 +5231,6 @@
 			(type solid)
 		)
 		(uuid "44713312-077b-4205-b86e-b51011d74c9b")
-	)
-	(wire
-		(pts
-			(xy 273.05 26.67) (xy 273.05 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "457e6530-5c9e-45fa-957b-06c8ce3e044b")
 	)
 	(wire
 		(pts
@@ -5445,13 +5274,13 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 35.56) (xy 273.05 38.1)
+			(xy 224.79 39.37) (xy 224.79 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5eff6253-3953-4991-a29f-e0b8d2954249")
+		(uuid "5d90d6ef-f771-410d-bf4a-adafa682c48c")
 	)
 	(wire
 		(pts
@@ -6015,16 +5844,6 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 27.94) (xy 273.05 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1b7c342-b829-4d2e-93f7-5b81138a43d0")
-	)
-	(wire
-		(pts
 			(xy 36.83 161.29) (xy 36.83 177.8)
 		)
 		(stroke
@@ -6093,7 +5912,7 @@
 		(uuid "0ed225c5-f70f-4289-863b-f8925f96d75d")
 	)
 	(label "SW_BOOST"
-		(at 234.95 50.8 0)
+		(at 240.03 50.8 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -6471,6 +6290,180 @@
 			)
 		)
 	)
+	(text "L4 / L5 = two footprints for the boost inductor, fit only ONE:\nL4: 6.3 µH, Reichelt L-242418FPS 6,3µ (Fastron 242418FPS-6R3N-01)\n     Isat 3.8 A, Irms 3.6 A, ≤39 mΩ, 6.2×6.2 mm on SRP5030 pads\nL5 (DNP): 10 µH, stock SRU1048-100Y, 10×10 mm"
+		(exclude_from_sim no)
+		(at 205.74 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "4c65b808-4202-4788-8935-effb430d4f71")
+	)
+	(wire
+		(pts
+			(xy 273.05 26.67) (xy 273.05 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "457e6530-5c9e-45fa-957b-06c8ce3e044b")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 273.05 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bf3177fa-99a3-498c-9cb9-2e22ecc1e11b")
+		(property "Reference" "#PWR70005"
+			(at 273.05 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 273.05 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 273.05 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b38623b2-1ba6-4316-9d7d-03e7361c5291")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
+					(reference "#PWR70005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 273.05 26.67 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0b76fb46-3b12-4375-baf5-c641a6af70f7")
+		(property "Reference" "#FLG7103"
+			(at 273.05 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 268.732 25.654 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 273.05 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 273.05 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "22a26edb-0f49-4b21-9112-859d22da5204")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
+					(reference "#FLG7103")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 44.45 166.37 0)
@@ -6528,6 +6521,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 44.45 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "MPE 006-1-004"
 			(at 44.45 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -6796,6 +6800,17 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMAJ 5.0A LITT"
+			(at 93.98 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7c9e2f9e-adac-40c8-a783-07b23f50075d")
 		)
@@ -6806,82 +6821,6 @@
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
 					(reference "D41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 273.05 26.67 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0b76fb46-3b12-4375-baf5-c641a6af70f7")
-		(property "Reference" "#FLG7103"
-			(at 273.05 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 268.732 25.654 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 273.05 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 273.05 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 273.05 26.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "22a26edb-0f49-4b21-9112-859d22da5204")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
-					(reference "#FLG7103")
 					(unit 1)
 				)
 			)
@@ -7027,6 +6966,17 @@
 				)
 			)
 		)
+		(property "Reichelt" "SK 34A SMD"
+			(at 231.14 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "19062c15-b3e5-4ac8-a527-aa276eb32316")
 		)
@@ -7140,7 +7090,7 @@
 				)
 			)
 		)
-		(property "Value" "1M"
+		(property "Value" "200k"
 			(at 42.926 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7218,7 +7168,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "2.2uF"
 			(at 120.65 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7296,7 +7246,7 @@
 				)
 			)
 		)
-		(property "Value" "10uH Isat>=3A"
+		(property "Value" "6.3uH"
 			(at 228.6 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7308,6 +7258,17 @@
 		)
 		(property "Footprint" "Inductor_SMD:L_Bourns_SRP5030T"
 			(at 228.6 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "L-242418FPS 6,3µ"
+			(at 228.6 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7374,7 +7335,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "22k"
 			(at 261.62 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7540,7 +7501,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_Micro-B_Molex-105017-0001"
+		(property "Footprint" "RPN42Library:USB_Micro-B_Reichelt_MIC-USB-BBU"
 			(at 31.75 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -7564,6 +7525,17 @@
 		)
 		(property "Description" "USB Micro Type B connector"
 			(at 27.94 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "MIC USB BBU"
+			(at 31.75 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7753,6 +7725,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 228.6 39.37 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "4b4f0879-793d-46bb-8433-c686523e8a99")
+		(property "Reference" "L5"
+			(at 228.6 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uH"
+			(at 228.6 43.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Bourns-SRU1028_10.0x10.0mm"
+			(at 228.6 39.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "49b568dc-e662-4803-a2e9-af1ad7ba7f11")
+		)
+		(pin "2"
+			(uuid "257e6125-d51f-46ed-b287-301342a0efff")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
+					(reference "L5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:2N7002")
 		(at 106.68 80.01 0)
 		(unit 1)
@@ -7845,83 +7895,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 273.05 38.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4fcd5dc4-3b14-43fb-b9c3-eb79e5f62d2d")
-		(property "Reference" "#PWR70006"
-			(at 273.05 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 273.05 43.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 273.05 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 273.05 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 273.05 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5e0600ed-e2a3-4ca3-90ac-02a72828b3d8")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
-					(reference "#PWR70006")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 261.62 106.68 0)
 		(unit 1)
@@ -7942,7 +7915,7 @@
 				)
 			)
 		)
-		(property "Value" "30k"
+		(property "Value" "66.5k"
 			(at 261.62 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8021,7 +7994,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47nF"
+		(property "Value" "100nF"
 			(at 95.25 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8134,6 +8107,17 @@
 		)
 		(property "Description" ""
 			(at 271.78 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "GRM31CC81E226K"
+			(at 271.78 78.74 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8288,6 +8272,17 @@
 		)
 		(property "Description" ""
 			(at 96.52 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "JST EH2P ST90"
+			(at 96.52 147.32 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9429,7 +9424,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 205.74 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9439,7 +9434,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 205.74 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -9463,6 +9458,17 @@
 		)
 		(property "Description" ""
 			(at 205.74 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "GRM31CC81E226K"
+			(at 205.74 93.98 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9481,83 +9487,6 @@
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
 					(reference "C37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 273.05 25.4 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bf3177fa-99a3-498c-9cb9-2e22ecc1e11b")
-		(property "Reference" "#PWR70005"
-			(at 273.05 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 273.05 21.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 273.05 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 273.05 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 273.05 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b38623b2-1ba6-4316-9d7d-03e7361c5291")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
-					(reference "#PWR70005")
 					(unit 1)
 				)
 			)
@@ -9584,7 +9513,7 @@
 				)
 			)
 		)
-		(property "Value" "1M"
+		(property "Value" "200k"
 			(at 43.18 63.246 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9773,6 +9702,17 @@
 		)
 		(property "Description" ""
 			(at 57.15 166.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "USBLC6-2SC6"
+			(at 57.15 166.37 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10196,6 +10136,17 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD1206P075TF16"
+			(at 111.76 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d325ff82-8627-44d6-b159-761063aad32e")
 		)
@@ -10366,95 +10317,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 273.05 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "f18050fa-76ce-4047-8c86-af9ae1198667")
-		(property "Reference" "C54"
-			(at 273.05 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220uF 6.3V polymer"
-			(at 271.272 35.052 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D_HandSolder"
-			(at 273.05 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 273.05 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 273.05 31.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DNP Reason" "Optional +5V bulk; C38/C39 22uF ceramic are enough"
-			(at 273.05 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9a74531f-b559-40ce-9fda-967ddd65638d")
-		)
-		(pin "2"
-			(uuid "d7361ff7-99d2-4434-a3dd-68d863fc1c72")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
-					(reference "C54")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 83.82 57.15 0)
 		(unit 1)
@@ -10475,7 +10337,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "2.2uF"
 			(at 83.82 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)

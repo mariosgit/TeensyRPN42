@@ -10,8 +10,8 @@ don't let auto-place/sync tools touch them. If a change seems necessary, **ask f
 
 - **OLED** `J3` (`RPN42Library:OLED-2.8inch16pin`) at (103.6965, 92.202), F.Cu (moved to top 2026-11, approved).
 - **37 Kailh Choc V1 key switches** (`SW38`–`SW78`; 1u/1.25u/2u), all at rot 180 on F.Cu.
-- **Mounting holes** `H1`–`H4` (M3) at x 57.912 / 149.352, y 78.486 / 105.918.
-- **Board outline:** Edge.Cuts rounded rect (47.068, 73.618)–(160.068, 256.486) = 113.0 × 182.868 mm, 3 mm corner radius (4 lines + 4 arcs).
+- **Mounting holes** `H1`–`H4` (M3, `MountingHole_3.7mm` for OLED tolerance, changed 2026-11) at x 57.912 / 149.352, y 78.486 / 105.918.
+- **Board outline:** Edge.Cuts rounded rect (47.068, 72.40032)–(160.068, 256.486) = 113.0 × 184.086 mm (top edge moved to J7 USB edge mark 2026-11), 3 mm corner radius (4 lines + 4 arcs).
 
 All of these are also locked in KiCad (`(locked yes)`); never unlock them.
 Reference: `PCB-KiCAD/TeensyRPN42/fixed_placement.json`. After any PCB edit run

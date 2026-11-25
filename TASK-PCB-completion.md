@@ -4,23 +4,29 @@ This is becoming a PCB for a slightly oversized RPN calculator.
 
 ## TODO
 
-* OLED pinout fitting ? — checked 2026-11-24 against `images/S0ca32adc2e2146a188fa496b92d5a3e5P.avif`
-  (SOG25664C_M280 drawing):
-  * OK: pin numbering (seen from the display side = board top: pin 1 bottom left, 2 bottom right, 15/16 on top)
-    → J3 on F.Cu is right. Holes 91.5 × 27.5 (H1–H4 91.44 × 27.43, fine), outline 97 × 32.5,
-    SPI pin functions (pin 6 = D2 open, 7–13 tied to GND) match.
-  * **MISMATCH: header position.** Drawing: pin 1/2 row **6.50 mm** from the module's bottom edge, right pin
-    column **1.30 mm** from the right edge. J3 footprint: ≈ 7.4 / ≈ 1.53 → header ≈ **0.86 mm too far toward
-    pins 15/16** (+ maybe 0.2–0.3 mm too far left). Footprint centres the header between the holes, drawing doesn't.
-  * **Before fixing: measure the real module** — centre of pin 2 to centre of the bottom-right mounting hole.
-    Drawing ≈ 4.0 mm vertical / ≈ 1.6–1.7 mm horizontal, footprint 4.83 / 1.33.
-  * If confirmed: shift the 16 header pads inside the J3 footprint (≈ 0.86 mm toward pin 1, maybe 0.2–0.3 mm
-    right). J3 position, holes and outline stay; touch up the traces/fill at J3. J3 is fixed mechanics → snapshot after.
+* ~~OLED pinout fitting~~ — done 2026-11-25. Pin numbering, hole pattern and SPI pin functions match the
+  SOG25664C_M280 drawing (`images/S0ca32adc2e2146a188fa496b92d5a3e5P.avif`). The drawing put the header
+  ≈ 0.86 mm off, but the real module measures more symmetrical → J3 pads stay. H1–H4 changed to
+  `MountingHole_3.7mm` for tolerance. Snapshot updated.
   * Module setting: set the module to **4-wire SPI** (CN1 table: R19/R21 fitted, R18/R20 open); these ship as 8080.
-* USB plug fitting
+* DRC: re-exclude in the DRC dialog (the hole swap dropped the old exclusions): H3/H4 ↔ J3 and H1 ↔ SW2 / H3 ↔ SW1
+  courtyard overlaps (the 3.7 mm footprint has an r 4 mm courtyard), H3/H4 "items not allowed" in the F.Cu keepout
+  at J3, and H4's reference silk clipped by J3 pads 1/2 (hide or move it).
+* USB plug fitting — J7 → Reichelt "MIC USB BBU" (Morecrafts USBMIBXX-F05RME1), own footprint
+  `RPN42Library:USB_Micro-B_Reichelt_MIC-USB-BBU` (2026-11-25, from the datasheet's recommended layout;
+  PCB edge at local y +2.90 = same board fit as the old Molex). GND strap vias at x ±6.03 next to it.
+  TODO: F8, touch up VBUS/D−/D+/GND at J7 (pads moved ≈ 0.25 mm), check the posts' holes vs nearby vias, DRC.
+  3D model is the Molex 105017 stand-in.
 * USB header labels on the back
-* SW1 SW2 in stock ???
-* die SK LEDs suchen !
+* BOM consolidation 2026-11-25: C4/C5 10µ→22µF (C_Polarized→C), C37 10µF 0805→22µF 1206, C30 1µ→2.2µF,
+  C31/C34/C35 4.7µ→2.2µF, C56 47n→100nF. Caps now: 100n ×35, 2.2µ ×6, 22µ ×5 (1206), 1n, 20p, 6.8p. TODO: F8 (C37 footprint).
+* SW1 SW2 in stock — EVQ-Q2 not at Reichelt → swapped 2026-11-25 to Diptronics DTSM-61K (Reichelt "DIP DTSM-61K",
+  6 × 6 × 4.3 mm, 100 gf; other heights DTSM-63R 7 mm / DTSM-66R 13 mm, same footprint),
+  footprint `Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92`. TODO: F8 in the PCB, re-route the stubs at SW1/SW2.
+* SK LEDs: none in stock that fit → ordered SK6805 2020 (KAIHCHIP, 2 × 2 mm, `images/LED2x2.png`); fits the 2427 footprint
+  (same pin order DO/GND left, VDD/DI right; terminals fully on the pads across, ≈ 73 % along).
+* BOM + order list: `PCB-KiCAD/TeensyRPN42/bom/BOM.md` (Part-DB stock + Reichelt codes, 2026-11-25). Stock swaps: R2 470,
+  R13/R14 66.5k/22k (4.98 V), R16/R17 200k, C1/C2 18 pF. Open: L4 + Y2 not at Reichelt. TODO: F8 so the PCB/iBOM get the new values.
 
 ### LEDs
 
@@ -50,16 +56,16 @@ Fixed mechanics (OLED, switches, M3 holes, outline): see `CLAUDE.md` and `check_
 | Key matrix ROW7 | PA15 | |
 | Key matrix COL0–COL5 | COL0–2: PC7–PC9, COL3–5: PB5–PB7 | inputs with pull-up |
 | OLED SPI1 | PA5 SCK, PA7 MOSI, PA4 CS, PC4 D/C | RESET = NRST (shared). PA6/MISO1 unused |
-| LED data (SK6805 chain) | PB10 | → 74AHCT125 (5 V level shift) → 330 Ω → D1 … D38 |
+| LED data (SK6805 chain) | PB10 | → 74AHCT125 (5 V level shift) → 470 Ω → D1 … D38 |
 | I²C1 (J2, mini OLED / spare) | PB8 SCL, PB9 SDA | 2.2 k pull-ups on board |
 | USART2 (J4) | PA2 TX, PA3 RX | |
 | USB FS | PA11 D−, PA12 D+ | Micro-USB J7, USBLC6 ESD (U6 pins 4/6 MCU side). No VBUS sense on PA9 (used as ROW1) → disable VBUS sensing |
 | SWD (J1) | PA13 SWDIO, PA14 SWCLK, PB3 SWO, NRST | J1.1 = 3V3 (VTref) |
 | USB present (VBUS_DET) | PA1 (ADC1_IN1) | VBUS via 100 k / 150 k → ≈ 3.0 V when USB is plugged in, 0 V otherwise (no pull needed) |
 | Boost enable | PC3 | high = 5 V on (LEDs + 74AHCT125) via Q2/Q1 load switch. 100 k pull-down → off in reset |
-| Battery voltage | PA0 (ADC1_IN0) | 1 M / 1 M divider on PWR_SYS (= module OUT+ = battery) → V_bat / 2 |
+| Battery voltage | PA0 (ADC1_IN0) | 200 k / 200 k divider on PWR_SYS (= module OUT+ = battery) → V_bat / 2 |
 | LSE 32.768 kHz | PC14 / PC15 | RTC (Free42 clock functions). 6.8 pF caps, crystal CL ≈ 6 pF |
-| HSE 8 MHz | PH0 / PH1 | Y1 (HC49). Y3 is an alternative footprint, DNP |
+| HSE 8 MHz | PH0 / PH1 | Y3 (ceramic 5.2 × 3.4 mm, Reichelt IC14M8, CL 12 pF). Y1 (HC49) is the alternative footprint, DNP |
 | BOOT0 / BOOT1 | BOOT0 (pin 60) / PB2 | BOOT0: R1 10 k pull-down; SW2 and jumper J10 pull it to +3.3 V = system bootloader (DFU). BOOT1 = PB2: R23 10 k pull-down (must be low for DFU) |
 | Spare (labelled `SPARE_*`, not routed) | PA8, PB0, PB1, PB4, PB11, PB12–PB15, PC0, PC1, PC2, PC5, PC6, PC13 | PC0/PC1 were charger STAT1/2, PC2 was VBUS_DET, PC13 was BOOST_EN, PB12–PB15 were ROW3–6 |
 
@@ -69,11 +75,11 @@ All the STM32F405's "V…" supply pins need decoupling, and the schematic alread
 |---|---|---|---|---|
 | **31 VCAP_1** | /MCU_VCAP1 | C27 2.2 µF | **Required.** Without it the internal 1.2 V core regulator doesn't start. Low-ESR ceramic to GND | C27 at (83.6, 84.0), about 5 mm from pin 31 ✔ |
 | **47 VCAP_2** | /MCU_VCAP2 | C28 2.2 µF | **Required**, same as VCAP_1 | ⚠ C28 at (99.4, 109.7), about **21 mm** from pin 47 (82.2, 98.2). Needs to move next to pin 47 on the left side of U2 |
-| **13 VDDA** | /VDDA (via L1 from +3.3V) | C6 100 nF + C30 1 µF | Recommended. Analog/ADC supply; returns through 12 VSSA | C6/C30 at y ≈ 84, about 9 mm from pin 13 (93.5, 92.7). Closer is better |
+| **13 VDDA** | /VDDA (via L1 from +3.3V) | C6 100 nF + C30 2.2 µF | Recommended. Analog/ADC supply; returns through 12 VSSA | C6/C30 at y ≈ 84, about 9 mm from pin 13 (93.5, 92.7). Closer is better |
 | **1 VBAT** | +3.3V | C29 100 nF | Recommended (powers the RTC/LSE domain) | C29 at (93.4, 104.4), about 6 mm ✔ |
-| **19, 32, 48, 64 VDD** | +3.3V | one 100 nF each, plus C31 4.7 µF bulk | 100 nF per VDD pin, plus one 4.7 µF bulk | 19 → C10, 32 → C8, 48 → C9, 64 → C7/C12, all about 4–6 mm. C31 bulk at the bottom ✔ |
+| **19, 32, 48, 64 VDD** | +3.3V | one 100 nF each, plus C31 2.2 µF bulk (+ C5 22 µF at the LDO) | 100 nF per VDD pin, plus one 4.7 µF bulk | 19 → C10, 32 → C8, 48 → C9, 64 → C7/C12, all about 4–6 mm. C31 bulk at the bottom ✔ |
 
-There are 6 × 100 nF on +3.3V for 4 VDD pins, so C11 (at 87.4, 83.9) is a spare and could go near VBAT or VDD 19. C5 10 µF is at the LDO output, not at the MCU, which is fine.
+There are 6 × 100 nF on +3.3V for 4 VDD pins, so C11 (at 87.4, 83.9) is a spare and could go near VBAT or VDD 19. C5 22 µF is at the LDO output, not at the MCU, which is fine.
 
 The ground pins 12 VSSA, 18 VSS and 63 VSS need short paths to GND (vias right at the pins), but no caps of their own.
 
@@ -113,10 +119,10 @@ battery ──► module B+ / B−   (battery never connects to our board direct
 module OUT+ / OUT− ──cable──► J5 "BAT" (JST-EH: 1 GND, 2 PWR_SYS)
 PWR_SYS ─┬─ U4 MCP1727-3302E/SN → +3.3 V (MCU, OLED), PWRGD → NRST
          ├─ R16/R17 → BAT_SENSE (PA0)
-         └─ Q1 IRLML6401 (load switch) → BOOST_IN → L4 10 µH → SW → D42 SS34 → +5 V (C38 22 µF; C54 220 µF = DNP; V-LED bulk C53 22 µF)
-              gate: R20 100 k + C56 47 nF to PWR_SYS, pulled low via R24 10 k by Q2 2N7002 when BOOST_EN (PC3) = high
-              (soft-start ≈ 0.45 ms against inrush into the +5V/V-LED caps; Vgs on ≈ −0.91 × V_bat)
-            U5 TS1935BCX5: VCC = EN = BOOST_IN, FB = R13 30 k / R14 10 k → 1.238 V × 4 = 4.95 V
+         └─ Q1 IRLML6401 (load switch) → BOOST_IN → L4 6.3 µH (or L5 10 µH, DNP) → SW → D42 SS34 → +5 V (C38 22 µF; C54 removed 2026-11-25; V-LED bulk C53 22 µF)
+              gate: R20 100 k + C56 100 nF to PWR_SYS, pulled low via R24 10 k by Q2 2N7002 when BOOST_EN (PC3) = high
+              (soft-start ≈ 0.9 ms against inrush into the +5V/V-LED caps; Vgs on ≈ −0.91 × V_bat)
+            U5 TS1935BCX5: VCC = EN = BOOST_IN, FB = R13 66.5 k / R14 22 k → 1.238 V × 4.02 = 4.98 V
 ```
 - **Module wiring:** our GND only to the module's IN−/OUT− (never B−, that is the switched battery minus).
 - **Module PROG resistor:** stock modules charge at 1 A (R_PROG 1.2 k, often "R3"/"122"). Change it to
@@ -145,7 +151,7 @@ Done (scripted / small grid router, DRC-clean except the known items below):
 - Power cluster: **re-placed 2026-11-20 for TP4056 module + XL6007, not routed** (U5 now TS1935B SOT-23-5,
   R24/C56 new — re-place after F8) (user routes by hand):
   J5 BAT + J9 CHG IN side by side at the top edge (x 116.9 / 125.5), Q2/Q1/R20/R15 load switch above L4,
-  U5 (SOIC-8, rot 270) right of L4, D42 + C38/C54 (+5V) below, C37/C55 at U5 VIN, R13/R14 (FB) right,
+  U5 (SOIC-8, rot 270) right of L4, D42 + C38 (+5V) below, C37/C55 at U5 VIN, R13/R14 (FB) right,
   R21/R22 (VBUS_DET) next to C34. Old charger/boost copper removed; still-valid links (BAT_SENSE, LDO) kept.
 - GND: vias next to the SMD GND pads (new power parts still without), stitching grid only in the key area (y > 113).
 

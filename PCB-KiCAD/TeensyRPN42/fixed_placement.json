@@ -1,28 +1,28 @@
 {
  "footprints": {
   "H1": {
-   "footprint": "MountingHole:MountingHole_3.2mm_M3_ISO7380",
+   "footprint": "MountingHole:MountingHole_3.7mm",
    "x": 57.912,
    "y": 78.486,
    "rot": 0.0,
    "layer": "F.Cu"
   },
   "H2": {
-   "footprint": "MountingHole:MountingHole_3.2mm_M3_ISO7380",
+   "footprint": "MountingHole:MountingHole_3.7mm",
    "x": 57.912,
    "y": 105.918,
    "rot": 0.0,
    "layer": "F.Cu"
   },
   "H3": {
-   "footprint": "MountingHole:MountingHole_3.2mm_M3_ISO7380",
+   "footprint": "MountingHole:MountingHole_3.7mm",
    "x": 149.352,
    "y": 78.486,
    "rot": 0.0,
    "layer": "F.Cu"
   },
   "H4": {
-   "footprint": "MountingHole:MountingHole_3.2mm_M3_ISO7380",
+   "footprint": "MountingHole:MountingHole_3.7mm",
    "x": 149.352,
    "y": 105.918,
    "rot": 0.0,
@@ -301,15 +301,15 @@
    "points": [
     [
      47.068,
-     76.618
+     75.40032
     ],
     [
      47.94668,
-     74.49668
+     73.279
     ],
     [
      50.068,
-     73.618
+     72.40032
     ]
    ]
   },
@@ -335,15 +335,15 @@
    "points": [
     [
      157.068,
-     73.618
+     72.40032
     ],
     [
      159.18932,
-     74.49668
+     73.279
     ],
     [
      160.068,
-     76.618
+     75.40032
     ]
    ]
   },
@@ -373,7 +373,7 @@
     ],
     [
      47.068,
-     76.618
+     75.40032
     ]
    ]
   },
@@ -382,11 +382,11 @@
    "points": [
     [
      50.068,
-     73.618
+     72.40032
     ],
     [
      157.068,
-     73.618
+     72.40032
     ]
    ]
   },
@@ -408,7 +408,7 @@
    "points": [
     [
      160.068,
-     76.618
+     75.40032
     ],
     [
      160.068,

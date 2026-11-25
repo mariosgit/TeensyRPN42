@@ -6519,12 +6519,6 @@
 		(uuid "f437ea42-4a44-48ca-baf9-3f01620fbe3a")
 	)
 	(junction
-		(at 38.1 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f59088a6-1746-458c-ab14-feaddfea46a7")
-	)
-	(junction
 		(at 219.71 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10101,7 +10095,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQQ2"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92"
 			(at 17.78 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -10125,6 +10119,17 @@
 		)
 		(property "Description" "Push button switch, generic, symbol, four pins"
 			(at 25.4 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "DIP DTSM-61K"
+			(at 17.78 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10278,7 +10283,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20pF"
+		(property "Value" "18pF"
 			(at 55.88 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10515,7 +10520,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 58.42 24.13 0)
+		(at 198.12 142.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10526,7 +10531,7 @@
 		(fields_autoplaced yes)
 		(uuid "209cbf18-a39b-4ddd-a0fc-ce63899b4a7b")
 		(property "Reference" "H2"
-			(at 60.96 22.8599 0)
+			(at 200.66 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10537,7 +10542,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 60.96 25.3999 0)
+			(at 200.66 143.5099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10547,8 +10552,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
-			(at 58.42 24.13 0)
+		(property "Footprint" "MountingHole:MountingHole_3.7mm"
+			(at 198.12 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10559,7 +10564,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 24.13 0)
+			(at 198.12 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10570,7 +10575,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 58.42 24.13 0)
+			(at 198.12 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10581,7 +10586,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 58.42 24.13 0)
+			(at 198.12 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10592,7 +10597,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 58.42 24.13 0)
+			(at 198.12 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11116,6 +11121,17 @@
 				)
 			)
 		)
+		(property "Reichelt" "JST EH2P ST90"
+			(at 180.34 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d4871009-664a-4752-85fe-18f4a2bac337")
 		)
@@ -11392,7 +11408,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "Device:C")
 		(at 210.82 38.1 0)
 		(unit 1)
 		(body_style 1)
@@ -11414,7 +11430,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "22uF"
 			(at 214.63 38.4809 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11447,8 +11463,19 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 210.82 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "GRM31CC81E226K"
+			(at 211.7852 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11558,6 +11585,17 @@
 				)
 			)
 		)
+		(property "Reichelt" "CL10C6R8CB8NNNC"
+			(at 25.4 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9bfcf51e-eb4c-46b7-bfd4-bec44dbf67f0")
 		)
@@ -11628,6 +11666,17 @@
 		)
 		(property "Description" ""
 			(at 30.48 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "SL 1X36G 2,54"
+			(at 30.48 69.85 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11911,7 +11960,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "Device:C")
 		(at 270.51 38.1 0)
 		(unit 1)
 		(body_style 1)
@@ -11933,7 +11982,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "22uF"
 			(at 274.32 38.4809 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11966,8 +12015,19 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 270.51 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "GRM31CC81E226K"
+			(at 271.4752 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12119,7 +12179,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 58.42 29.21 0)
+		(at 198.12 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12130,7 +12190,7 @@
 		(fields_autoplaced yes)
 		(uuid "666a2cb3-3275-4d6b-9e46-f4f213dcd50e")
 		(property "Reference" "H3"
-			(at 60.96 27.9399 0)
+			(at 200.66 146.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12141,7 +12201,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 60.96 30.4799 0)
+			(at 200.66 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12151,8 +12211,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
-			(at 58.42 29.21 0)
+		(property "Footprint" "MountingHole:MountingHole_3.7mm"
+			(at 198.12 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12163,7 +12223,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 29.21 0)
+			(at 198.12 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12174,7 +12234,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 58.42 29.21 0)
+			(at 198.12 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12185,7 +12245,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 58.42 29.21 0)
+			(at 198.12 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12196,7 +12256,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 58.42 29.21 0)
+			(at 198.12 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12395,7 +12455,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20pF"
+		(property "Value" "18pF"
 			(at 48.26 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12478,7 +12538,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 58.42 19.05 0)
+		(at 198.12 137.16 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12489,7 +12549,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d46e03d-883b-4c41-881c-78e2f87de66d")
 		(property "Reference" "H1"
-			(at 60.96 17.7799 0)
+			(at 200.66 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12500,7 +12560,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 60.96 20.3199 0)
+			(at 200.66 138.4299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12510,8 +12570,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
-			(at 58.42 19.05 0)
+		(property "Footprint" "MountingHole:MountingHole_3.7mm"
+			(at 198.12 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12522,7 +12582,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 19.05 0)
+			(at 198.12 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12533,7 +12593,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 58.42 19.05 0)
+			(at 198.12 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12544,7 +12604,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 58.42 19.05 0)
+			(at 198.12 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12555,7 +12615,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 58.42 19.05 0)
+			(at 198.12 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12868,7 +12928,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQQ2"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92"
 			(at 17.78 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12892,6 +12952,17 @@
 		)
 		(property "Description" "Push button switch, generic, symbol, four pins"
 			(at 25.4 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "DIP DTSM-61K"
+			(at 17.78 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13377,7 +13448,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "8b9f25b0-d3d1-4cee-a60d-9af1427f9637")
 		(property "Reference" "Y3"
 			(at 71.12 55.8799 90)
@@ -13390,7 +13461,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Crystal_GND24"
+		(property "Value" "8MHz 12pF"
 			(at 82.804 51.816 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13501,7 +13572,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 58.42 34.29 0)
+		(at 198.12 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13512,7 +13583,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c36bdb2-5600-4491-96e2-4337fec2eec3")
 		(property "Reference" "H4"
-			(at 60.96 33.0199 0)
+			(at 200.66 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13523,7 +13594,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 60.96 35.5599 0)
+			(at 200.66 153.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13533,8 +13604,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
-			(at 58.42 34.29 0)
+		(property "Footprint" "MountingHole:MountingHole_3.7mm"
+			(at 198.12 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13545,7 +13616,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 34.29 0)
+			(at 198.12 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13556,7 +13627,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 58.42 34.29 0)
+			(at 198.12 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13567,7 +13638,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 58.42 34.29 0)
+			(at 198.12 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13578,7 +13649,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 58.42 34.29 0)
+			(at 198.12 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13793,7 +13864,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 130.81 0)
+			(at 48.514 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13913,6 +13984,17 @@
 				)
 			)
 		)
+		(property "Reichelt" "SL 1X36G 2,54"
+			(at 27.94 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "KLC_S3.3" ""
 			(at 27.94 138.43 0)
 			(hide yes)
@@ -14018,6 +14100,17 @@
 		)
 		(property "Description" "1.5A, Low Voltage, Low Quiescent Current LDO Regulator, 2.3 - 6V Input, Fixed 3.3V Output, 330mV Dropout, SOIC-8"
 			(at 237.49 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "MCP17273302ESN"
+			(at 237.49 12.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14524,7 +14617,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 110.49 27.94 180)
+		(at 110.49 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14534,7 +14627,7 @@
 		(dnp no)
 		(uuid "ad579285-252d-4718-82bb-d0d6a341adf6")
 		(property "Reference" "#PWR45091"
-			(at 110.49 21.59 180)
+			(at 110.49 34.29 180)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14545,7 +14638,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 110.49 22.86 180)
+			(at 110.236 22.098 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14619,7 +14712,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "2.2uF"
 			(at 207.01 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15306,6 +15399,17 @@
 				)
 			)
 		)
+		(property "Reichelt" "CL10C6R8CB8NNNC"
+			(at 45.72 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cbd575ac-0dbd-4f74-8d87-2e279882b0f1")
 		)
@@ -15323,7 +15427,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 38.1 133.35 270)
+		(at 43.18 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15333,7 +15437,7 @@
 		(dnp no)
 		(uuid "c125b836-6a65-4df0-9928-135f38292bf8")
 		(property "Reference" "#PWR58039"
-			(at 38.1 127 90)
+			(at 36.83 133.35 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15344,7 +15448,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 38.1 128.27 90)
+			(at 39.37 131.064 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15354,7 +15458,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 133.35 90)
+			(at 43.18 133.35 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15365,7 +15469,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 133.35 0)
+			(at 43.18 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15376,7 +15480,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 133.35 0)
+			(at 43.18 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15931,7 +16035,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d3e6fb74-baf0-4dd6-8fb3-2cfca1501263")
 		(property "Reference" "Y1"
 			(at 60.96 55.8799 90)
@@ -15978,6 +16082,17 @@
 			)
 		)
 		(property "Description" "Two pin crystal"
+			(at 57.15 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "8,0000-HC49-SMD"
 			(at 57.15 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -16168,6 +16283,17 @@
 				)
 			)
 		)
+		(property "Reichelt" "MPE 006-1-004"
+			(at 255.27 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "KLC_S3.3" ""
 			(at 255.27 107.95 0)
 			(hide yes)
@@ -16335,7 +16461,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "2.2uF"
 			(at 215.9 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16917,6 +17043,17 @@
 				)
 			)
 		)
+		(property "Reichelt" "SL 1X36G 2,54"
+			(at 27.94 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "336c6cff-da69-4cc2-8186-89c2794f758a")
 		)
@@ -17215,8 +17352,8 @@
 		)
 	)
 	(sheet
-		(at 172.72 130.81)
-		(size 30.48 15.24)
+		(at 115.57 161.29)
+		(size 30.48 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -17231,7 +17368,7 @@
 		)
 		(uuid "8260932e-aadb-418b-9bc7-d3f80c00a0b0")
 		(property "Sheetname" "Power"
-			(at 172.72 130.0984 0)
+			(at 115.57 160.5784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17242,7 +17379,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 172.72 146.6326 0)
+			(at 115.57 186.0046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

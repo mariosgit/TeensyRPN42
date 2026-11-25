@@ -134,6 +134,10 @@
           ""
         ],
         [
+          "courtyards_overlap|130808000|89723000|5f8c6f2e-f675-4b11-94d7-c5922860a744|70419899-31c1-4fe8-8bf7-f437a34f69a3",
+          ""
+        ],
+        [
           "courtyards_overlap|146843000|216481000|2392d54f-50f7-4330-9629-82efa332bc2f|ebbd5999-3eee-456d-9001-df3d864cf8ec",
           ""
         ],
@@ -162,11 +166,19 @@
           ""
         ],
         [
-          "courtyards_overlap|149086928|102831838|3d5c6ab6-d729-494b-978f-da28831ea81e|f028513c-a1b8-4754-9ae8-ec1c30e326a0",
+          "courtyards_overlap|148952627|101990722|3d5c6ab6-d729-494b-978f-da28831ea81e|f028513c-a1b8-4754-9ae8-ec1c30e326a0",
           ""
         ],
         [
-          "courtyards_overlap|149811828|81547000|7618db30-def6-41c3-8ece-5b9c5327e39f|f028513c-a1b8-4754-9ae8-ec1c30e326a0",
+          "courtyards_overlap|151828804|81547000|7618db30-def6-41c3-8ece-5b9c5327e39f|f028513c-a1b8-4754-9ae8-ec1c30e326a0",
+          ""
+        ],
+        [
+          "courtyards_overlap|152974000|76955000|7618db30-def6-41c3-8ece-5b9c5327e39f|b24c55a6-5da6-43de-a660-439cb5a65a93",
+          ""
+        ],
+        [
+          "courtyards_overlap|54195000|79757659|477ef30b-fc95-4188-9508-dc10606cd0d7|7ca653a0-8b4f-4fdf-a2a1-a6e601f94831",
           ""
         ],
         [
@@ -234,27 +246,11 @@
           ""
         ],
         [
-          "items_not_allowed|151306930|98354692|f028513c-a1b8-4754-9ae8-ec1c30e326a0|00000000-0000-0000-0000-000000000000",
+          "hole_clearance|66164000|76411000|1dfd64ee-29ca-47c4-ac76-5b0ecd360f30|e6e08167-b7a2-4358-8a1e-1a62017229e4",
           ""
         ],
         [
-          "silk_over_copper|148857848|76964220|4b1a77ba-9e15-46e7-82f6-fcdd1020ca0f|57973587-9c77-4a33-b373-b5d40bbc5667",
-          ""
-        ],
-        [
-          "silk_over_copper|149940652|104430220|edd87035-19a9-4568-b371-ea85acd95cff|15b14d06-69eb-497c-970f-05f078eaf1e6",
-          ""
-        ],
-        [
-          "silk_over_copper|56806296|77329532|d3cf9f26-5234-459f-859c-ef97a3be02de|a64d7afa-a015-4afa-90c3-08080615d91e",
-          ""
-        ],
-        [
-          "silk_over_copper|59052204|104795532|7f94b45c-31e1-4d62-b33a-9fc528c24416|7bb8ec3f-6dcb-48a2-9a01-110eee1cf22c",
-          ""
-        ],
-        [
-          "starved_thermal|138745000|92064000|1e221e45-f960-4632-ba73-422414b5a87f|e4952777-63ff-454f-916a-fc7dbbd840a0|F.Cu",
+          "hole_clearance|68964000|76411000|231c3283-c871-462e-a41e-f85b38376875|8be177bd-632e-42ce-b32a-0a26bc7508cd",
           ""
         ],
         [
@@ -906,7 +902,7 @@
         "uuid": "9acd3f2f-288a-40cb-ae05-b7b5178d11de"
       }
     ],
-    "used_designators": "#PWR31,#PWR10798-10799,#PWR16646,#PWR70008,J6-9",
+    "used_designators": "#PWR31,#PWR10798-10799,#PWR16646,#PWR70008,J6-9,L5",
     "variants": []
   },
   "sheets": [

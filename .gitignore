@@ -8,3 +8,4 @@ PCB-KiCAD/**/output/
 
 compile_commands.json
 
+.env
