@@ -4613,6 +4613,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 210.82 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 210.82 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c7352c0d-0eb5-4b7a-b220-cadf1e5760aa")
 		)
@@ -4683,6 +4705,28 @@
 		)
 		(property "Description" ""
 			(at 190.5 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 190.5 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 190.5 198.12 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5039,6 +5083,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 180.34 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 180.34 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3684c1fc-a2ab-4a6b-8952-220bfc707602")
 		)
@@ -5331,6 +5397,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD-0603 470"
+			(at 72.39 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "RC0603FR-07470RL (12, Box SMD Reste)"
+			(at 72.39 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "684082bf-9b80-4bdf-aec6-dec223cf0ad2")
 		)
@@ -5424,6 +5512,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 171.45 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 171.45 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
 			(at 171.45 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5807,6 +5917,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 198.12 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 198.12 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a62bb94c-1e2f-413a-8096-ecfa08692b42")
 		)
@@ -5877,6 +6009,28 @@
 		)
 		(property "Description" ""
 			(at 200.66 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 200.66 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 200.66 198.12 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6478,6 +6632,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 208.28 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 208.28 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7b0c15fc-77aa-43cc-bcb0-f9ec0116be49")
 		)
@@ -6624,6 +6800,28 @@
 		)
 		(property "Description" ""
 			(at 200.66 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 200.66 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 200.66 165.1 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6835,6 +7033,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 196.85 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 196.85 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
 			(at 196.85 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -7288,6 +7508,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 172.72 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 172.72 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5b21e421-e573-42a8-89b2-a6b0a012e365")
 		)
@@ -7469,6 +7711,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 184.15 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 184.15 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ad3f8498-b962-413c-b8dd-c249614d7f18")
 		)
@@ -7539,6 +7803,28 @@
 		)
 		(property "Description" ""
 			(at 220.98 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 220.98 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 220.98 165.1 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7750,6 +8036,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 196.85 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 196.85 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
 			(at 196.85 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -8009,6 +8317,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 171.45 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 171.45 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
 			(at 171.45 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -8394,6 +8724,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 209.55 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 209.55 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "61d3a5d0-4ef6-4934-b6c8-0f47aa3d6ba3")
 		)
@@ -8464,6 +8816,28 @@
 		)
 		(property "Description" ""
 			(at 190.5 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 190.5 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 190.5 165.1 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8626,6 +9000,28 @@
 		)
 		(property "Description" ""
 			(at 170.18 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 170.18 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 170.18 165.1 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8803,6 +9199,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 184.15 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 184.15 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
 			(at 184.15 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -9433,6 +9851,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 170.18 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 170.18 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f1c8cb6d-4827-48d3-af32-662a4657c09c")
 		)
@@ -9579,6 +10019,28 @@
 		)
 		(property "Description" ""
 			(at 220.98 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 220.98 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 220.98 198.12 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10895,6 +11357,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 180.34 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 180.34 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2af68d0e-27e1-44ee-ac21-4fe0d542c52a")
 		)
@@ -10988,6 +11472,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 208.28 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 208.28 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
 			(at 208.28 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -11709,6 +12215,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 185.42 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 185.42 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9b39844b-60cc-4bbf-8b64-07c70a1007f5")
 		)
@@ -12135,6 +12663,28 @@
 		)
 		(property "Description" ""
 			(at 210.82 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 210.82 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 210.82 198.12 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

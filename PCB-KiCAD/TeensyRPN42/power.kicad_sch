@@ -4822,6 +4822,27 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "L4 / L5 = two footprints for the boost inductor, fit only ONE:\nL4: 6.3 µH, Reichelt L-242418FPS 6,3µ (Fastron 242418FPS-6R3N-01)\n     Isat 3.8 A, Irms 3.6 A, ≤39 mΩ, 6.2×6.2 mm on SRP5030 pads\nL5 (DNP): 10 µH, stock SRU1048-100Y, 10×10 mm"
+		(exclude_from_sim no)
+		(at 205.74 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "4c65b808-4202-4788-8935-effb430d4f71")
+	)
+	(text "Vout = 1.238 V × (1 + R13/R14)."
+		(exclude_from_sim no)
+		(at 232.41 120.142 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9170b56a-9e2f-449e-85dc-3643f073ef51")
+	)
 	(junction
 		(at 39.37 163.83)
 		(diameter 0)
@@ -4853,10 +4874,16 @@
 		(uuid "567029f2-1f8f-439c-9b32-2fdf32accd68")
 	)
 	(junction
-		(at 261.62 120.65)
+		(at 255.27 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "68fa2768-2107-4a40-b58b-20e3a511a487")
+		(uuid "7972dfdf-64d2-4044-8fb4-7f9d980721a5")
+	)
+	(junction
+		(at 232.41 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8463510b-9b33-4f65-aac4-2231c4ca1951")
 	)
 	(junction
 		(at 109.22 40.64)
@@ -4877,7 +4904,19 @@
 		(uuid "8e589f34-1573-4d88-8bb0-1086ca08ef90")
 	)
 	(junction
-		(at 232.41 50.8)
+		(at 265.43 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abffe697-cea8-4d27-980c-b1a03261ab5f")
+	)
+	(junction
+		(at 207.01 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1096847-2a5f-4fbc-8f43-8c4c69a07d49")
+	)
+	(junction
+		(at 223.52 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3dc93f6-109e-42c4-b006-cb0b9c7f2f07")
@@ -4895,10 +4934,22 @@
 		(uuid "b7b53342-f8b6-475e-9e48-7c8d6c8055a7")
 	)
 	(junction
-		(at 224.79 50.8)
+		(at 231.14 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2cff468-3062-41e2-b303-fefd688067b5")
+	)
+	(junction
+		(at 215.9 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8cd4d43-2329-4c6c-abe8-81390a7a1934")
+	)
+	(junction
+		(at 191.77 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cdabb1e0-ba42-46a0-9909-79d4c8e1e0e1")
 	)
 	(junction
 		(at 120.65 162.56)
@@ -4907,10 +4958,16 @@
 		(uuid "d8701d46-d5e2-410a-a592-38875cce2854")
 	)
 	(junction
-		(at 261.62 113.03)
+		(at 185.42 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dc60ff26-f6a4-4087-9d37-6fbf09976f67")
+		(uuid "e4f672f1-7bc7-48c0-b4ec-377dc785c097")
+	)
+	(junction
+		(at 255.27 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee0a4c2d-7c03-4ba4-8251-1dc56524c8e2")
 	)
 	(junction
 		(at 142.24 149.86)
@@ -4929,12 +4986,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f1fef8ee-1890-49a0-a928-24913d26a0f4")
-	)
-	(junction
-		(at 222.25 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f3bbb4fa-5e21-42cf-923d-c570634d5937")
 	)
 	(junction
 		(at 92.71 40.64)
@@ -5014,6 +5065,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 82.55) (xy 265.43 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bb7be6c-999b-4a0b-88bc-fe8c4fb8242c")
+	)
+	(wire
+		(pts
 			(xy 59.69 71.12) (xy 59.69 73.66)
 		)
 		(stroke
@@ -5044,16 +5105,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 60.96) (xy 237.49 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ff4705e-868a-4e6f-8478-d2362992e4ef")
-	)
-	(wire
-		(pts
 			(xy 127 162.56) (xy 120.65 162.56)
 		)
 		(stroke
@@ -5064,17 +5115,47 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 96.52) (xy 222.25 95.25)
+			(xy 185.42 85.09) (xy 185.42 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d2341ae-aeae-4d5a-b655-e2905a6d8023")
+		(uuid "14cf258a-2ed7-4064-9fd8-b05ae49e7a0c")
 	)
 	(wire
 		(pts
-			(xy 237.49 87.63) (xy 237.49 90.17)
+			(xy 236.22 99.06) (xy 229.87 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16acddc9-4863-4601-9a0b-305c0644f53a")
+	)
+	(wire
+		(pts
+			(xy 191.77 91.44) (xy 207.01 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17a6d623-8d04-4ead-956d-c064e55b86d9")
+	)
+	(wire
+		(pts
+			(xy 185.42 91.44) (xy 191.77 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1905a768-9bdf-4af9-acce-6acff3ea2e95")
+	)
+	(wire
+		(pts
+			(xy 218.44 104.14) (xy 218.44 106.68)
 		)
 		(stroke
 			(width 0)
@@ -5124,6 +5205,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 78.74) (xy 232.41 78.74)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "222d949b-e372-4263-8f43-06540296c102")
+	)
+	(wire
+		(pts
 			(xy 142.24 144.78) (xy 142.24 149.86)
 		)
 		(stroke
@@ -5134,7 +5225,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 50.8) (xy 240.03 50.8)
+			(xy 223.52 78.74) (xy 231.14 78.74)
 		)
 		(stroke
 			(width 0)
@@ -5164,7 +5255,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 80.01) (xy 205.74 90.17)
+			(xy 191.77 91.44) (xy 191.77 101.6)
 		)
 		(stroke
 			(width 0)
@@ -5174,7 +5265,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 60.96) (xy 224.79 60.96)
+			(xy 247.65 91.44) (xy 255.27 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5184,7 +5275,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 39.37) (xy 232.41 50.8)
+			(xy 223.52 67.31) (xy 223.52 78.74)
 		)
 		(stroke
 			(width 0)
@@ -5224,6 +5315,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 91.44) (xy 255.27 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40bcca6a-3b98-44a7-aacc-84c5babcc518")
+	)
+	(wire
+		(pts
 			(xy 59.69 81.28) (xy 59.69 85.09)
 		)
 		(stroke
@@ -5234,7 +5335,17 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 74.93) (xy 251.46 74.93)
+			(xy 273.05 26.67) (xy 273.05 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "457e6530-5c9e-45fa-957b-06c8ce3e044b")
+	)
+	(wire
+		(pts
+			(xy 229.87 91.44) (xy 240.03 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5274,7 +5385,27 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 39.37) (xy 224.79 50.8)
+			(xy 207.01 78.74) (xy 215.9 78.74)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "593a9edd-d84c-4bcd-970b-fabad7cef996")
+	)
+	(wire
+		(pts
+			(xy 231.14 77.47) (xy 231.14 78.74)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "59eb17d0-483d-4d2c-909c-8cc0e2b95f09")
+	)
+	(wire
+		(pts
+			(xy 215.9 67.31) (xy 215.9 78.74)
 		)
 		(stroke
 			(width 0)
@@ -5334,6 +5465,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 78.74) (xy 207.01 91.44)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "6de8268d-bf21-4ba5-80e4-2949c4ac149f")
+	)
+	(wire
+		(pts
 			(xy 35.56 158.75) (xy 38.1 158.75)
 		)
 		(stroke
@@ -5354,7 +5495,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 130.81) (xy 261.62 140.97)
+			(xy 255.27 123.19) (xy 255.27 127)
 		)
 		(stroke
 			(width 0)
@@ -5384,7 +5525,17 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 148.59) (xy 57.15 158.75)
+			(xy 236.22 111.76) (xy 236.22 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77690a40-8727-44f5-89c0-4aefb0a2d623")
+	)
+	(wire
+		(pts
+			(xy 57.15 151.13) (xy 57.15 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5434,16 +5585,6 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 127) (xy 261.62 120.65)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "8b5591b7-656c-4fea-9ddd-27ca55306a5a")
-	)
-	(wire
-		(pts
 			(xy 27.94 173.99) (xy 27.94 177.8)
 		)
 		(stroke
@@ -5481,6 +5622,16 @@
 			(type default)
 		)
 		(uuid "8f25e220-7d9b-456a-8f7d-c01597507af7")
+	)
+	(wire
+		(pts
+			(xy 207.01 91.44) (xy 207.01 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ff49935-a88e-4e72-8798-8ce4314dd699")
 	)
 	(wire
 		(pts
@@ -5524,16 +5675,6 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 120.65) (xy 261.62 123.19)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "99c84e22-09c2-4dc9-805a-7b3b26328091")
-	)
-	(wire
-		(pts
 			(xy 95.25 80.01) (xy 100.33 80.01)
 		)
 		(stroke
@@ -5544,23 +5685,13 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 82.55) (xy 271.78 92.71)
+			(xy 265.43 116.84) (xy 265.43 127)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(uuid "9ebf2acd-f5bb-448d-ad67-127d6fe6e607")
-	)
-	(wire
-		(pts
-			(xy 261.62 92.71) (xy 261.62 102.87)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "9f2d1fdc-f4ac-4395-bac3-69c273cdfb99")
 	)
 	(wire
 		(pts
@@ -5614,7 +5745,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 110.49) (xy 261.62 113.03)
+			(xy 255.27 105.41) (xy 255.27 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5624,33 +5755,13 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 95.25) (xy 219.71 92.71)
+			(xy 236.22 111.76) (xy 255.27 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b2752e7d-142f-4478-8a2d-b62ab4d21931")
-	)
-	(wire
-		(pts
-			(xy 219.71 95.25) (xy 222.25 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2abcc6a-c07b-4826-b899-911da2c211d5")
-	)
-	(wire
-		(pts
-			(xy 256.54 111.76) (xy 261.62 113.03)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "b7390ce3-ac96-47c1-819d-9716c4aaaf20")
+		(uuid "b1431b65-2666-4dbd-92d1-615befca0e63")
 	)
 	(wire
 		(pts
@@ -5684,16 +5795,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 82.55) (xy 251.46 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c803c60d-caf2-4281-b1ca-2b89a7f0b752")
-	)
-	(wire
-		(pts
 			(xy 120.65 162.56) (xy 120.65 168.91)
 		)
 		(stroke
@@ -5701,6 +5802,16 @@
 			(type solid)
 		)
 		(uuid "c94ca980-1427-4271-ae20-387e9bd77e5f")
+	)
+	(wire
+		(pts
+			(xy 255.27 91.44) (xy 265.43 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c999406a-bc79-4e82-ae32-06e718fb45ad")
 	)
 	(wire
 		(pts
@@ -5744,33 +5855,13 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 74.93) (xy 226.06 74.93)
+			(xy 185.42 91.44) (xy 185.42 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3dde58a-f65e-4b86-bab9-42f7b888d4a9")
-	)
-	(wire
-		(pts
-			(xy 222.25 50.8) (xy 224.79 50.8)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "dac78e6c-5b93-4667-807d-62b54e2f7bca")
-	)
-	(wire
-		(pts
-			(xy 261.62 113.03) (xy 261.62 120.65)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "dbff17cf-d6dd-474a-a0bb-9b111901bbff")
+		(uuid "d091eaab-d591-435e-b322-0f1a5c4b58be")
 	)
 	(wire
 		(pts
@@ -5794,7 +5885,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 97.79) (xy 205.74 107.95)
+			(xy 191.77 109.22) (xy 191.77 127)
 		)
 		(stroke
 			(width 0)
@@ -5814,7 +5905,27 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 78.74) (xy 226.06 78.74)
+			(xy 255.27 111.76) (xy 255.27 115.57)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "e76ad61a-95b7-4ff4-a1b2-1f91db4adfe8")
+	)
+	(wire
+		(pts
+			(xy 207.01 91.44) (xy 209.55 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e879b24e-afff-42b2-aa61-54093ebcfb78")
+	)
+	(wire
+		(pts
+			(xy 209.55 95.25) (xy 207.01 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5834,7 +5945,17 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 104.14) (xy 222.25 106.68)
+			(xy 232.41 78.74) (xy 232.41 91.44)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "eb7fdbef-de10-42e6-a68b-f891a1e62950")
+	)
+	(wire
+		(pts
+			(xy 185.42 109.22) (xy 185.42 127)
 		)
 		(stroke
 			(width 0)
@@ -5894,7 +6015,17 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 64.77) (xy 271.78 74.93)
+			(xy 57.15 151.13) (xy 64.77 151.13)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "fde5e576-36b1-43ee-9b2a-6099ae9180da")
+	)
+	(wire
+		(pts
+			(xy 265.43 91.44) (xy 265.43 109.22)
 		)
 		(stroke
 			(width 0)
@@ -5912,7 +6043,7 @@
 		(uuid "0ed225c5-f70f-4289-863b-f8925f96d75d")
 	)
 	(label "SW_BOOST"
-		(at 240.03 50.8 0)
+		(at 231.14 77.47 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -5921,7 +6052,7 @@
 		(uuid "20c88a59-44c1-4d2c-b9bc-3d0296bc9bc7")
 	)
 	(label "FB_BOOST"
-		(at 251.46 82.55 0)
+		(at 236.22 111.76 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -5929,35 +6060,6 @@
 			(justify left bottom)
 		)
 		(uuid "235f98b0-82d9-45eb-a12b-420e586040f8")
-	)
-	(label "BOOST_IN"
-		(at 226.06 78.74 180)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right bottom)
-		)
-		(uuid "31b0f1ac-1776-41a3-82ae-64625c01f176")
-	)
-	(label "SW_BOOST"
-		(at 237.49 60.96 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "3a1fbde8-ef73-45f0-b665-6f7ae9bffa98")
-	)
-	(label "FB_BOOST"
-		(at 256.54 127 90)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-		)
-		(uuid "3a37b046-c6bd-43af-9588-0dc8577d5c8f")
 	)
 	(label "VBUS_IN"
 		(at 40.64 156.21 0)
@@ -5978,7 +6080,7 @@
 		(uuid "61d0ceba-0fd8-4e05-9bf3-393f64ebb376")
 	)
 	(label "BOOST_IN"
-		(at 226.06 74.93 180)
+		(at 207.01 91.44 180)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -6016,25 +6118,6 @@
 		)
 		(uuid "74dc269b-7479-46ca-89a2-d8efe6b9caf7")
 	)
-	(label "BOOST_IN"
-		(at 222.25 50.8 180)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right bottom)
-		)
-		(uuid "771f0802-5091-492c-b163-3eff1dbbff5a")
-	)
-	(label "FB_BOOST"
-		(at 256.54 111.76 90)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-		)
-		(uuid "aa6ef080-d84f-4fec-9d6d-39171c847a69")
-	)
 	(label "VBUS"
 		(at 104.14 144.78 0)
 		(effects
@@ -6053,16 +6136,6 @@
 			)
 		)
 		(uuid "bb69b75b-6173-42f4-bf63-41b377f78365")
-	)
-	(label "BOOST_IN"
-		(at 205.74 80.01 90)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "c4a75d11-6e63-41b5-9e04-3a65607f6bdc")
 	)
 	(label "VBUS"
 		(at 146.05 148.59 90)
@@ -6083,26 +6156,6 @@
 			(justify right bottom)
 		)
 		(uuid "d081e43c-de83-41e5-a642-4f2577e58ecb")
-	)
-	(label "SW_BOOST"
-		(at 251.46 74.93 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "e18097aa-8b86-4072-a13b-6297d7efcac9")
-	)
-	(label "BOOST_IN"
-		(at 219.71 92.71 90)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "f1c4a90b-7d89-4bca-aed4-1adf47e8839d")
 	)
 	(label "Q1_G"
 		(at 102.87 60.96 0)
@@ -6290,180 +6343,6 @@
 			)
 		)
 	)
-	(text "L4 / L5 = two footprints for the boost inductor, fit only ONE:\nL4: 6.3 µH, Reichelt L-242418FPS 6,3µ (Fastron 242418FPS-6R3N-01)\n     Isat 3.8 A, Irms 3.6 A, ≤39 mΩ, 6.2×6.2 mm on SRP5030 pads\nL5 (DNP): 10 µH, stock SRU1048-100Y, 10×10 mm"
-		(exclude_from_sim no)
-		(at 205.74 24.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "4c65b808-4202-4788-8935-effb430d4f71")
-	)
-	(wire
-		(pts
-			(xy 273.05 26.67) (xy 273.05 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "457e6530-5c9e-45fa-957b-06c8ce3e044b")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 273.05 25.4 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bf3177fa-99a3-498c-9cb9-2e22ecc1e11b")
-		(property "Reference" "#PWR70005"
-			(at 273.05 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 273.05 21.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 273.05 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 273.05 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 273.05 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b38623b2-1ba6-4316-9d7d-03e7361c5291")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
-					(reference "#PWR70005")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 273.05 26.67 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0b76fb46-3b12-4375-baf5-c641a6af70f7")
-		(property "Reference" "#FLG7103"
-			(at 273.05 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 268.732 25.654 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 273.05 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 273.05 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 273.05 26.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "22a26edb-0f49-4b21-9112-859d22da5204")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
-					(reference "#FLG7103")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 44.45 166.37 0)
@@ -6587,7 +6466,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 261.62 140.97 0)
+		(at 255.27 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6597,7 +6476,7 @@
 		(dnp no)
 		(uuid "055a6410-104b-43d2-a516-a68926f836dc")
 		(property "Reference" "#PWR53701"
-			(at 261.62 147.32 0)
+			(at 255.27 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6608,7 +6487,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 261.62 146.05 0)
+			(at 255.27 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6618,7 +6497,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 140.97 0)
+			(at 255.27 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6629,7 +6508,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 140.97 0)
+			(at 255.27 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6640,7 +6519,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 261.62 140.97 0)
+			(at 255.27 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6827,8 +6706,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 237.49 90.17 0)
+		(lib_id "power:PWR_FLAG")
+		(at 273.05 26.67 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6836,9 +6715,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "12e3cd7d-1cf6-42b0-82a5-3983aa3201d3")
-		(property "Reference" "#PWR70001"
-			(at 237.49 90.17 0)
+		(uuid "0b76fb46-3b12-4375-baf5-c641a6af70f7")
+		(property "Reference" "#FLG7103"
+			(at 273.05 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6848,8 +6727,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 237.49 95.25 0)
+		(property "Value" "PWR_FLAG"
+			(at 268.732 25.654 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6859,7 +6738,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 90.17 0)
+			(at 273.05 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6869,8 +6748,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 237.49 90.17 0)
+		(property "Datasheet" "~"
+			(at 273.05 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6881,7 +6760,83 @@
 			)
 		)
 		(property "Description" ""
-			(at 237.49 90.17 0)
+			(at 273.05 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "22a26edb-0f49-4b21-9112-859d22da5204")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
+					(reference "#FLG7103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "12e3cd7d-1cf6-42b0-82a5-3983aa3201d3")
+		(property "Reference" "#PWR70001"
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.44 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6905,7 +6860,7 @@
 	)
 	(symbol
 		(lib_id "Diode:SS34")
-		(at 231.14 60.96 0)
+		(at 243.84 91.44 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6915,7 +6870,7 @@
 		(dnp no)
 		(uuid "1a6d3e36-4fd3-478c-853c-ea780df272e3")
 		(property "Reference" "D42"
-			(at 231.14 57.15 0)
+			(at 243.84 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6925,7 +6880,7 @@
 			)
 		)
 		(property "Value" "SS34"
-			(at 231.14 64.77 0)
+			(at 243.84 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6935,7 +6890,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 231.14 60.96 0)
+			(at 243.84 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6946,7 +6901,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 60.96 0)
+			(at 243.84 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6957,7 +6912,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 231.14 60.96 0)
+			(at 243.84 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6967,7 +6922,7 @@
 			)
 		)
 		(property "Reichelt" "SK 34A SMD"
-			(at 231.14 60.96 0)
+			(at 243.84 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7090,7 +7045,7 @@
 				)
 			)
 		)
-		(property "Value" "200k"
+		(property "Value" "220k"
 			(at 42.926 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7124,6 +7079,28 @@
 		)
 		(property "Description" ""
 			(at 46.99 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 220K"
+			(at 46.99 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "200k ERJ-3EKF2003V (26, Box SMD Reste) - any equal pair works (V_bat/2)"
+			(at 46.99 78.74 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7210,6 +7187,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "KEM X5R0603 2,2U"
+			(at 120.65 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "GRM188R61E225KA12D (4, Box SMD Reste)"
+			(at 120.65 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dc95a02d-5e11-4a10-be49-ac3dc4de0901")
 		)
@@ -7227,7 +7226,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 228.6 50.8 90)
+		(at 219.71 78.74 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7237,7 +7236,7 @@
 		(dnp no)
 		(uuid "38c7b111-ce41-40e8-9b63-0a870ea9a02d")
 		(property "Reference" "L4"
-			(at 228.6 46.99 90)
+			(at 219.71 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7247,7 +7246,7 @@
 			)
 		)
 		(property "Value" "6.3uH"
-			(at 228.6 54.61 90)
+			(at 219.71 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7257,18 +7256,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Bourns_SRP5030T"
-			(at 228.6 50.8 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Reichelt" "L-242418FPS 6,3µ"
-			(at 228.6 50.8 0)
+			(at 219.71 78.74 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7279,7 +7267,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 50.8 0)
+			(at 219.71 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7290,7 +7278,18 @@
 			)
 		)
 		(property "Description" ""
-			(at 228.6 50.8 0)
+			(at 219.71 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "L-242418FPS 6,3µ"
+			(at 219.71 78.74 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7316,7 +7315,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 261.62 127 0)
+		(at 255.27 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7326,7 +7325,7 @@
 		(dnp no)
 		(uuid "3c327757-0abd-4ad9-ba71-9f5eb71da885")
 		(property "Reference" "R14"
-			(at 261.62 123.19 0)
+			(at 255.27 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7335,8 +7334,8 @@
 				)
 			)
 		)
-		(property "Value" "22k"
-			(at 261.62 130.81 0)
+		(property "Value" "27k"
+			(at 255.27 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7346,7 +7345,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 261.62 127 0)
+			(at 255.27 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7357,7 +7356,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 127 0)
+			(at 255.27 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7368,7 +7367,29 @@
 			)
 		)
 		(property "Description" ""
-			(at 261.62 127 0)
+			(at 255.27 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 27K"
+			(at 255.27 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "alt. pair from stock: R14 22k ERJ-3EKF2202V (4) + R13 66.5k -> 4.98 V"
+			(at 255.27 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7649,84 +7670,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 261.62 92.71 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "46d565d2-7ac3-4fdd-bdd5-5f851df46354")
-		(property "Reference" "#PWR20390"
-			(at 261.62 86.36 180)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 261.62 87.63 180)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 261.62 92.71 180)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 261.62 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 261.62 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3055dd3f-58a1-47a4-bb1f-1e0baede7782")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
-					(reference "#PWR20390")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
-		(at 228.6 39.37 90)
+		(at 219.71 67.31 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7736,7 +7681,7 @@
 		(dnp yes)
 		(uuid "4b4f0879-793d-46bb-8433-c686523e8a99")
 		(property "Reference" "L5"
-			(at 228.6 35.56 90)
+			(at 219.71 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7746,7 +7691,7 @@
 			)
 		)
 		(property "Value" "10uH"
-			(at 228.6 43.18 90)
+			(at 219.71 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7756,7 +7701,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Bourns-SRU1028_10.0x10.0mm"
-			(at 228.6 39.37 90)
+			(at 219.71 67.31 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7767,7 +7712,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 39.37 0)
+			(at 219.71 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7778,7 +7723,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 228.6 39.37 0)
+			(at 219.71 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7896,7 +7841,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 261.62 106.68 0)
+		(at 255.27 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7906,7 +7851,7 @@
 		(dnp no)
 		(uuid "515bca96-19a8-467e-8ea6-ee0e70a22b14")
 		(property "Reference" "R13"
-			(at 261.62 102.87 0)
+			(at 255.27 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7915,8 +7860,8 @@
 				)
 			)
 		)
-		(property "Value" "66.5k"
-			(at 261.62 110.49 0)
+		(property "Value" "82k"
+			(at 255.27 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7926,7 +7871,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 261.62 106.68 0)
+			(at 255.27 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7937,7 +7882,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 106.68 0)
+			(at 255.27 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7948,7 +7893,29 @@
 			)
 		)
 		(property "Description" ""
-			(at 261.62 106.68 0)
+			(at 255.27 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 82K"
+			(at 255.27 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "alt. pair from stock: R13 66.5k ERJ-3EKF6652V (4) + R14 22k -> 4.98 V"
+			(at 255.27 101.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8037,6 +8004,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 92.71 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 92.71 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2dfc02e4-00d6-4a00-9efd-cf7dbdb1dbcc")
 		)
@@ -8054,7 +8043,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 271.78 78.74 0)
+		(at 265.43 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8064,7 +8053,7 @@
 		(dnp no)
 		(uuid "5c36775d-c776-4d12-9e8d-d313c32f6068")
 		(property "Reference" "C38"
-			(at 271.78 74.93 0)
+			(at 265.43 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8074,7 +8063,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 271.78 82.55 0)
+			(at 265.43 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8084,7 +8073,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 271.78 78.74 0)
+			(at 265.43 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8095,7 +8084,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 78.74 0)
+			(at 265.43 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8106,7 +8095,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 271.78 78.74 0)
+			(at 265.43 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8116,7 +8105,7 @@
 			)
 		)
 		(property "Reichelt" "GRM31CC81E226K"
-			(at 271.78 78.74 0)
+			(at 265.43 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8308,7 +8297,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 224.79 60.96 90)
+		(at 265.43 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8318,7 +8307,7 @@
 		(dnp no)
 		(uuid "72a68820-a09f-4de3-9cc6-0cedacbe7c58")
 		(property "Reference" "#PWR70004"
-			(at 224.79 60.96 0)
+			(at 265.43 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8329,7 +8318,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 220.98 60.96 0)
+			(at 265.43 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8339,7 +8328,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 60.96 0)
+			(at 265.43 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8350,7 +8339,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 60.96 0)
+			(at 265.43 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8361,7 +8350,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 224.79 60.96 0)
+			(at 265.43 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8385,7 +8374,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 222.25 95.25 270)
+		(at 185.42 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8395,7 +8384,7 @@
 		(dnp no)
 		(uuid "7460d39a-f0f4-4978-a8bd-ceb68d044527")
 		(property "Reference" "#FLG7102"
-			(at 222.25 88.9 0)
+			(at 179.07 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8406,7 +8395,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 222.25 90.17 0)
+			(at 180.34 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8416,7 +8405,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 95.25 0)
+			(at 185.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8427,7 +8416,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 95.25 0)
+			(at 185.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8438,7 +8427,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 222.25 95.25 0)
+			(at 185.42 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8677,6 +8666,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD-0603 10K"
+			(at 109.22 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "RC0603FR-0710KL (11) / ERJ-3EKF1002V (2), Box SMD Reste"
+			(at 109.22 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0e1d757f-d3ef-40c2-b62b-d262fd907e4d")
 		)
@@ -8694,7 +8705,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 205.74 107.95 0)
+		(at 191.77 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8704,7 +8715,7 @@
 		(dnp no)
 		(uuid "8a947f58-1b89-4537-b23b-4bc2a9936887")
 		(property "Reference" "#PWR35851"
-			(at 205.74 114.3 0)
+			(at 191.77 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8715,7 +8726,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.74 113.03 0)
+			(at 191.77 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8725,7 +8736,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 107.95 0)
+			(at 191.77 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8736,7 +8747,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 107.95 0)
+			(at 191.77 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8747,7 +8758,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 107.95 0)
+			(at 191.77 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8907,6 +8918,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD-0603 100K"
+			(at 100.33 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "ERJ-3EKF1003V (24) / RC0603FR-07100KL (4), Box SMD Reste"
+			(at 100.33 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "77a821b0-c605-4c8f-a457-e79b6b73dce4")
 		)
@@ -8999,84 +9032,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 271.78 64.77 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ae1bbd0f-a5a4-4a97-b9a5-d7a0d0bd17ef")
-		(property "Reference" "#PWR25810"
-			(at 271.78 71.12 180)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 271.272 59.944 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 271.78 64.77 180)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 271.78 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 271.78 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8fead4f7-2b44-40e2-b2c9-d0da3a118664")
-		)
-		(instances
-			(project "TeensyRPN42"
-				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
-					(reference "#PWR25810")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 271.78 92.71 0)
+		(at 265.43 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9086,7 +9043,7 @@
 		(dnp no)
 		(uuid "b0c27c25-974d-4f56-8e69-c3ae02ac67bf")
 		(property "Reference" "#PWR1052"
-			(at 271.78 99.06 0)
+			(at 265.43 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9097,7 +9054,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 271.78 97.79 0)
+			(at 265.43 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9107,7 +9064,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 271.78 92.71 0)
+			(at 265.43 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9118,7 +9075,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 92.71 0)
+			(at 265.43 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9129,7 +9086,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 271.78 92.71 0)
+			(at 265.43 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9152,7 +9109,7 @@
 	)
 	(symbol
 		(lib_id "RPN42Library:TS1935B")
-		(at 238.76 78.74 0)
+		(at 219.71 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9162,7 +9119,7 @@
 		(dnp no)
 		(uuid "b477e767-c87b-4bb1-8142-75bcf2c81f98")
 		(property "Reference" "U5"
-			(at 238.76 74.93 0)
+			(at 219.71 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9172,7 +9129,7 @@
 			)
 		)
 		(property "Value" "TS1935BCX5"
-			(at 246.38 90.17 0)
+			(at 227.33 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9182,7 +9139,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 238.76 78.74 0)
+			(at 219.71 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9193,7 +9150,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/395/TS1935BCX_C1904-1918490.pdf"
-			(at 238.76 78.74 0)
+			(at 219.71 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9204,7 +9161,7 @@
 			)
 		)
 		(property "Description" "1.2MHz 1.9A boost DC/DC converter, 2.6-5.5V input, up to 27V out, FB 1.238V, SOT-23-5 (SOT-25)"
-			(at 238.76 78.74 0)
+			(at 219.71 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9215,7 +9172,7 @@
 			)
 		)
 		(property "Reichelt" "TS1935BCX5"
-			(at 238.76 78.74 0)
+			(at 219.71 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9304,6 +9261,28 @@
 		)
 		(property "Description" ""
 			(at 142.24 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 100K"
+			(at 142.24 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "ERJ-3EKF1003V (24) / RC0603FR-07100KL (4), Box SMD Reste"
+			(at 142.24 156.21 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9405,7 +9384,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 205.74 93.98 0)
+		(at 191.77 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9415,7 +9394,7 @@
 		(dnp no)
 		(uuid "baa78bd6-7293-41ef-94b2-4da50ba00adc")
 		(property "Reference" "C37"
-			(at 205.74 90.17 0)
+			(at 191.77 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9425,7 +9404,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 205.74 97.79 0)
+			(at 191.77 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9435,7 +9414,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 205.74 93.98 0)
+			(at 191.77 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9446,7 +9425,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 93.98 0)
+			(at 191.77 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9457,7 +9436,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 93.98 0)
+			(at 191.77 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9467,7 +9446,7 @@
 			)
 		)
 		(property "Reichelt" "GRM31CC81E226K"
-			(at 205.74 93.98 0)
+			(at 191.77 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9487,6 +9466,83 @@
 			(project "TeensyRPN42"
 				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
 					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 273.05 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bf3177fa-99a3-498c-9cb9-2e22ecc1e11b")
+		(property "Reference" "#PWR70005"
+			(at 273.05 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 273.05 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 273.05 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b38623b2-1ba6-4316-9d7d-03e7361c5291")
+		)
+		(instances
+			(project "TeensyRPN42"
+				(path "/9acd3f2f-288a-40cb-ae05-b7b5178d11de/8260932e-aadb-418b-9bc7-d3f80c00a0b0"
+					(reference "#PWR70005")
 					(unit 1)
 				)
 			)
@@ -9513,7 +9569,7 @@
 				)
 			)
 		)
-		(property "Value" "200k"
+		(property "Value" "220k"
 			(at 43.18 63.246 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9555,6 +9611,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD-0603 220K"
+			(at 46.99 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "200k ERJ-3EKF2003V (26, Box SMD Reste) - any equal pair works (V_bat/2)"
+			(at 46.99 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1134a643-32c8-43d5-8f0b-cd8ad99e5ae2")
 		)
@@ -9572,7 +9650,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.15 148.59 180)
+		(at 64.77 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9582,7 +9660,7 @@
 		(dnp no)
 		(uuid "c8e566aa-a5e2-40ff-91b4-88f0faed5099")
 		(property "Reference" "#PWR10797"
-			(at 57.15 142.24 0)
+			(at 64.77 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9593,7 +9671,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 57.15 143.51 0)
+			(at 64.77 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9842,7 +9920,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 222.25 100.33 0)
+		(at 185.42 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9852,7 +9930,7 @@
 		(dnp no)
 		(uuid "d65862c7-21d2-4f36-9b55-625a3284a97e")
 		(property "Reference" "C55"
-			(at 222.25 96.52 0)
+			(at 185.42 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9862,7 +9940,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 222.25 104.14 0)
+			(at 185.42 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9872,7 +9950,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 222.25 100.33 0)
+			(at 185.42 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9883,7 +9961,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 100.33 0)
+			(at 185.42 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9894,7 +9972,29 @@
 			)
 		)
 		(property "Description" ""
-			(at 222.25 100.33 0)
+			(at 185.42 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 185.42 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 185.42 105.41 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9920,7 +10020,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 222.25 106.68 0)
+		(at 185.42 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9930,7 +10030,7 @@
 		(dnp no)
 		(uuid "e40bddf7-3ee0-48ca-9070-7b1986da079e")
 		(property "Reference" "#PWR70007"
-			(at 222.25 106.68 0)
+			(at 185.42 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9941,7 +10041,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 111.76 0)
+			(at 185.42 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9951,7 +10051,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 106.68 0)
+			(at 185.42 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9962,7 +10062,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 106.68 0)
+			(at 185.42 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9973,7 +10073,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 222.25 106.68 0)
+			(at 185.42 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10050,6 +10150,28 @@
 		)
 		(property "Description" ""
 			(at 109.22 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 100K"
+			(at 109.22 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "ERJ-3EKF1003V (24) / RC0603FR-07100KL (4), Box SMD Reste"
+			(at 109.22 54.61 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10225,6 +10347,28 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD-0603 150K"
+			(at 142.24 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "ERJ-3EKF1503V (7, Box SMD Reste)"
+			(at 142.24 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "50da9e33-d552-44fb-8e7a-66ec407b4043")
 		)
@@ -10371,6 +10515,28 @@
 		)
 		(property "Description" ""
 			(at 83.82 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "KEM X5R0603 2,2U"
+			(at 83.82 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "GRM188R61E225KA12D (4, Box SMD Reste)"
+			(at 83.82 57.15 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10601,6 +10767,28 @@
 		)
 		(property "Description" ""
 			(at 59.69 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 59.69 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 59.69 77.47 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

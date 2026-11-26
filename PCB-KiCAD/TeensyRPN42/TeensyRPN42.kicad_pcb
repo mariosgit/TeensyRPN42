@@ -209,6 +209,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cd7815e-7093-4b6a-8fdd-916f905c8cf2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb188728-7f71-4c5e-85b5-8cab46b1fb2a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/700781e6-4328-4789-9056-6a37124fdb80")
 		(sheetname "/LEDS/")
@@ -2154,6 +2180,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD-0603 150K"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e9e8556-61ca-48df-a981-1f4cc7d7a5e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "ERJ-3EKF1503V (7, Box SMD Reste)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ccf1d2d0-794a-4bc1-916c-d7b04b953416")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8260932e-aadb-418b-9bc7-d3f80c00a0b0/eb2305b3-ebd6-462e-84de-dd3997c302bc")
 		(sheetname "/Power/")
@@ -2267,7 +2319,7 @@
 				)
 			)
 		)
-		(property "Value" "200k"
+		(property "Value" "220k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "98abeeb9-b914-4786-8792-ca9840ebf4dd")
@@ -2305,6 +2357,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "eb793ade-a694-4f21-98e7-9ada972f37da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 220K"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b36d211-555f-437f-9e8d-87b33acb7646")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "200k ERJ-3EKF2003V (26, Box SMD Reste) - any equal pair works (V_bat/2)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "29866140-6d07-4a36-aa1c-20ecddc4f819")
 			(effects
 				(font
 					(size 1 1)
@@ -3272,7 +3350,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "27k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "a51bdde8-2d0d-441f-a905-dc723b15d609")
@@ -3310,6 +3388,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "b8543cac-d6bb-495e-8874-28de7aaf6e94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 27K"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e6d68b96-c518-48c6-8183-e7e24503137f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "alt. pair from stock: R14 22k ERJ-3EKF2202V (4) + R13 66.5k -> 4.98 V"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52d1dece-373c-4887-926e-b4add34e5f68")
 			(effects
 				(font
 					(size 1 1)
@@ -4167,6 +4271,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46c9a7ae-4bc5-4c1d-9824-2798f81aa641")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ab01768-37e9-4a85-99e7-9c5b64e1d9c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/4a7d52d1-a722-4d42-b661-31b16d8907aa")
 		(sheetname "/LEDS/")
@@ -4376,6 +4506,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "34ed4c32-ca9d-4120-8f08-e94cae018f98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 100K"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "621c8920-278d-4bc8-a0d7-4b4260380c26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "ERJ-3EKF1003V (24) / RC0603FR-07100KL (4), Box SMD Reste"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49592ce9-c5a7-47c9-a81e-99fc5adb5e57")
 			(effects
 				(font
 					(size 1 1)
@@ -4849,6 +5005,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3d5a3ff7-6a1e-4de8-b302-e00582a2714a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "KEM X5R0603 2,2U"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1230eb8e-e665-4ab3-bdda-f6bdcb99abde")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "GRM188R61E225KA12D (4, Box SMD Reste)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc1b3635-a361-4209-b3fb-1a95d0dcbbaf")
 			(effects
 				(font
 					(size 1 1)
@@ -5415,6 +5597,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD-0603 2,2K"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84d3eb6d-46e5-4e81-a633-88cd5c7aaea3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "ERJ-3EKF2201V (14) / RC0603FR-072K2L (6), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15677f7b-c29d-438c-8fb0-040f5e8783a8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b1c3462d-bd73-4abc-87e7-d0c86e5d32e3")
 		(sheetname "/")
@@ -5640,6 +5848,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a3b3efa8-3585-4973-a447-ec8b20f2eace")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea9a53ed-6de8-44d9-94d4-86aea0a9171b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5940ee5f-cf9e-4d30-ba84-dcb7155e576f")
 			(effects
 				(font
 					(size 1 1)
@@ -6434,6 +6668,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ff7ee4d3-04c3-4668-8b96-e78512fa54cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "079caa4e-28c1-4ecd-8330-f01e0e283c4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "51eba0f0-96bf-49b3-bb81-7033498b9027")
 			(effects
 				(font
 					(size 1 1)
@@ -7284,6 +7544,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ef9cb025-0cf2-4e89-afac-b9c04d6d3fe0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc7cfd5a-2c3c-4f6a-9329-5a4baa959037")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec6ac92d-0302-416a-bc34-f5a2a3271b8e")
 			(effects
 				(font
 					(size 1 1)
@@ -8256,6 +8542,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08054774-1785-4ceb-b162-b8f6174a7f54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6461f238-9a2b-4c4e-a2b0-5e9a7f9c1d30")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/2535b292-e5f3-46ce-8921-5f554a050dd6")
 		(sheetname "/LEDS/")
@@ -8777,6 +9089,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da8d01d4-8ddc-43be-be44-0529caff7d72")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3955e379-8b0f-4935-a564-b15e1564088a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/26561a37-4822-4ebe-a906-c5f7ce06d403")
 		(sheetname "/")
@@ -8948,7 +9286,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8pF"
+		(property "Value" "12pF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "22734797-3cd4-4dcd-a796-a64ec92d92b3")
@@ -8993,12 +9331,25 @@
 				)
 			)
 		)
-		(property "Reichelt" "CL10C6R8CB8NNNC"
+		(property "Reichelt" "CL10C120JB8NNNC"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b09c258b-03b7-44f4-98dd-919d74c6c8fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "none; for a CL 6 pF crystal on Y2 use 6.8 pF (CL10C6R8CB8NNNC)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f269996c-7cab-450d-801b-8a881af77396")
 			(effects
 				(font
 					(size 1 1)
@@ -9173,6 +9524,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "11402bda-0ce8-47fd-b129-8ca41f4889ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 10K"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57329f2b-8bee-40f6-ab2c-0648c524d5e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "RC0603FR-0710KL (11) / ERJ-3EKF1002V (2), Box SMD Reste"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e875864c-f933-426d-9d4a-eb97eca1fb26")
 			(effects
 				(font
 					(size 1 1)
@@ -9405,6 +9782,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ffa9cb75-b9cc-409f-9b6f-33a3537000e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ea50c97-010e-4571-bc96-0199f636621a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80cfbc3e-b8f1-4567-a358-69fe4028cc2d")
 			(effects
 				(font
 					(size 1 1)
@@ -12738,6 +13141,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5d953db-d06f-4f0c-bf9a-6279c4066b7d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9b35133-84e0-4b50-9091-cc60fa75da34")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/7918ebfb-ba04-4f24-a888-301d80b6e9e2")
 		(sheetname "/LEDS/")
@@ -12851,7 +13280,7 @@
 				)
 			)
 		)
-		(property "Value" "200k"
+		(property "Value" "220k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "605589cc-2625-4db9-ba9b-33dbdc0c3b84")
@@ -12889,6 +13318,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9498c066-da16-44a1-9910-8ad76db1bbd2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 220K"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "294a00be-c550-408b-94f8-b47f70854268")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "200k ERJ-3EKF2003V (26, Box SMD Reste) - any equal pair works (V_bat/2)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb53d251-a81b-4b60-aed7-4185edd77b0b")
 			(effects
 				(font
 					(size 1 1)
@@ -13723,6 +14178,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "224dd8d0-7ae5-4291-85a1-e8ae7d6cac76")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 10K"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f1a7526-4aef-4030-a77e-013edc6f3685")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "RC0603FR-0710KL (11) / ERJ-3EKF1002V (2), Box SMD Reste"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50d572d2-b97d-405f-be09-03492c4a0452")
 			(effects
 				(font
 					(size 1 1)
@@ -14948,6 +15429,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD-0603 10K"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3aa8e6d5-3923-4834-a90b-3b7f9c28a8b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "RC0603FR-0710KL (11) / ERJ-3EKF1002V (2), Box SMD Reste"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a1df638-2be1-48e8-91a1-c3649cc01827")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/485c6d20-1def-4a81-8d2f-bb6bfaa71031")
 		(sheetname "/")
@@ -15794,6 +16301,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "KEM X5R0603 2,2U"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0290f9ae-31d6-47a8-8f62-a3cce3e900c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "GRM188R61E225KA12D (4, Box SMD Reste)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a6c729a-55b5-4411-b69f-33279f4caf20")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ec890c9d-ca43-4e54-82e0-bb60573ddc92")
 		(sheetname "/")
@@ -16175,6 +16708,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "208991f9-b576-4c44-9148-53b04f6701aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10eccc86-2ef4-4dbd-b1bf-51208c650c92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/f0069da5-2c95-4807-a740-b03360ee3f3f")
 		(sheetname "/LEDS/")
@@ -16400,6 +16959,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "51e4e808-ce49-43fc-b55f-c1243083ccb4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8dcb941-c68e-417a-8fce-9571049214cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c15eb939-ece7-4879-ad89-d4dce0673b99")
 			(effects
 				(font
 					(size 1 1)
@@ -18577,6 +19162,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD-0603 100K"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a374437-8a6e-43ba-b120-8c9822804388")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "ERJ-3EKF1003V (24) / RC0603FR-07100KL (4), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cb3997f-4973-4e78-8628-db4617ad5a89")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8260932e-aadb-418b-9bc7-d3f80c00a0b0/b82e1975-441c-4149-8f50-a4a378af26f4")
 		(sheetname "/Power/")
@@ -19096,6 +19707,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5c73027-6aaf-40ac-ab6f-ae9edca327f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ba95e1b-9e6e-45b7-a167-8132127da6dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/8260932e-aadb-418b-9bc7-d3f80c00a0b0/d65862c7-21d2-4f36-9b55-625a3284a97e")
 		(sheetname "/Power/")
@@ -19247,6 +19884,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "eb2d6ee7-c14b-447c-8fa6-2389834743b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 100K"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f21a68d0-4d94-4588-ae5a-c1e5a1111ba6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "ERJ-3EKF1003V (24) / RC0603FR-07100KL (4), Box SMD Reste"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f073d7ec-148d-4e71-9c6f-ca1c6b927af6")
 			(effects
 				(font
 					(size 1 1)
@@ -21335,6 +21998,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "db03f8fc-1ea6-4702-bfaa-2837d289dac0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6db493e1-df6c-4591-983a-3ef61a176bf2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b227b61-bbcd-4a68-b6c1-5a97154ba584")
 			(effects
 				(font
 					(size 1 1)
@@ -25031,6 +25720,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a0aee5c0-c012-4cc4-924f-846764433e4a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52a2b486-08fc-4cd8-b0d4-88cad9b4538f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/544865d1-bb20-44c5-a05a-bcd731d8792c")
 		(sheetname "/LEDS/")
@@ -25240,7 +25955,7 @@
 				)
 			)
 		)
-		(property "Reichelt" "DIP DTSM-61K"
+		(property "Reichelt" "DIP DTSM-61R"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25580,6 +26295,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "cdc2cd37-21b2-408d-8ff6-d5ae29329ed3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bf8701dc-6320-48b6-ad5c-77e3ac1709e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bfffae4e-329f-46ae-9ea0-ec933ac92e6c")
 			(effects
 				(font
 					(size 1 1)
@@ -26106,6 +26847,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "KEM X5R0603 2,2U"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11865eb3-942f-4326-8035-526e0a186831")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "GRM188R61E225KA12D (4, Box SMD Reste)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66735c6e-290e-4808-b9f3-b89448caf074")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/8260932e-aadb-418b-9bc7-d3f80c00a0b0/385901eb-260f-4a1d-9e0b-cf8567ee28c2")
 		(sheetname "/Power/")
@@ -26273,6 +27040,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4cdf7e2b-c413-47ca-874a-5aeb437aaf48")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 2,2K"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa91611f-db02-46d6-8b85-60ef364635d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "ERJ-3EKF2201V (14) / RC0603FR-072K2L (6), Box SMD Reste"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "489d6a82-4e9d-4cf2-b9c8-d07984ef0508")
 			(effects
 				(font
 					(size 1 1)
@@ -28953,6 +29746,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD-0603 10K"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82703f0c-4156-46f5-b67c-e1251ff2bfcc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "RC0603FR-0710KL (11) / ERJ-3EKF1002V (2), Box SMD Reste"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c2f4d88-7211-4b6e-83a9-7344cb379103")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8260932e-aadb-418b-9bc7-d3f80c00a0b0/8833ddaa-bc41-4654-88d5-9da8afd44fe2")
 		(sheetname "/Power/")
@@ -29442,6 +30261,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "CL10C180JB8NNNC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ab3ea3d-e89e-4e44-ab4d-8ebffb4ec7d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "GRM1885C1H180JA01J (20, Box SMD Reste)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bcf25926-91c7-4f8b-a229-0b42e0fc2e0f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/6b5f1f31-8572-464f-bbc0-69b1c590572a")
 		(sheetname "/")
@@ -29651,6 +30496,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "552c6a55-4e9f-416c-8f3b-591647a80cf4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85ac5363-b848-4a8f-b4af-4007a66dbf00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3429263-244a-45c8-a548-c64fd4e81534")
 			(effects
 				(font
 					(size 1 1)
@@ -30132,7 +31003,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8pF"
+		(property "Value" "12pF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "0a061470-b0ef-4759-89b6-b0c508a8d029")
@@ -30177,12 +31048,25 @@
 				)
 			)
 		)
-		(property "Reichelt" "CL10C6R8CB8NNNC"
+		(property "Reichelt" "CL10C120JB8NNNC"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4426f65b-a5e0-407e-a1cb-d138a7a27ef7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "none; for a CL 6 pF crystal on Y2 use 6.8 pF (CL10C6R8CB8NNNC)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af9c0d85-a388-4bee-b68e-e4bd041360a1")
 			(effects
 				(font
 					(size 1 1)
@@ -30341,6 +31225,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "120647bc-8c00-44f8-b815-39b8e47277d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ef15c67-31c1-4bae-8bab-88f959c13c84")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cbab3f44-8523-4e36-9d7c-03b1bb6c7a12")
 			(effects
 				(font
 					(size 1 1)
@@ -31415,6 +32325,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "SMD-0603 470"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64bf0e77-3064-4725-8a6c-3cb0687c5e18")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "RC0603FR-07470RL (12, Box SMD Reste)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8676f3b6-f272-4323-90a4-5d584edb4c8d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/13d2d911-cd22-4459-b94f-48d10dfd8b6c")
 		(sheetname "/LEDS/")
@@ -31955,6 +32891,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fd612d07-7d3e-47b9-97b1-af93d967c5ee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "71aba1b0-9816-485b-a293-1e44167032e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2594615a-4304-4e31-8394-df50a6708dde")
 			(effects
 				(font
 					(size 1 1)
@@ -33025,6 +33987,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ccb4e4b-61e0-4c23-8edf-d8997509a148")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a19c671-7666-4afd-9061-004f92759cfa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/0b8d91d0-c627-4fc4-896a-f3972f3d9a2b")
 		(sheetname "/LEDS/")
@@ -33138,7 +34126,7 @@
 				)
 			)
 		)
-		(property "Value" "32.768kHz CL6pF"
+		(property "Value" "32.768kHz CL9pF"
 			(at 0 2 90)
 			(layer "F.Fab")
 			(uuid "37aedbd6-e8cc-41d1-90b7-1a8b5ce4f785")
@@ -33171,6 +34159,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "32,768 CC7V-9"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8678bb54-dea8-4f34-96f2-25ab7d68cfcc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "none; CL 6-7 pF 3215 crystal (not at Reichelt) has more LSE gain margin, then C32/C33 = 6.8 pF"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a1b3b99-7102-4dfe-a662-bcea6b830721")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -33752,6 +34766,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "385bea1c-8de1-4d04-a9e6-ef3e6e8aa0a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f1f83921-9588-4cf5-a343-d0c48b038f6d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/fd80c72a-b6a6-4e41-ad74-a3ae42d047cf")
 		(sheetname "/LEDS/")
@@ -33903,7 +34943,7 @@
 				)
 			)
 		)
-		(property "Reichelt" "DIP DTSM-61K"
+		(property "Reichelt" "DIP DTSM-61R"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -35161,6 +36201,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "CL10C180JB8NNNC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6bcaadc-60e5-4fb0-8eb6-7a639bac9a7d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "GRM1885C1H180JA01J (20, Box SMD Reste)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cfe3389d-6c14-47bb-a644-b4cdc7ae03bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0ccc27ef-6d67-44ae-a664-0f6efc783bd3")
 		(sheetname "/")
@@ -35377,6 +36443,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1b5b143-5c85-474e-ab06-8c49bc04669c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e747fa3e-40fd-413d-b36b-eb3cc52ddee6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/ad6d2e73-4ac3-456d-a9e9-dc713fd3d979")
 		(sheetname "/LEDS/")
@@ -35544,6 +36636,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cc71fbd3-c2f4-4170-8e5c-e58a6e07f90b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b497e703-e572-417e-9aa4-8b43674865d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e505e823-2096-4f05-8475-b7d75b0c47ae")
 			(effects
 				(font
 					(size 1 1)
@@ -35783,6 +36901,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d1196f31-9dcc-4046-b735-cc87ccaa8b17")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25fbd99c-e2e7-4c6c-8b82-38ba8ff36d23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/714fb02c-779b-4f03-bbba-2ecbd61a1d7b")
 		(sheetname "/")
@@ -35992,6 +37136,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d76fb935-33cb-4d76-86b5-d96621da3337")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "KEM X5R0603 2,2U"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82cc122c-600d-4b36-903c-0ef20d640e2a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "GRM188R61E225KA12D (4, Box SMD Reste)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "684a5931-4978-47eb-8794-626de624a550")
 			(effects
 				(font
 					(size 1 1)
@@ -37195,6 +38365,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0ff2262f-f772-40bd-836d-39c7f782e46d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6fd090b-d546-4f92-a9e0-92da79455260")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b945765e-adaa-4f86-8b49-801a373d6db8")
 			(effects
 				(font
 					(size 1 1)
@@ -39204,6 +40400,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c0a5c74-b5d3-4479-8173-cc6f5340dc78")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67051a38-bba0-44ff-82ad-16076c95044c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/3cce20f8-efb8-47a1-a0da-1f9ada192967")
 		(sheetname "/LEDS/")
@@ -40028,6 +41250,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b52e242d-0c8c-4e71-9e72-ef4bd73a3cdd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20968eb1-e52a-4cf0-99d2-6d89dac2fba5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/7f0afd21-dc89-44c5-b970-def22c00fd1f")
 		(sheetname "/LEDS/")
@@ -40542,6 +41790,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3db49afe-ebe9-49ab-be3b-17370b07825e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "935e4f14-2b2a-4d99-9bad-a6ae197e0663")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b9dce86-6965-4426-9027-830bb99d9744")
 			(effects
 				(font
 					(size 1 1)
@@ -41503,6 +42777,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f78284a8-cf7a-454b-bfe2-f9016f3560a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ddde466-3db5-4f59-8f1b-1b36e9971eeb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/59abf6d9-feda-4be2-94b1-ab01d74b524b")
 		(sheetname "/LEDS/")
@@ -42107,6 +43407,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "123e68cc-40cc-4599-b014-91229d331ce3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "74e2e197-19b4-4219-93eb-dd12c0dc0d61")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "54f0f0b2-08a8-4780-b059-4890fb427a90")
 			(effects
 				(font
 					(size 1 1)
@@ -43345,7 +44671,7 @@
 				)
 			)
 		)
-		(property "Value" "66.5k"
+		(property "Value" "82k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "3cf031f4-0dec-4b8a-8909-ca68e1fa7f34")
@@ -43383,6 +44709,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "077c6015-6288-4377-8cea-92658b40936b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "SMD-0603 82K"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "038f8911-ce98-4d74-a54a-3e867487889f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "alt. pair from stock: R13 66.5k ERJ-3EKF6652V (4) + R14 22k -> 4.98 V"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bcee442b-77e0-4c6f-adeb-1ef3c39dd027")
 			(effects
 				(font
 					(size 1 1)
@@ -43548,6 +44900,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b85fa13-68bb-4f2a-bbdc-a2bea7ce3bc0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46b2634f-c9ce-4bd7-868b-7a9d87a0e506")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/8260932e-aadb-418b-9bc7-d3f80c00a0b0/ff931f8a-0410-408b-8b1c-286f6254a096")
 		(sheetname "/Power/")
@@ -43699,6 +45077,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "92809bb1-2f67-4404-b446-b99a53f8c3bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "KEM X5R0603 2,2U"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4f80a9b-1222-415e-bc4e-14afb91db767")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "GRM188R61E225KA12D (4, Box SMD Reste)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2bfac1c2-c2e3-47cb-b111-7d9a835822a0")
 			(effects
 				(font
 					(size 1 1)
@@ -45094,6 +46498,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4fd0d463-2177-4d56-aa6e-207005de3230")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3a35d61-3361-41a3-919a-a790c72b0b94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/4bcb0689-342d-4310-938b-f007ed399e5d")
 		(sheetname "/LEDS/")
@@ -45671,6 +47101,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28177a25-af90-4cda-a8ac-146be1772094")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5489e34a-c2d2-4c79-b17c-7e8ff108b5ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/29d6d2e4-a4cc-4fb0-8b11-6038316c81a7")
 		(sheetname "/LEDS/")
@@ -45838,6 +47294,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5eb10fb6-89af-4bc7-92d2-16c27ad5bc3b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d89117f-0e00-4386-ac62-3783f5455d1b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8cf3f086-2279-409e-8e0c-889f6ed25d56")
 			(effects
 				(font
 					(size 1 1)
@@ -46739,6 +48221,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fad9e9c1-c351-4347-8328-cddc68f7f5fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2e80384-8389-4680-b43c-dbd93ed1073d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/51a2bd4f-07a7-47bb-bc82-388f828f1c4f")
 		(sheetname "/")
@@ -47286,6 +48794,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "X7R-G0603 100N"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b662fd79-e9b7-40d2-bccc-0213cce806bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "CC0603KRX7R9BB104 X7R (27) / C0603C104Z3VAC Y5V (128), Box SMD Reste"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a4831fd-29ef-41cc-89db-e462d1647bf3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62b6b0f2-8eb7-4bef-92bf-632626f4cc22/9ec0b6c6-cd96-42c9-b63f-b9440831759f")
 		(sheetname "/LEDS/")
@@ -47749,6 +49283,32 @@
 				)
 			)
 		)
+		(property "Reichelt" "KEM C0G0603 1,0N"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f22218ee-94a3-409d-99c6-272c1d7e4510")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "GRM1885C1H102FA01J (7, Box SMD Reste)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1cd098c8-ffe6-4524-894e-6c32ae938e9f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/bab00ad3-0645-4832-aa32-b8cfc3c6c465")
 		(sheetname "/")
@@ -47900,6 +49460,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "85b1247b-2964-4391-ad8c-ad12bf9d6902")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Reichelt" "KEM X5R0603 2,2U"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70f9a1d6-e21b-4d99-8864-f0de99a4a647")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "GRM188R61E225KA12D (4, Box SMD Reste)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6eb36ebb-8d45-48eb-a18f-1224c9338be6")
 			(effects
 				(font
 					(size 1 1)
@@ -60932,6 +62518,94 @@
 		(uuid "7eadab19-5844-4f83-8205-a8d327ac9ecb")
 	)
 	(segment
+		(start 136.5305 94.1015)
+		(end 138.75 94.1015)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Power/SW_BOOST")
+		(uuid "37286ca9-5ba6-4d9e-b709-e3376b535867")
+	)
+	(segment
+		(start 131.953 95.468)
+		(end 132.171 95.25)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Power/SW_BOOST")
+		(uuid "3d5dd105-ed02-4c74-b28a-7f2f3e15ca95")
+	)
+	(segment
+		(start 131.953 95.468)
+		(end 131.953 97.619)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Power/SW_BOOST")
+		(uuid "4279d6e5-3d2f-45dd-b438-adf05ec66608")
+	)
+	(segment
+		(start 139.795 99.663)
+		(end 139.795 101.346)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Power/SW_BOOST")
+		(uuid "42a4a8e5-7737-4613-b93f-a9b3020cadfb")
+	)
+	(segment
+		(start 139.6 96.039)
+		(end 139.6 99.468)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Power/SW_BOOST")
+		(uuid "4ec55cf7-626b-48a4-9269-5fba6314d564")
+	)
+	(segment
+		(start 135.382 95.25)
+		(end 136.5305 94.1015)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Power/SW_BOOST")
+		(uuid "7726e999-b3f1-4264-9d75-ef02df61d7c1")
+	)
+	(segment
+		(start 138.75 94.1015)
+		(end 138.75 95.189)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Power/SW_BOOST")
+		(uuid "93532170-9064-4b63-bf33-08d47b0418d8")
+	)
+	(segment
+		(start 132.171 95.25)
+		(end 135.382 95.25)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Power/SW_BOOST")
+		(uuid "a5065e3d-216f-4c59-9f0d-91a6e0b114c0")
+	)
+	(segment
+		(start 139.6 99.468)
+		(end 139.795 99.663)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Power/SW_BOOST")
+		(uuid "bd6f7354-b659-441d-ad58-4031f0da2991")
+	)
+	(segment
+		(start 138.75 95.189)
+		(end 139.6 96.039)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Power/SW_BOOST")
+		(uuid "cf2b282d-cff3-45f2-9413-7433d0f4eba4")
+	)
+	(segment
+		(start 131.953 97.619)
+		(end 132.012 97.678)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Power/SW_BOOST")
+		(uuid "d598a2ef-f276-4ff9-a278-9a44379a1010")
+	)
+	(segment
 		(start 67.625 86.713501)
 		(end 68.105501 86.233)
 		(width 0.25)
@@ -62906,94 +64580,6 @@
 		(layer "B.Cu")
 		(net "/SWO")
 		(uuid "f5646221-7cfd-4cac-ada3-b8e556f40168")
-	)
-	(segment
-		(start 136.5305 94.1015)
-		(end 138.75 94.1015)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "/Power/SW_BOOST")
-		(uuid "37286ca9-5ba6-4d9e-b709-e3376b535867")
-	)
-	(segment
-		(start 131.953 95.468)
-		(end 132.171 95.25)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "/Power/SW_BOOST")
-		(uuid "3d5dd105-ed02-4c74-b28a-7f2f3e15ca95")
-	)
-	(segment
-		(start 131.953 95.468)
-		(end 131.953 97.619)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "/Power/SW_BOOST")
-		(uuid "4279d6e5-3d2f-45dd-b438-adf05ec66608")
-	)
-	(segment
-		(start 139.795 99.663)
-		(end 139.795 101.346)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "/Power/SW_BOOST")
-		(uuid "42a4a8e5-7737-4613-b93f-a9b3020cadfb")
-	)
-	(segment
-		(start 139.6 96.039)
-		(end 139.6 99.468)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "/Power/SW_BOOST")
-		(uuid "4ec55cf7-626b-48a4-9269-5fba6314d564")
-	)
-	(segment
-		(start 135.382 95.25)
-		(end 136.5305 94.1015)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "/Power/SW_BOOST")
-		(uuid "7726e999-b3f1-4264-9d75-ef02df61d7c1")
-	)
-	(segment
-		(start 138.75 94.1015)
-		(end 138.75 95.189)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "/Power/SW_BOOST")
-		(uuid "93532170-9064-4b63-bf33-08d47b0418d8")
-	)
-	(segment
-		(start 132.171 95.25)
-		(end 135.382 95.25)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "/Power/SW_BOOST")
-		(uuid "a5065e3d-216f-4c59-9f0d-91a6e0b114c0")
-	)
-	(segment
-		(start 139.6 99.468)
-		(end 139.795 99.663)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "/Power/SW_BOOST")
-		(uuid "bd6f7354-b659-441d-ad58-4031f0da2991")
-	)
-	(segment
-		(start 138.75 95.189)
-		(end 139.6 96.039)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "/Power/SW_BOOST")
-		(uuid "cf2b282d-cff3-45f2-9413-7433d0f4eba4")
-	)
-	(segment
-		(start 131.953 97.619)
-		(end 132.012 97.678)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "/Power/SW_BOOST")
-		(uuid "d598a2ef-f276-4ff9-a278-9a44379a1010")
 	)
 	(segment
 		(start 114.021835 155.931997)

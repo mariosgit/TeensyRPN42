@@ -1,6 +1,6 @@
 # What ???
 
-Trying to compile Free42 on a Teensy4.
+Trying to compile Free42 on a Teensy4 / STM32F4xx.
 
 It's a PlatformIO project, copied some code from free42 into lib and trying to compile it...
 
@@ -25,10 +25,6 @@ Works with double precision over terminal.
 │  ▄▀▄  ▄             █    ▄▄    █    ▄   █ █   █ ▄   █  █    ▄   █ ▄   █ ▄   █ █   █   █    █    █▄▄▄          █  │
 │ ▀   ▀              ▀▀▀   ▀▀    ▀     ▀▀▀   ▀▀▀   ▀▀▀   ▀     ▀▀▀   ▀▀▀   ▀▀▀   ▀▀▀   ▀▀▀   ▀                 ▀▀▀ │
 ╘══════════════════════════════════════════════════════════════════════════════════════════════════════════════════╛
-T=0 
-Z=0 
-Y=2.92371704723␘-1 
-X=-1.75637355817␘-1
 ```
 
 # Software
@@ -66,21 +62,26 @@ Ideas...
 
 * Display ???
   * OLED ? 256x64
-  * VFD ?? cool but power usage ???
 * Keys 
   * K.Choc low profile mechaniks
-  * cheap 12mm clickers ?
-  * RGB LEDs under keys ? SK6812-E | SK6805
 * Power ?
   * Single Lipo ? Cheap Charger...
 
-Start with a mini board ? Only the top three rows ? Uhm mhm might be tedious to map that, especially the func key top row ?
 
-| | | | | | |
-|----|---|---|---|---|---|
-| +  | * | ^ | 7 | 8 | 9 |
-| -  | / | . | 4 | 5 | 6 |
-| ENTER || 0 | 1 | 2 | 3 |
+## PCB Ordered 
+
+commit: 9db91b7e23bbdf1880c24b6f514a0bee10d9d54c
+
+## Costa ?
+
+| What | Where | $$$ |
+|---|---|---:|
+| PCB | JLC 5x | 27/5 = 5.4 |
+| OLED "OLED Display 2.8" 256*64" | AliEx | 22 |
+| Keith Choc V1 | AliEx | ~30 |
+| LEDs "WS2812 2020" 500x | AliEx | 22/13 = 1.7 |
+| BOM all | Reichelt | 20 |
+| **Sum** | | ~100 |
 
 # Refs
 
