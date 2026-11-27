@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "RPN42Library")(type "KiCad")(uri "${KIPRJMOD}/RPN42Library.kicad_sym")(options "")(descr "TeensyRPN42 project symbols"))
+)

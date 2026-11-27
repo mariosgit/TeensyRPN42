@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "kicad": {
+      "command": "uvx",
+      "args": [
+        "kicad-mcp-pro"
+      ],
+      "env": {
+        "KICAD_MCP_PROJECT_DIR": "${HOME}/DevelSelf/TeensyRPN42/PCB-KiCAD/TeensyRPN42",
+        "KICAD_MCP_PROFILE": "full",
+        "KICAD_MCP_OPERATING_MODE": "write",
+        "KICAD_MCP_TRANSPORT": "stdio"
+      },
+      "type": "stdio"
+    }
+  }
+}
